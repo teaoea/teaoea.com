@@ -1,0 +1,45 @@
+<mat-toolbar>
+
+  <div class="button">
+    <button mat-flat-button color="primary" (keyup.enter)="home()">
+      <a routerLink="/" routerLinkActive="active">Home</a>
+    </button>
+  </div>
+
+  <div class="button">
+    <button mat-flat-button color="primary" (keyup.enter)="learn()">
+      <a routerLink="/article/learn" routerLinkActive="active">Learn</a>
+    </button>
+  </div>
+
+  <div class="button">
+    <button mat-flat-button color="primary" (keyup.enter)="notes()">
+      <a routerLink="/article/note" routerLinkActive="active">Notes</a>
+    </button>
+  </div>
+
+  <div class="button community">
+    <button mat-flat-button color="primary" (keyup.enter)="community()">
+      <a routerLink="/article/community" routerLinkActive="active">Community</a>
+    </button>
+  </div>
+
+  <!--If you are not signed in,
+  the `sign in` and `sign up` buttons are displayed,
+  if you are signed in, the `me` button is displayed-->
+  <div *ngIf="show; then isSignin; else me"></div>
+  <ng-template #isSignin>
+    <div class="button signin">
+      <button mat-flat-button color="primary" (keyup.enter)="signup()">
+        <a routerLink="/account/signin" routerLinkActive="active">Sign in</a>
+      </button>
+    </div>
+
+    <div class="button signup">
+      <button mat-flat-button color="primary" (keyup.enter)="signup()">
+        <a routerLink="/account/signup" routerLinkActive="active">Sign up</a>
+      </button>
+    </div>
+  </ng-template>
+  <ng-template #me></ng-template>
+</mat-toolbar>
