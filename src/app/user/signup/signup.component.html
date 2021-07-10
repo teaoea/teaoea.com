@@ -46,7 +46,7 @@
   <p>
     <mat-form-field appearance="outline" class="country">
       <mat-label>Country</mat-label>
-      <mat-select panelClass="select" disableRipple aria-readonly="true"
+      <mat-select panelClass="select" disableRipple required
                   [(ngModel)]="signup.country"
                   [ngModelOptions]="{standalone: true}">
         <mat-option *ngFor="let c of countries"
