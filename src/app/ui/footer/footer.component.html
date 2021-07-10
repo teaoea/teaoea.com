@@ -1,0 +1,15 @@
+<mat-toolbar>
+  <button mat-flat-button [matMenuTriggerFor]="language" class="language">
+    <mat-icon matSuffix>language</mat-icon>
+  </button>
+  <mat-menu #language="matMenu">
+    <button mat-menu-item (click)="English()" (keyup.enter)="English()">English</button>
+    <button mat-menu-item (click)="SimplifiedChinese()" (keyup.enter)="SimplifiedChinese()">简体中文</button>
+    <button mat-menu-item (click)="TraditionalChinese()" (keyup.enter)="TraditionalChinese()">繁體中文</button>
+  </mat-menu>
+
+  <button mat-flat-button class="about" (keyup.enter)="about()">
+    <a routerLink="/about" routerLinkActive="active">About</a>
+  </button>
+</mat-toolbar>
+

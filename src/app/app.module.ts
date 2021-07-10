@@ -8,19 +8,26 @@ import { HeaderComponent } from './ui/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HomeComponent } from './ui/home/home.component';
+import { FooterComponent } from './ui/footer/footer.component';
+import { MatIconModule } from '@angular/material/icon';
+import { _MatMenuDirectivesModule, MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    _MatMenuDirectivesModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

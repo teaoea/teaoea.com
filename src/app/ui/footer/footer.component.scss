@@ -1,0 +1,30 @@
+mat-toolbar {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+}
+
+a {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+button {
+  bottom: 18%;
+}
+
+mat-icon {
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+}
+
+.about {
+  margin-top: 1%;
+  left: 10%;
+}
+
+.language {
+  margin-top: 1%;
+  left: 3%;
+}
