@@ -2,7 +2,8 @@
   "baseURL": "https://api.teaoea.com",
   "urls": {
     "user": {
-      "signup": "/v1/account/signup"
+      "signup": "/v1/account/signup",
+      "signin": "/v1/account/signin"
     }
   },
   "suffixes": [

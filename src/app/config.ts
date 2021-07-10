@@ -13,6 +13,7 @@ export const options = {
 
 export const urls = {
   user: {
-    signup: `${config.baseURL}${config.urls.user.signup}`
+    signup: `${config.baseURL}${config.urls.user.signup}`,
+    signin: `${config.baseURL}${config.urls.user.signin}`
   }
 };
