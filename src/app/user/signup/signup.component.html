@@ -1,7 +1,7 @@
 <app-header></app-header>
 <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
   <p>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
       <mat-label>Username</mat-label>
       <input matInput required
              [(ngModel)]="signup.username" formControlName="username">
@@ -11,7 +11,7 @@
     </mat-form-field>
   </p>
   <p>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
       <mat-label>Password</mat-label>
       <input matInput required [type]="show ? 'password' : 'text'" class="input"
              [(ngModel)]="signup.password" formControlName="password">
@@ -22,7 +22,7 @@
     </mat-form-field>
   </p>
   <p>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
       <mat-label>Confirm password</mat-label>
       <input matInput required [type]="show ? 'password' : 'text'" class="input"
              [(ngModel)]="signup.password2" formControlName="password">
@@ -33,7 +33,7 @@
     </mat-form-field>
   </p>
   <p>
-    <mat-form-field appearance="fill">
+    <mat-form-field appearance="outline">
       <mat-label>Email address</mat-label>
       <input matInput required type="email" class="input"
              [(ngModel)]="signup.email"
@@ -44,7 +44,7 @@
     </mat-form-field>
   </p>
   <p>
-    <mat-form-field appearance="fill" class="country">
+    <mat-form-field appearance="outline" class="country">
       <mat-label>Country</mat-label>
       <mat-select panelClass="select" disableRipple aria-readonly="true"
                   [(ngModel)]="signup.country"
@@ -53,7 +53,7 @@
                     [value]="c.value">{{c.key}}</mat-option>
       </mat-select>
     </mat-form-field>
-    <mat-form-field appearance="fill" class="number">
+    <mat-form-field appearance="outline" class="number">
       <mat-label (keyup.enter)="onSubmit()">Phone number</mat-label>
       <input matInput required class="input"
              [(ngModel)]="signup.number"
