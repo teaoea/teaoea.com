@@ -1,0 +1,68 @@
+<app-header></app-header>
+<form>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Username</mat-label>
+      <input matInput required type="text" class="input"
+             [(ngModel)]="signup.username"
+             [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix>account_circle</mat-icon>
+      <mat-error>{{errorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input matInput required type="password" class="input"
+             [(ngModel)]="signup.password"
+             [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix>password</mat-icon>
+      <mat-error>{{errorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Confirm password</mat-label>
+      <input matInput required type="password" class="input"
+             [(ngModel)]="signup.password2"
+             [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix>password</mat-icon>
+      <mat-error>{{errorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Email address</mat-label>
+      <input matInput required type="email" class="input"
+             [(ngModel)]="signup.email"
+             [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix>email</mat-icon>
+      <mat-error>{{errorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill" class="country">
+      <mat-label>Country</mat-label>
+      <mat-select panelClass="select" disableRipple aria-readonly="true"
+                  [(ngModel)]="signup.country"
+                  [ngModelOptions]="{standalone: true}">
+        <mat-option *ngFor="let c of countries"
+                    [value]="c.value">{{c.key}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="number">
+      <mat-label (keyup.enter)="onSubmit()">Phone number</mat-label>
+      <input matInput required class="input"
+             [(ngModel)]="signup.number"
+             [ngModelOptions]="{standalone: true}">
+      <mat-icon matSuffix>phone</mat-icon>
+      <mat-error>{{errorMessage()}}</mat-error>
+    </mat-form-field>
+  </p>
+  <p class="button signup">
+    <button mat-raised-button color="primary" type="button"
+            (click)="onSubmit()" (keyup.enter)="onSubmit()">Sign up
+    </button>
+  </p>
+</form>
+<app-footer></app-footer>

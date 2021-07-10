@@ -1,3 +1,23 @@
 {
-  "baseURL": "https://api.teaoea.com"
+  "baseURL": "https://api.teaoea.com",
+  "urls": {
+    "user": {
+      "signup": "/v1/account/signup"
+    }
+  },
+  "suffixes": [
+    "@gmail.com",
+    "@qq.com",
+    "@163.com",
+    "@live.com",
+    "@email.com",
+    "@outlook.com",
+    "@126.com",
+    "@icould.com",
+    "@ask.com",
+    "@msn.com",
+    "@hotmail.com",
+    "@googlemail.com",
+    "@yahoo.com"
+  ]
 }

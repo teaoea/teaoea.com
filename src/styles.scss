@@ -56,3 +56,32 @@ a {
   border-radius: 4px;
   height: 35px;
 }
+
+form {
+  margin-top: 40px;
+  text-align: center;
+}
+
+mat-form-field {
+  width: 25%;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 1.5px solid rgb(64, 82, 182);
+}
+
+mat-label {
+  height: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: rgb(255, 255, 255);
+}
+
+.input {
+  color: rgb(0, 0, 0);
+  background-color: rgb(64, 82, 182);
+}
