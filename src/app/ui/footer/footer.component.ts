@@ -17,15 +17,15 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  English() {
+  UnitedStates() {
     window.location.href = 'https://teaoea.com';
   }
 
-  SimplifiedChinese() {
+  China() {
     window.location.href = 'https://zh.teaoea.com';
   }
 
-  TraditionalChinese() {
+  HongKong() {
     window.location.href = 'https://hk.teaoea.com';
   }
 
