@@ -14,7 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { SignupComponent } from './user/signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from '@angular/material/snack-bar';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
@@ -30,22 +30,23 @@ import { SigninComponent } from './user/signin/signin.component';
     SignupComponent,
     SigninComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatFormFieldModule,
-    MatIconModule,
-    HttpClientModule,
-    MatSnackBarModule,
-    MatInputModule,
-    FormsModule,
-    MatSelectModule,
-    MatOptionModule
-  ],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		BrowserAnimationsModule,
+		MatButtonModule,
+		MatToolbarModule,
+		MatMenuModule,
+		MatFormFieldModule,
+		MatIconModule,
+		HttpClientModule,
+		MatSnackBarModule,
+		MatInputModule,
+		FormsModule,
+		MatSelectModule,
+		MatOptionModule,
+		ReactiveFormsModule
+	],
   providers: [
     {
       provide: MAT_SNACK_BAR_DEFAULT_OPTIONS,

@@ -6,18 +6,21 @@
       <input matInput required type="text" class="input"
              [(ngModel)]="signin.username"
              [ngModelOptions]="{standalone: true}">
-      <mat-icon matSuffix>account_circle</mat-icon>
-      <mat-error>{{errorMessage()}}</mat-error>
+      <button mat-icon-button matSuffix disabled>
+        <mat-icon matSuffix>account_circle</mat-icon>
+      </button>
     </mat-form-field>
   </p>
   <p>
     <mat-form-field appearance="fill">
       <mat-label>Password</mat-label>
-      <input matInput required type="password" class="input"
+      <input matInput required [type]="show ? 'password' : 'text'" class="input"
              [(ngModel)]="signin.password"
              [ngModelOptions]="{standalone: true}">
-      <mat-icon matSuffix>password</mat-icon>
-      <mat-error>{{errorMessage()}}</mat-error>
+      <button mat-icon-button matSuffix (click)="show = !show" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="show">
+        <mat-icon matSuffix>{{show ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
     </mat-form-field>
   </p>
   <p class="button signin">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SignupService } from './signup.service';
 import { countries, Signup } from './signup';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
@@ -10,7 +11,7 @@ import { countries, Signup } from './signup';
 export class SignupComponent implements OnInit {
 
   constructor(
-    private service: SignupService
+    private service: SignupService,
   ) {
   }
 
@@ -26,12 +27,30 @@ export class SignupComponent implements OnInit {
     number: ''
   };
 
+  formGroup = new FormGroup({
+    username: new FormControl(this.signup.username, Validators.compose([
+      Validators.required, Validators.pattern(/^[a-zA-Z]/),
+      Validators.minLength(5), Validators.maxLength(32)
+    ])),
+    password: new FormControl('', Validators.compose([
+      Validators.required, Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@!%*?&])[A-Za-z\d$@!%*?&]/),
+      Validators.minLength(8), Validators.maxLength(32)
+    ]))
+  });
+
+  show = true;
+
   countries = countries;
 
   onSubmit() {
     this.service.post(this.signup);
   }
 
-  errorMessage(): any {
+  errorUsername(): any {
+
+  }
+
+  error(): any {
+
   }
 }

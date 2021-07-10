@@ -22,11 +22,10 @@ export class SigninComponent implements OnInit {
     password: ''
   };
 
+  show = true;
+
   onSubmit() {
     return this.service.post(this.signin);
   }
 
-  errorMessage(): any {
-
-  }
 }
