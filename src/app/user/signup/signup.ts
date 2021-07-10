@@ -22,7 +22,7 @@ export const countries: Country[] = [
     value: '+86'
   },
   {
-    key: '🇭🇰 HongKong,China +852',
+    key: '🇭🇰 Hong Kong,China +852',
     value: '+852'
   }
 ];
