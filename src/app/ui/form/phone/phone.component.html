@@ -1,0 +1,18 @@
+<p>
+  <mat-form-field appearance="outline" class="country">
+    <mat-label>Country</mat-label>
+    <mat-select panelClass="select" disableRipple required
+                (keyup)="newCountry(value)" [(ngModel)]="value">
+      <mat-option *ngFor="let c of countries"
+                  [value]="c.value">{{c.key}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="number">
+    <mat-label>Phone number</mat-label>
+    <input matInput required class="input"
+           (keyup)="newNumber(value2)" [(ngModel)]="value2">
+    <button mat-icon-button matSuffix disabled>
+      <mat-icon matSuffix>phone</mat-icon>
+    </button>
+  </mat-form-field>
+</p>

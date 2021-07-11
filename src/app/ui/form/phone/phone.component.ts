@@ -1,0 +1,34 @@
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { countries } from './country';
+
+@Component({
+  selector: 'phone',
+  templateUrl: './phone.component.html',
+  styleUrls: ['./phone.component.scss']
+})
+export class PhoneComponent implements OnInit {
+
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
+  countries = countries;
+
+  value: string = '';
+
+  @Output() country: EventEmitter<string> = new EventEmitter();
+
+  newCountry(value: string) {
+    this.country.emit(value);
+  }
+
+  value2: string = '';
+
+  @Output() number: EventEmitter<string> = new EventEmitter();
+
+  newNumber(value: string){
+    this.number.emit(value)
+  }
+}
