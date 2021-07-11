@@ -1,0 +1,10 @@
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Email address</mat-label>
+    <input matInput required type="email" class="input"
+           (keyup)="newEmail(value)" [(ngModel)]="value">
+    <button mat-icon-button matSuffix disabled>
+      <mat-icon matSuffix>email</mat-icon>
+    </button>
+  </mat-form-field>
+</p>
