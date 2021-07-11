@@ -23,7 +23,7 @@ export class UsernameComponent implements OnInit {
   }
 
   formControl = new FormControl('', [
-    Validators.required, Validators.pattern(/^[a-zA-Z_-]{5,32}$/),
+    Validators.required, Validators.pattern(/^[a-zA-Z@._-]{5,32}$/),
     Validators.minLength(5), Validators.maxLength(32)
   ]);
 
