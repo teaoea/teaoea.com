@@ -1,68 +1,9 @@
 <app-header></app-header>
-<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
-  <p>
-    <mat-form-field appearance="outline">
-      <mat-label>Username</mat-label>
-      <input matInput required
-             [(ngModel)]="signup.username" formControlName="username">
-      <button mat-icon-button matSuffix disabled>
-        <mat-icon matSuffix>account_circle</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="outline">
-      <mat-label>Password</mat-label>
-      <input matInput required [type]="show ? 'password' : 'text'" class="input"
-             [(ngModel)]="signup.password" formControlName="password">
-      <button mat-icon-button matSuffix (click)="show = !show" [attr.aria-label]="'Hide password'"
-              [attr.aria-pressed]="show">
-        <mat-icon matSuffix>{{show ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="outline">
-      <mat-label>Confirm password</mat-label>
-      <input matInput required [type]="show ? 'password' : 'text'" class="input"
-             [(ngModel)]="signup.password2" formControlName="password">
-      <button mat-icon-button matSuffix (click)="show = !show" [attr.aria-label]="'Hide password'"
-              [attr.aria-pressed]="show">
-        <mat-icon matSuffix>{{show ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="outline">
-      <mat-label>Email address</mat-label>
-      <input matInput required type="email" class="input"
-             [(ngModel)]="signup.email"
-             [ngModelOptions]="{standalone: true}">
-      <button mat-icon-button matSuffix disabled>
-        <mat-icon matSuffix>email</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="outline" class="country">
-      <mat-label>Country</mat-label>
-      <mat-select panelClass="select" disableRipple required
-                  [(ngModel)]="signup.country"
-                  [ngModelOptions]="{standalone: true}">
-        <mat-option *ngFor="let c of countries"
-                    [value]="c.value">{{c.key}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field appearance="outline" class="number">
-      <mat-label (keyup.enter)="onSubmit()">Phone number</mat-label>
-      <input matInput required class="input"
-             [(ngModel)]="signup.number"
-             [ngModelOptions]="{standalone: true}">
-      <button mat-icon-button matSuffix disabled>
-        <mat-icon matSuffix>phone</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
+<form>
+  <username (username)="username($event)"></username>
+  <confirm-password (password)="password($event)" (password2)="password2($event)"></confirm-password>
+  <email (email)="email($event)"></email>
+  <phone (country)="country($event)" (number)="number($event)"></phone>
   <p class="button signup">
     <button mat-raised-button color="primary" type="button"
             (click)="onSubmit()" (keyup.enter)="onSubmit()">Sign up

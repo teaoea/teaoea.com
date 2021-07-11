@@ -20,6 +20,11 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { SigninComponent } from './user/signin/signin.component';
+import { UsernameComponent } from './ui/form/username/username.component';
+import { PasswordComponent } from './ui/form/password/password.component';
+import { ConfirmPasswordComponent } from './ui/form/confirm-password/confirm-password.component';
+import { EmailComponent } from './ui/form/email/email.component';
+import { PhoneComponent } from './ui/form/phone/phone.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { SigninComponent } from './user/signin/signin.component';
     HomeComponent,
     FooterComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    UsernameComponent,
+    PasswordComponent,
+    ConfirmPasswordComponent,
+    EmailComponent,
+    PhoneComponent,
   ],
 	imports: [
 		BrowserModule,
