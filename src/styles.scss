@@ -58,7 +58,7 @@ a {
 }
 
 form {
-  margin-top: 40px;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -83,4 +83,8 @@ mat-label {
 .input {
   color: rgb(0, 0, 0);
   background-color: rgb(64, 82, 182);
+}
+
+mat-icon {
+  color: rgb(0, 0, 0);
 }

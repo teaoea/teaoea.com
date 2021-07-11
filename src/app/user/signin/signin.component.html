@@ -1,28 +1,7 @@
 <app-header></app-header>
 <form>
-  <p>
-    <mat-form-field appearance=outline>
-      <mat-label>Username</mat-label>
-      <input matInput required type="text" class="input"
-             [(ngModel)]="signin.username"
-             [ngModelOptions]="{standalone: true}">
-      <button mat-icon-button matSuffix disabled>
-        <mat-icon matSuffix>account_circle</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
-  <p>
-    <mat-form-field appearance="outline">
-      <mat-label>Password</mat-label>
-      <input matInput required [type]="show ? 'password' : 'text'" class="input"
-             [(ngModel)]="signin.password"
-             [ngModelOptions]="{standalone: true}">
-      <button mat-icon-button matSuffix (click)="show = !show" [attr.aria-label]="'Hide password'"
-              [attr.aria-pressed]="show">
-        <mat-icon matSuffix>{{show ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
-  </p>
+  <username (username)="username($event)"></username>
+  <password (password)="password($event)"></password>
   <p class="button signin">
     <button mat-raised-button color="primary" type="button"
             (click)="onSubmit()" (keyup.enter)="onSubmit()">Sign in

@@ -22,7 +22,13 @@ export class SigninComponent implements OnInit {
     password: ''
   };
 
-  show = true;
+  username(value: string) {
+    this.signin.username = value;
+  }
+
+  password(value: string) {
+    this.signin.password = value;
+  }
 
   onSubmit() {
     return this.service.post(this.signin);
