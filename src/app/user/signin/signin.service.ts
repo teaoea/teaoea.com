@@ -25,10 +25,10 @@ export class SigninService {
         this.router.navigate(['/'], {relativeTo: this.route}).then();
       },
       (error) => {
-        if (error.status === 460) {
+        if (error.status === 404) {
           this.snackBar.open('mistake username');
           return;
-        } else if (error.status === 461) {
+        } else if (error.status === 403) {
           this.snackBar.open('mistake password');
           return;
         }
