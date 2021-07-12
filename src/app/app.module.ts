@@ -25,6 +25,7 @@ import { PasswordComponent } from './ui/form/password/password.component';
 import { ConfirmPasswordComponent } from './ui/form/confirm-password/confirm-password.component';
 import { EmailComponent } from './ui/form/email/email.component';
 import { PhoneComponent } from './ui/form/phone/phone.component';
+import { MeComponent } from './user/me/me.component';
 
 @NgModule({
   declarations: [
@@ -39,24 +40,25 @@ import { PhoneComponent } from './ui/form/phone/phone.component';
     ConfirmPasswordComponent,
     EmailComponent,
     PhoneComponent,
+    MeComponent
   ],
-	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		BrowserAnimationsModule,
-		MatButtonModule,
-		MatToolbarModule,
-		MatMenuModule,
-		MatFormFieldModule,
-		MatIconModule,
-		HttpClientModule,
-		MatSnackBarModule,
-		MatInputModule,
-		FormsModule,
-		MatSelectModule,
-		MatOptionModule,
-		ReactiveFormsModule
-	],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatFormFieldModule,
+    MatIconModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    MatInputModule,
+    FormsModule,
+    MatSelectModule,
+    MatOptionModule,
+    ReactiveFormsModule
+  ],
   providers: [
     {
       provide: MAT_SNACK_BAR_DEFAULT_OPTIONS,

@@ -3,7 +3,11 @@
   "urls": {
     "user": {
       "signup": "/v1/account/signup",
-      "signin": "/v1/account/signin"
+      "signin": "/v1/account/signin",
+      "me": "/v1/account/me"
+    },
+    "angular": {
+      "signin_guard": "/v1/angular/signin_guard"
     }
   },
   "suffixes": [
