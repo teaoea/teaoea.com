@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="me">
+  <ol>
+    <li>Username:{{me.username}}</li>
+    <li>Email:{{me.email}}</li>
+    <li>Email Active: {{me.email_active}}</li>
+    <li>Number: {{me.number}}</li>
+    <li>Number Active: {{me.number_active}}</li>
+    <li>Avatar: {{me.avatar}}</li>
+    <li>Gender: {{me.gender}}</li>
+  </ol>
+  <button mat-raised-button color="primary" (click)="onSubmit()">Me</button>
+</div>
+
+<app-footer></app-footer>
