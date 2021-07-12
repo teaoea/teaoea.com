@@ -15,7 +15,8 @@ export class SignupService {
     private snackBar: MatSnackBar,
     private router: Router,
     private route: ActivatedRoute
-  ) { }
+  ) {
+  }
 
   post(signup: Signup) {
     return this.http.post<any>(urls.user.signup, signup, options).subscribe(
@@ -28,7 +29,12 @@ export class SignupService {
             this.snackBar.open('The two passwords entered are inconsistent');
             break;
           case 461:
-            this.snackBar.open('The password needs to be greater than 8 digits and less than 32 digits');
+            this.snackBar.open(
+              `The password needs to meet the following requirements\n
+            1. Need a capital letter\n
+            2. Need a lowercase letter\n
+            3. Need a number\n
+            4. Need a special character,"!@#~$%^&*(\"\')+|_<>"`, 'Undo');
             break;
           case 462:
             this.snackBar.open('Email address suffix cannot be used for registration');

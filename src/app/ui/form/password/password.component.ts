@@ -25,12 +25,15 @@ export class PasswordComponent implements OnInit {
   }
 
   formControl = new FormControl('', [
-    Validators.required, Validators.minLength(8), Validators.maxLength(32)
+    Validators.required, Validators.pattern(/(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[^a-zA-Z0-9]).{8,32}/),
+    Validators.minLength(8), Validators.maxLength(32)
   ]);
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
       return 'You must enter a value';
+    } else if (this.formControl.hasError('pattern')) {
+      return 'The password isn\'t secure enough';
     } else if (this.formControl.hasError('minLength')) {
       return 'At least 8 characters';
     } else if (this.formControl.hasError('maxLength')) {
