@@ -29,21 +29,15 @@ export class SigninGuard implements CanActivate {
     return this.http.get(urls.angular.signin_guard, authOptions);
   }
 
-  pass: boolean = false;
-
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     this.get().subscribe(
       () => {
-        this.pass = true;
-      },
-      (error) => {
-        if (error.status === 401) {
-          this.router.navigate(['/account/signin'], {relativeTo: this.route}).then();
-        }
+        return true;
       }
     );
-    return this.pass;
+    this.router.navigate(['/account/signin'], {relativeTo: this.route}).then();
+    return false;
   }
 }
