@@ -10,9 +10,10 @@
   <mat-form-field appearance="outline" class="number">
     <mat-label>Phone number</mat-label>
     <input matInput required class="input"
-           (keyup)="newNumber(value2)" [(ngModel)]="value2">
+           (keyup)="newNumber(value2)" [(ngModel)]="value2" [formControl]="formControl">
     <button mat-icon-button matSuffix disabled>
       <mat-icon matSuffix>phone</mat-icon>
     </button>
+    <mat-error *ngIf="formControl.invalid">{{errorMessage()}}</mat-error>
   </mat-form-field>
 </p>

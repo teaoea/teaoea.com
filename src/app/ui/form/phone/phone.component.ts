@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { countries } from './country';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'phone',
@@ -28,7 +29,19 @@ export class PhoneComponent implements OnInit {
 
   @Output() number: EventEmitter<string> = new EventEmitter();
 
-  newNumber(value: string){
-    this.number.emit(value)
+  newNumber(value: string) {
+    this.number.emit(value);
+  }
+
+  formControl = new FormControl('', [
+    Validators.required, Validators.pattern(/^[0-9]$/)
+  ]);
+
+  errorMessage(): any {
+    if (this.formControl.hasError('required')) {
+      return 'You must enter a value';
+    } else if (this.formControl.hasError('pattern')) {
+      return 'Can only be numbers';
+    }
   }
 }
