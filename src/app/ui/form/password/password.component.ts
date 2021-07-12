@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'password',
@@ -21,5 +22,19 @@ export class PasswordComponent implements OnInit {
 
   newPassword(value: string) {
     this.password.emit(value);
+  }
+
+  formControl = new FormControl('', [
+    Validators.required, Validators.minLength(8), Validators.maxLength(32)
+  ]);
+
+  errorMessage(): any {
+    if (this.formControl.hasError('required')) {
+      return 'You must enter a value';
+    } else if (this.formControl.hasError('minLength')) {
+      return 'At least 8 characters';
+    } else if (this.formControl.hasError('maxLength')) {
+      return 'Up to 32 characters';
+    }
   }
 }
