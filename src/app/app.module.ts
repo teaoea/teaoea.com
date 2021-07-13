@@ -26,6 +26,7 @@ import { ConfirmPasswordComponent } from './ui/form/confirm-password/confirm-pas
 import { EmailComponent } from './ui/form/email/email.component';
 import { PhoneComponent } from './ui/form/phone/phone.component';
 import { MeComponent } from './user/me/me.component';
+import { httpInterceptorProviders } from './tools/http-interceptor';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { MeComponent } from './user/me/me.component';
       useValue: {
         duration: 1500
       }
-    }
+    },
+    httpInterceptorProviders
   ],
   bootstrap: [AppComponent]
 })

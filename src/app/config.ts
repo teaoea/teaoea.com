@@ -33,6 +33,7 @@ export const urls = {
     me: `${config.baseURL}${config.urls.user.me}`
   },
   angular: {
-    signin_guard: `${config.baseURL}${config.urls.angular.signin_guard}`
+    signin_guard: `${config.baseURL}${config.urls.angular.signin_guard}`,
+    logger: `${config.baseURL}${config.urls.angular.logger}`
   }
 };

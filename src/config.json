@@ -7,7 +7,8 @@
       "me": "/v1/account/me"
     },
     "angular": {
-      "signin_guard": "/v1/angular/signin_guard"
+      "signin_guard": "/v1/angular/signin_guard",
+      "logger": "/v1/angular/logger"
     }
   },
   "suffixes": [
