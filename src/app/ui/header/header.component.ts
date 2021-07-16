@@ -1,5 +1,5 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { MeService } from '../../user/me/me.service';
 import config from '../../../config.json';
 
@@ -11,7 +11,6 @@ import config from '../../../config.json';
 export class HeaderComponent implements OnInit {
 
   constructor(
-    private route: ActivatedRoute,
     private router: Router,
     private meService: MeService
   ) {
@@ -29,27 +28,27 @@ export class HeaderComponent implements OnInit {
   username: string = '';
 
   home() {
-    this.router.navigate(['/'], {relativeTo: this.route}).then();
+    this.router.parseUrl('/');
   }
 
   notes() {
-    this.router.navigate(['/article/note'], {relativeTo: this.route}).then();
+    this.router.parseUrl('/note');
   }
 
   community() {
-    this.router.navigate(['/article/community'], {relativeTo: this.route}).then();
+    this.router.parseUrl('/community');
   }
 
   learn() {
-    this.router.navigate(['/article/kind'], {relativeTo: this.route}).then();
+    this.router.parseUrl('kind');
   }
 
   signin() {
-    this.router.navigate(['/account/signin'], {relativeTo: this.route}).then();
+    this.router.parseUrl('/account/signin');
   }
 
   signup() {
-    this.router.navigate(['/account/signup'], {relativeTo: this.route}).then();
+    this.router.parseUrl('/account/signup');
   }
 
   me() {
