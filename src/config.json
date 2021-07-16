@@ -1,5 +1,6 @@
 {
-  "baseURL": "https://api.teaoea.com",
+  "baseURL": "http://127.0.0.1:1035",
+  "avatar": "https://api.teaoea.com/",
   "urls": {
     "user": {
       "signup": "/v1/account/signup",
