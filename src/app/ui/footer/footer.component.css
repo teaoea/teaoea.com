@@ -1,0 +1,32 @@
+mat-toolbar {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  background: white;
+}
+
+a {
+  color: black;
+  font-size: 15px;
+}
+
+button {
+  bottom: 18%;
+}
+
+mat-icon {
+  color: black;
+  font-size: 26px;
+}
+
+.about {
+  margin-top: 1%;
+  left: 10%;
+}
+
+.language {
+  margin-top: 1%;
+  left: 3%;
+}
+
+/*# sourceMappingURL=footer.component.css.map */
