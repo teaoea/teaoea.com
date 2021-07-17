@@ -34,14 +34,12 @@ export class PhoneComponent implements OnInit {
   }
 
   formControl = new FormControl('', [
-    Validators.required, Validators.pattern(/^[0-9]$/)
+    Validators.required
   ]);
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
       return 'You must enter a value';
-    } else if (this.formControl.hasError('pattern')) {
-      return 'Can only be numbers';
     }
   }
 }
