@@ -24,23 +24,29 @@
     </button>
   </div>
 
-  <!--If you are not signed in,
-  the `sign in` and `sign up` buttons are displayed,
-  if you are signed in, the `me` button is displayed-->
-  <div *ngIf="show; then isSignin; else me"></div>
-  <ng-template #isSignin>
+  <!--
+  If you are not signed in,the `sign in` and `sign up` buttons are displayed,
+  if you are signed in, the `me` button is displayed
+  -->
+  <div *ngIf="show; then True; else False"></div>
+  <ng-template #True>
     <div class="button signin">
       <button mat-flat-button color="primary" (keyup.enter)="signup()">
         <a routerLink="/account/signin" routerLinkActive="active">Sign in</a>
       </button>
     </div>
-
     <div class="button signup">
       <button mat-flat-button color="primary" (keyup.enter)="signup()">
         <a routerLink="/account/signup" routerLinkActive="active">Sign up</a>
       </button>
     </div>
   </ng-template>
-  <ng-template #me></ng-template>
-  <img src="{{avatar}}" alt="">
+  <ng-template #False>
+    <div class="avatar">
+      <a routerLink="/account/me" routerLinkActive="active">
+        <img [src]="avatar" alt="Account information"/>
+      </a>
+    </div>
+  </ng-template>
+
 </mat-toolbar>

@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MeService } from '../../user/me/me.service';
 import config from '../../../config.json';
@@ -17,13 +17,12 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.me();
   }
 
   show: boolean = true;
 
   avatar: string = '';
-
-  Authorization: TemplateRef<any> | null = null;
 
   username: string = '';
 
@@ -54,9 +53,13 @@ export class HeaderComponent implements OnInit {
   me() {
     this.meService.get().subscribe(
       (response) => {
-        this.avatar = `${config.avatar}${response.body?.avatar}`;
         this.show = false;
-      }
+        if (response.body?.avatar === "") {
+          this.avatar = "src/assets/user-solid.svg";
+        } else {
+          this.avatar = `${config.avatar}${response.body?.avatar}`;
+        }
+      },
     );
   }
 }
