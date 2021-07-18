@@ -53,5 +53,4 @@ export class SignupComponent implements OnInit {
   onSubmit() {
     this.service.post(this.signup);
   }
-
 }
