@@ -35,5 +35,8 @@ export const urls = {
   angular: {
     signin_guard: `${config.baseURL}${config.urls.angular.signin_guard}`,
     logger: `${config.baseURL}${config.urls.angular.logger}`
+  },
+  article: {
+    write: `${config.baseURL}${config.urls.article.write}`
   }
 };

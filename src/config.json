@@ -7,6 +7,9 @@
       "signin": "/v1/account/signin",
       "me": "/v1/account/me"
     },
+    "article": {
+      "write": "/v1/article/write"
+    },
     "angular": {
       "signin_guard": "/v1/angular/signin_guard",
       "logger": "/v1/angular/logger"
