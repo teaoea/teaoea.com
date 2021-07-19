@@ -31,7 +31,7 @@ export class CategoryComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return 'Must choose a category';
     }
   }
 }
