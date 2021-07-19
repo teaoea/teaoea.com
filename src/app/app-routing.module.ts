@@ -4,6 +4,7 @@ import { HomeComponent } from './ui/home/home.component';
 import { SignupComponent } from './user/signup/signup.component';
 import { SigninComponent } from './user/signin/signin.component';
 import { MeComponent } from './user/me/me.component';
+import { WriteComponent } from './article/write/write.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
@@ -12,6 +13,11 @@ const routes: Routes = [
       {path: 'signup', component: SignupComponent},
       {path: 'signin', component: SigninComponent},
       {path: 'me', component: MeComponent}
+    ]
+  },
+  {
+    path: 'article', children: [
+      {path: 'write', component: WriteComponent}
     ]
   }
 ];

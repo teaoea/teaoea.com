@@ -27,6 +27,8 @@ import { EmailComponent } from './ui/user/email/email.component';
 import { PhoneComponent } from './ui/user/phone/phone.component';
 import { MeComponent } from './user/me/me.component';
 import { httpInterceptorProviders } from './tools/http-interceptor';
+import { WriteComponent } from './article/write/write.component';
+import { TitleComponent } from './ui/article/title/title.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { httpInterceptorProviders } from './tools/http-interceptor';
     EmailComponent,
     PhoneComponent,
     MeComponent,
+    WriteComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
