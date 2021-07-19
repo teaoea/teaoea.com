@@ -1,0 +1,9 @@
+<mat-form-field appearance="outline">
+  <mat-label>Status</mat-label>
+  <mat-select panelClass="select" required disableRipple
+              [(ngModel)]="value" (keyup)="newShow(value)"
+              (mouseenter)="newShow(value)">
+    <mat-option *ngFor="let s of s" [value]="s.value">{{s.key}}</mat-option>
+  </mat-select>
+  <mat-error *ngIf="formControl.invalid">{{errorMessage()}}</mat-error>
+</mat-form-field>
