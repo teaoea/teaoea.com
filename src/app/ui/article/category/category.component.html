@@ -1,9 +1,8 @@
-<mat-form-field appearance="outline">
+<mat-form-field appearance="legacy">
   <mat-label>Category</mat-label>
-  <mat-select panelClass="select" required disableRipple
-              [(ngModel)]="value" (keyup)="newCategory(value)"
-              (mouseenter)="newCategory(value)">
-    <mat-option *ngFor="let c of categories" [value]="c.value">{{c.key}}</mat-option>
-  </mat-select>
+  <select required matNativeControl [(ngModel)]="value"
+          (keyup)="newCategory(value)" (mouseenter)="newCategory(value)">
+    <option *ngFor="let c of categories" [value]="c.value">{{c.key}}</option>
+  </select>
   <mat-error *ngIf="formControl.invalid">{{errorMessage()}}</mat-error>
 </mat-form-field>
