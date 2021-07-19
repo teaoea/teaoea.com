@@ -1,0 +1,8 @@
+<mat-form-field appearance="outline">
+  <mat-label>Category</mat-label>
+  <mat-select panelClass="select" required disableRipple
+              [(ngModel)]="value" (keyup)="newCategory(value)"
+              (mouseenter)="newCategory(value)">
+    <mat-option *ngFor="let c of categories" [value]="c.value">{{c.key}}</mat-option>
+  </mat-select>
+</mat-form-field>
