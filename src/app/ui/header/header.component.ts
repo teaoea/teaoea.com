@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { MeService } from '../../user/me/me.service';
-import config from '../../../config.json';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AuthService } from '../../tools/auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -12,54 +11,50 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private meService: MeService
+    private route: ActivatedRoute,
+    private auth: AuthService
   ) {
   }
 
   ngOnInit(): void {
-    this.me();
+    this.isSignin();
   }
 
   show: boolean = true;
 
-  avatar: string = '';
-
-  username: string = '';
+  isSignin() {
+    this.auth.get().subscribe(
+      () => {
+        this.show = false;
+      }
+    );
+  }
 
   home() {
-    this.router.parseUrl('/');
+    return this.router.navigate(['/'], {relativeTo: this.route}).then();
   }
 
   notes() {
-    this.router.parseUrl('/note');
+    return this.router.navigate(['/note'], {relativeTo: this.route}).then();
   }
 
   community() {
-    this.router.parseUrl('/community');
+    return this.router.navigate(['/community'], {relativeTo: this.route}).then();
   }
 
   learn() {
-    this.router.parseUrl('kind');
+    return this.router.navigate(['/learn'], {relativeTo: this.route}).then();
   }
 
   signin() {
-    this.router.parseUrl('/account/signin');
+    return this.router.navigate(['/account/signin'], {relativeTo: this.route}).then();
   }
 
   signup() {
-    this.router.parseUrl('/account/signup');
+    return this.router.navigate(['/account/signup'], {relativeTo: this.route}).then();
   }
 
   me() {
-    this.meService.get().subscribe(
-      (response) => {
-        this.show = false;
-        if (response.body?.avatar === "") {
-          this.avatar = "src/assets/user-solid.svg";
-        } else {
-          this.avatar = `${config.avatar}${response.body?.avatar}`;
-        }
-      },
-    );
+    return this.router.navigate(['/account/me'], {relativeTo: this.route}).then();
   }
 }

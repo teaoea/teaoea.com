@@ -18,10 +18,11 @@ mat-toolbar {
   width: 6%;
 }
 
-.avatar {
-  margin-left: 40%;
-  width: 6%;
-  height: 6%;
-  border-radius: 50%;
-  overflow: hidden;
+mat-icon {
+  color: rgb(255, 255, 255);
+}
+
+.me {
+  display: flex;
+  margin-left: 48%;
 }

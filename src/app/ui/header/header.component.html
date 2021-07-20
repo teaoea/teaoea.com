@@ -42,11 +42,11 @@
     </div>
   </ng-template>
   <ng-template #False>
-    <div class="avatar">
-      <a routerLink="/account/me" routerLinkActive="active">
-        <img [src]="avatar" alt="Account information"/>
-      </a>
+    <div class="me">
+      <button mat-mini-fab color="primary" aria-label="account setting"
+              (click)="me()" (keyup.enter)="me()">
+        <mat-icon>manage_accounts</mat-icon>
+      </button>
     </div>
   </ng-template>
-
 </mat-toolbar>
