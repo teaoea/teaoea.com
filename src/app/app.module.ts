@@ -29,6 +29,8 @@ import { MeComponent } from './user/me/me.component';
 import { httpInterceptorProviders } from './tools/http-interceptor';
 import { WriteComponent } from './article/write/write.component';
 import { TitleComponent } from './ui/article/title/title.component';
+import { CategoryComponent } from './ui/article/category/category.component';
+import { ShowComponent } from './ui/article/show/show.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { TitleComponent } from './ui/article/title/title.component';
     PhoneComponent,
     MeComponent,
     WriteComponent,
-    TitleComponent
+    TitleComponent,
+    CategoryComponent,
+    ShowComponent
   ],
   imports: [
     BrowserModule,
