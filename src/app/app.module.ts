@@ -26,7 +26,7 @@ import { ConfirmPasswordComponent } from './ui/user/confirm-password/confirm-pas
 import { EmailComponent } from './ui/user/email/email.component';
 import { PhoneComponent } from './ui/user/phone/phone.component';
 import { MeComponent } from './user/me/me.component';
-import { httpInterceptorProviders } from './tools/http-interceptor';
+import { httpInterceptorProviders } from './tools/interceptor/http-interceptor';
 import { WriteComponent } from './article/write/write.component';
 import { TitleComponent } from './ui/article/title/title.component';
 import { CategoryComponent } from './ui/article/category/category.component';
@@ -49,7 +49,7 @@ import { ShowComponent } from './ui/article/show/show.component';
     WriteComponent,
     TitleComponent,
     CategoryComponent,
-    ShowComponent
+    ShowComponent,
   ],
   imports: [
     BrowserModule,

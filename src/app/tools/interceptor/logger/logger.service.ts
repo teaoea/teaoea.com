@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Logger } from './logger';
-import { options, urls } from '../../config';
+import { options, urls } from '../../../config';
 
 @Injectable({
   providedIn: 'root'
