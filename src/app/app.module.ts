@@ -31,6 +31,7 @@ import { WriteComponent } from './article/write/write.component';
 import { TitleComponent } from './ui/article/title/title.component';
 import { CategoryComponent } from './ui/article/category/category.component';
 import { ShowComponent } from './ui/article/show/show.component';
+import { NotFoundComponent } from './ui/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ShowComponent } from './ui/article/show/show.component';
     TitleComponent,
     CategoryComponent,
     ShowComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
