@@ -30,7 +30,10 @@ export const urls = {
   user: {
     signup: `${config.baseURL}${config.urls.user.signup}`,
     signin: `${config.baseURL}${config.urls.user.signin}`,
-    me: `${config.baseURL}${config.urls.user.me}`
+    me: `${config.baseURL}${config.urls.user.me}`,
+    modify: {
+      password: `${config.baseURL}${config.urls.user.modify.password}`
+    }
   },
   angular: {
     signin_guard: `${config.baseURL}${config.urls.angular.signin_guard}`,

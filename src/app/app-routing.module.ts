@@ -7,6 +7,7 @@ import { MeComponent } from './user/me/me.component';
 import { WriteComponent } from './article/write/write.component';
 import { AuthGuard } from './tools/guard/auth/auth.guard';
 import { NotFoundComponent } from './ui/not-found/not-found.component';
+import { ModifyPasswordComponent } from './user/modify-password/modify-password.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
@@ -18,7 +19,12 @@ const routes: Routes = [
   },
   {
     path: 'account', canActivateChild: [AuthGuard], children: [
-      {path: 'me', component: MeComponent}
+      {path: 'me', component: MeComponent},
+      {
+        path: 'modify', children: [
+          {path: 'password', component: ModifyPasswordComponent}
+        ]
+      }
     ]
   },
   {

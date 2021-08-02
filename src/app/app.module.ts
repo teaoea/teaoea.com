@@ -32,6 +32,8 @@ import { TitleComponent } from './ui/article/title/title.component';
 import { CategoryComponent } from './ui/article/category/category.component';
 import { ShowComponent } from './ui/article/show/show.component';
 import { NotFoundComponent } from './ui/not-found/not-found.component';
+import { ModifyPasswordComponent } from './user/modify-password/modify-password.component';
+import { VerificationCodeComponent } from './ui/user/verification-code/verification-code.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { NotFoundComponent } from './ui/not-found/not-found.component';
     TitleComponent,
     CategoryComponent,
     ShowComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ModifyPasswordComponent,
+    VerificationCodeComponent
   ],
   imports: [
     BrowserModule,
