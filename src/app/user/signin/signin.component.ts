@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { SigninService } from './signin.service';
 import { Signin } from './signin';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-signin',
@@ -10,11 +11,13 @@ import { Signin } from './signin';
 export class SigninComponent implements OnInit {
 
   constructor(
+    private title: Title,
     private service: SigninService
   ) {
   }
 
   ngOnInit(): void {
+    this.title.setTitle('Sign in - teaoea');
   }
 
   signin: Signin = {

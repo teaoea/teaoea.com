@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Me } from './me';
 import { MeService } from './me.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-me',
@@ -10,11 +11,13 @@ import { MeService } from './me.service';
 export class MeComponent implements OnInit {
 
   constructor(
+    private title: Title,
     private service: MeService
   ) {
   }
 
   ngOnInit(): void {
+    this.title.setTitle('Account settings - teaoea');
   }
 
   me: Me = {

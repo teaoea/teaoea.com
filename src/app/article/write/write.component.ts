@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Write } from './write';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-write',
@@ -8,10 +9,13 @@ import { Write } from './write';
 })
 export class WriteComponent implements OnInit {
 
-  constructor() {
+  constructor(
+    private t: Title
+  ) {
   }
 
   ngOnInit(): void {
+    this.t.setTitle('Write article - teaoea');
   }
 
   write: Write = {
@@ -32,6 +36,6 @@ export class WriteComponent implements OnInit {
   }
 
   show(value: boolean) {
-    this.write.show = value
+    this.write.show = value;
   }
 }
