@@ -34,8 +34,6 @@ $teaoea-com-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-@import "assets/fonts.css";
-
 html, body {
   height: 100%;
   background-color: rgb(255, 255, 255);
@@ -43,7 +41,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: 'Fira Code', sans-serif;
+  font-family: sans-serif;
 }
 
 a {
