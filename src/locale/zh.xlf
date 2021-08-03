@@ -94,7 +94,7 @@
         <target>必须输入一个值</target>
       </trans-unit>
       <trans-unit id="4450260585069973489">
-        <source>The password isn't secure enough</source>
+        <source>The password isn&apos;t secure enough</source>
         <target>密码不够安全</target>
       </trans-unit>
       <trans-unit id="7477196145278522277">
@@ -154,7 +154,7 @@
         <target>登录 - teaoea</target>
       </trans-unit>
       <trans-unit id="7103402554082656086">
-        <source>Username doesn't exist</source>
+        <source>Username doesn&apos;t exist</source>
         <target>用户名不存在</target>
       </trans-unit>
       <trans-unit id="4118865998984581162">
@@ -170,7 +170,7 @@
         <target>两次输入的密码不一致</target>
       </trans-unit>
       <trans-unit id="6791498164802383421">
-        <source>Email address suffix can't be used for signed up</source>
+        <source>Email address suffix can&apos;t be used for signed up</source>
         <target>电子邮箱后缀无法用于注册账户</target>
       </trans-unit>
       <trans-unit id="6194233594898596299">
@@ -184,6 +184,30 @@
       <trans-unit id="6301702895671752959">
         <source>Phone number is already used by someone else</source>
         <target>手机号码已被其他人使用</target>
+      </trans-unit>
+      <trans-unit id="7152614246608881220" datatype="html">
+        <source>
+          The password needs to meet the following requirements:
+
+          1. Need a capital letter
+
+          2. Need a lowercase letter
+
+          3. Need a number
+
+          4. Need a special character,&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;
+        </source>
+        <target>
+          密码需要满足以下的所有的要求:
+
+          1. 需要大写字母
+
+          2. 需要小写字母
+
+          3. 需要数字
+
+          4. 需要特殊字符,&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;
+        </target>
       </trans-unit>
     </body>
   </file>
