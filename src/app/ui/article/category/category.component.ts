@@ -31,7 +31,7 @@ export class CategoryComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'Must choose a category';
+      return $localize`:@@2945974538621128369:Must choose a category`
     }
   }
 }

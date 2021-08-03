@@ -17,7 +17,7 @@ export class MeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Account settings - teaoea');
+    this.title.setTitle($localize`:@@4964247078132180679:Account settings - teaoea`);
   }
 
   me: Me = {

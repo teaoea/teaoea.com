@@ -28,11 +28,11 @@ export class TitleComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return $localize`:@@5461254227938381642:You must enter a value`;
     } else if (this.formControl.hasError('minLength')) {
-      return 'The title must be at least 10 characters';
+      return $localize`:@@5703778869662923789:The title must be at least 10 characters`
     } else if (this.formControl.hasError('maxLength')) {
-      return 'The title up to 90 characters'
+      return $localize`:@@3564951754754817328:The title up to 90 characters`
     }
   }
 }

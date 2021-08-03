@@ -17,7 +17,7 @@ export class SigninComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Sign in - teaoea');
+    this.title.setTitle($localize`:@@9098010359898849864:Sign in - teaoea`);
   }
 
   signin: Signin = {

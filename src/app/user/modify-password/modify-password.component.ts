@@ -17,7 +17,7 @@ export class ModifyPasswordComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Modify password - teaoea');
+    this.title.setTitle($localize`:@@2721771170036423646:Modify password - teaoea`);
   }
 
   modifyPassword: ModifyPassword = {
@@ -40,6 +40,5 @@ export class ModifyPasswordComponent implements OnInit {
 
   onSubmit() {
     this.service.post(this.modifyPassword);
-
   }
 }

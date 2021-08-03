@@ -39,9 +39,9 @@ export class PhoneComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return $localize`:@@5461254227938381642:You must enter a value`;
     } else if (this.formControl.hasError('pattern')) {
-      return 'The phone number can only be a number'
+      return $localize`:@@4870141070283689400:The phone number can only be a number`;
     }
   }
 }

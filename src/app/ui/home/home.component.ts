@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('Home - teaoea');
+    this.title.setTitle($localize`:@@4930247922469403331:Home - teaoea`);
   }
 
 }

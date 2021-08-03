@@ -15,7 +15,7 @@ export class WriteComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.t.setTitle('Write article - teaoea');
+    this.t.setTitle($localize`:@@4052058279966515691:Write article - teaoea`);
   }
 
   write: Write = {

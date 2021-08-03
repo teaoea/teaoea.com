@@ -39,13 +39,13 @@ export class ConfirmPasswordComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return $localize`:@@5461254227938381642:You must enter a value`;
     } else if (this.formControl.hasError('pattern')) {
-      return 'The password isn\'t secure enough';
+      return $localize`:@@4450260585069973489:The password isn\'t secure enough`;
     } else if (this.formControl.hasError('minLength')) {
-      return 'At least 8 characters';
+      return $localize`:@@7477196145278522277:At least 8 characters`;
     } else if (this.formControl.hasError('maxLength')) {
-      return 'Up to 32 characters';
+      return $localize`:@@3653294539457872842:Up to 32 characters`;
     }
   }
 
@@ -56,15 +56,15 @@ export class ConfirmPasswordComponent implements OnInit {
 
   errorMessage2(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return $localize`:@@5461254227938381642:You must enter a value`;
     } else if (this.formControl2.hasError('pattern')) {
-      return 'The password isn\'t secure enough';
+      return $localize`:@@4450260585069973489:The password isn\'t secure enough`;
     } else if (this.formControl.hasError('minLength')) {
       return 'At least 8 characters';
     } else if (this.formControl.hasError('maxLength')) {
-      return 'Up to 32 characters';
+      return $localize`:@@7477196145278522277:At least 8 characters`;
     } else if (this.value !== this.value2) {
-      return 'Inconsistent passwords';
+      return $localize`:@@3653294539457872842:Up to 32 characters`;
     }
   }
 

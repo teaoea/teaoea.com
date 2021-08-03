@@ -25,10 +25,10 @@ export class ModifyPasswordService {
       (error) => {
         switch (error.status) {
           case 460:
-            this.snackBar.open('Mistake verification code');
+            this.snackBar.open($localize`:@@3819679798950937017:Mistake verification code`);
             break;
           case 461:
-            this.snackBar.open('The password isn\'t secure enough');
+            this.snackBar.open($localize`:@@4450260585069973489:The password isn't secure enough`);
             break;
         }
       }

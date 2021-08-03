@@ -26,10 +26,12 @@ export class SigninService {
       },
       (error) => {
         if (error.status === 404) {
-          this.snackBar.open('mistake username');
+          this.snackBar.open($localize`:@@7103402554082656086:Username doesn't exist`);
           return;
-        } else if (error.status === 403) {
-          this.snackBar.open('mistake password');
+        }
+
+        if (error.status === 403) {
+          this.snackBar.open($localize`:@@4118865998984581162:Mistake password`);
           return;
         }
       }

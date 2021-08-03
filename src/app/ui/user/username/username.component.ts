@@ -29,13 +29,13 @@ export class UsernameComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return $localize`:@@5461254227938381642:You must enter a value`;
     } else if (this.formControl.hasError('pattern')) {
-      return 'Allow of letters,underscores and horizontal lines';
+      return $localize`:@@6092892111398938486:Allow of letters,underscores and horizontal lines`;
     } else if (this.formControl.hasError('minLength')) {
-      return 'At least 5 characters';
+      return $localize`:@@9189860139260910697:At least 5 characters`
     } else if (this.formControl.hasError('maxLength')) {
-      return 'Up to 32 characters';
+      return $localize`:@@3653294539457872842:Up to 32 characters`;
     }
   }
 }

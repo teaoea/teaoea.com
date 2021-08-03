@@ -26,33 +26,33 @@ export class SignupService {
       (error) => {
         switch (error.status) {
           case 460:
-            this.snackBar.open('The two passwords entered are inconsistent');
+            this.snackBar.open($localize`:@@5555496431958649129:The two passwords entered are inconsistent`);
             break;
           case 461:
-            this.snackBar.open(
-              `The password needs to meet the following requirements\n
+            this.snackBar.open($localize`:@@7152614246608881220:
+              The password needs to meet the following requirements:\n
             1. Need a capital letter\n
             2. Need a lowercase letter\n
             3. Need a number\n
             4. Need a special character,"!@#~$%^&*(\"\')+|_<>"`, 'Undo');
             break;
           case 462:
-            this.snackBar.open('Email address suffix cannot be used for registration');
+            this.snackBar.open($localize`:@@6791498164802383421:Email address suffix can't be used for signed up`);
             break;
           case 463:
-            this.snackBar.open('Username has been signed up');
+            this.snackBar.open($localize`:@@6194233594898596299:Username is already used by someone else`);
             break;
           case 464:
-            this.snackBar.open('Username can only be English characters');
+            this.snackBar.open($localize`:@@6092892111398938486:Allow of letters,underscores and horizontal lines`);
             break;
           case 465:
-            this.snackBar.open('Email address has been signed up');
+            this.snackBar.open($localize`:@@8871331676171095977:Email address is already used by someone else`);
             break;
           case 466:
-            this.snackBar.open('Phone number has been signed up');
+            this.snackBar.open($localize`:@@6301702895671752959:Phone number is already used by someone else`);
             break;
           case 467:
-            this.snackBar.open('The phone number can only be a number');
+            this.snackBar.open($localize`:@@4870141070283689400:The phone number can only be a number`);
         }
       }
     );

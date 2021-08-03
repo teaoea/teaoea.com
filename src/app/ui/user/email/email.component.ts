@@ -29,9 +29,9 @@ export class EmailComponent implements OnInit {
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
-      return 'You must enter a value';
+      return $localize`:@@5461254227938381642:You must enter a value`;
     } else if (!(Suffixes(this.value))) {
-      return 'Invalid email address suffix';
+      return $localize`:@@3832423045655225742:Invalid email address suffix`;
     }
   }
 }
