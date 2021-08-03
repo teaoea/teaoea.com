@@ -1,5 +1,5 @@
 <mat-form-field appearance="legacy">
-  <mat-label>Status</mat-label>
+  <mat-label i18n="@@3278564571394100745">Status</mat-label>
   <select required matNativeControl [(ngModel)]="value"
           (keyup)="newShow(value)" (mouseenter)="newShow(value)">
     <option *ngFor="let s of s" [value]="s.value">{{s.key}}</option>

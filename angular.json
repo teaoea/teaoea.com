@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "teaoea-com": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "zh": {
+            "translation": "src/locale/zh.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,6 +29,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "aot": true,
+            "i18nMissingTranslation": "error",
             "outputPath": "dist/teaoea-com",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -36,6 +48,10 @@
             "scripts": []
           },
           "configurations": {
+            "zh": {
+              "localize": ["zh"],
+              "main": "src/main.ts"
+            },
             "production": {
               "budgets": [
                 {
@@ -71,6 +87,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "zh": {
+              "browserTarget": "teaoea-com:build:zh"
+            },
             "production": {
               "browserTarget": "teaoea-com:build:production"
             },

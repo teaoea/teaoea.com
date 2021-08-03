@@ -1,5 +1,5 @@
 <mat-form-field appearance="legacy">
-  <mat-label>Title</mat-label>
+  <mat-label i18n="@@7596932255924037628">Title</mat-label>
   <input matInput required type="text" [formControl]="formControl"
             [(ngModel)]="value" (keyup)="newTitle(value)">
   <mat-error *ngIf="formControl.invalid">{{errorMessage()}}</mat-error>

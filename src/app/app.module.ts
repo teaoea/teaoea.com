@@ -34,6 +34,7 @@ import { ShowComponent } from './ui/article/show/show.component';
 import { NotFoundComponent } from './ui/not-found/not-found.component';
 import { ModifyPasswordComponent } from './user/modify-password/modify-password.component';
 import { VerificationCodeComponent } from './ui/user/verification-code/verification-code.component';
+import '@angular/common/locales/global/zh-Hans';
 
 @NgModule({
   declarations: [

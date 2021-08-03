@@ -1,5 +1,5 @@
 <mat-form-field appearance="legacy">
-  <mat-label>Category</mat-label>
+  <mat-label i18n="@@2892107238596033479">Category</mat-label>
   <select required matNativeControl [(ngModel)]="value"
           (keyup)="newCategory(value)" (mouseenter)="newCategory(value)">
     <option *ngFor="let c of categories" [value]="c.value">{{c.key}}</option>
