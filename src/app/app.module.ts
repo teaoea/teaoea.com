@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import './language';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './ui/header/header.component';
@@ -34,7 +35,6 @@ import { ShowComponent } from './ui/article/show/show.component';
 import { NotFoundComponent } from './ui/not-found/not-found.component';
 import { ModifyPasswordComponent } from './user/modify-password/modify-password.component';
 import { VerificationCodeComponent } from './ui/user/verification-code/verification-code.component';
-import '@angular/common/locales/global/zh-Hans';
 
 @NgModule({
   declarations: [

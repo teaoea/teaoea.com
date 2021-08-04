@@ -7,8 +7,8 @@
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
-          "zh": {
-            "translation": "src/locale/zh.xlf",
+          "zh-Hans": {
+            "translation": "src/locale/zh-Hans.xlf",
             "baseHref": ""
           }
         }
@@ -48,8 +48,8 @@
             "scripts": []
           },
           "configurations": {
-            "zh": {
-              "localize": ["zh"],
+            "zh-Hans": {
+              "localize": ["zh-Hans"],
               "main": "src/main.ts"
             },
             "production": {
@@ -87,8 +87,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "zh": {
-              "browserTarget": "teaoea-com:build:zh"
+            "zh-Hans": {
+              "browserTarget": "teaoea-com:build:zh-Hans"
             },
             "production": {
               "browserTarget": "teaoea-com:build:production"
