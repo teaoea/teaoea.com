@@ -185,7 +185,7 @@
         <source>Phone number is already used by someone else</source>
         <target>手机号码已被其他人使用</target>
       </trans-unit>
-      <trans-unit id="7152614246608881220" datatype="html">
+      <trans-unit id="7152614246608881220">
         <source>
           The password needs to meet the following requirements:
 
