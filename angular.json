@@ -3,12 +3,19 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "teaoea-com": {
+    "teaoea": {
       "i18n": {
-        "sourceLocale": "en-US",
+        "sourceLocale": {
+          "code": "en-US",
+          "baseHref": ""
+        },
         "locales": {
           "zh-Hans": {
             "translation": "src/locale/zh-Hans.xlf",
+            "baseHref": ""
+          },
+          "zh-Hant-HK": {
+            "translation": "src/locale/zh-Hant-HK.xlf",
             "baseHref": ""
           }
         }
@@ -32,7 +39,7 @@
             "localize": true,
             "aot": true,
             "i18nMissingTranslation": "error",
-            "outputPath": "dist/teaoea-com",
+            "outputPath": "dist/teaoea.com",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -49,10 +56,12 @@
           },
           "configurations": {
             "zh-Hans": {
-              "localize": ["zh-Hans"],
+              "localize": [
+                "zh-Hans"
+              ],
               "main": "src/main.ts"
             },
-            "production": {
+            "prod": {
               "budgets": [
                 {
                   "type": "initial",
@@ -73,7 +82,7 @@
               ],
               "outputHashing": "all"
             },
-            "development": {
+            "dev": {
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -82,27 +91,27 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "prod"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "zh-Hans": {
-              "browserTarget": "teaoea-com:build:zh-Hans"
+              "browserTarget": "teaoea:build:zh-Hans"
             },
-            "production": {
-              "browserTarget": "teaoea-com:build:production"
+            "prod": {
+              "browserTarget": "teaoea:build:prod"
             },
-            "development": {
-              "browserTarget": "teaoea-com:build:development"
+            "dev": {
+              "browserTarget": "teaoea:build:dev"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "dev"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "teaoea-com:build"
+            "browserTarget": "teaoea:build"
           }
         },
         "test": {
@@ -126,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "teaoea-com"
+  "defaultProject": "teaoea.com"
 }
