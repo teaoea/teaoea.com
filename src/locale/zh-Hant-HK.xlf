@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4052058279966515691" datatype="html">
+        <source>Write article - teaoea</source>
+        <target>編寫文章 - teaoea</target>
+      </trans-unit>
+      <trans-unit id="2892107238596033479" datatype="html">
+        <source>Category</source>
+        <target>類別</target>
+      </trans-unit>
+      <trans-unit id="2945974538621128369" datatype="html">
+        <source>Must choose a category</source>
+        <target>必須選擇一個類別</target>
+      </trans-unit>
+      <trans-unit id="3278564571394100745" datatype="html">
+        <source>Status</source>
+        <target>狀態</target>
+      </trans-unit>
+      <trans-unit id="7596932255924037628" datatype="html">
+        <source>Title</source>
+        <target>標題</target>
+      </trans-unit>
+      <trans-unit id="5461254227938381642" datatype="html">
+        <source>You must enter a value</source>
+        <target>您必須輸入一個值</target>
+      </trans-unit>
+      <trans-unit id="5703778869662923789" datatype="html">
+        <source>The title must be at least 10 characters</source>
+        <target>標題必須至少有10個字符</target>
+      </trans-unit>
+      <trans-unit id="3564951754754817328" datatype="html">
+        <source>The title up to 90 characters</source>
+        <target>標題最多90個字符</target>
+      </trans-unit>
+      <trans-unit id="3193388349000370860" datatype="html">
+        <source>About</source>
+        <target>關於我們</target>
+      </trans-unit>
+      <trans-unit id="8134905180384931783" datatype="html">
+        <source>Home</source>
+        <target>首頁</target>
+      </trans-unit>
+      <trans-unit id="1676795155482331512" datatype="html">
+        <source>Learn</source>
+        <target>學習</target>
+      </trans-unit>
+      <trans-unit id="1320277101496982634" datatype="html">
+        <source>Notes</source>
+        <target>筆記</target>
+      </trans-unit>
+      <trans-unit id="8932343533763733220" datatype="html">
+        <source>Community</source>
+        <target>社區</target>
+      </trans-unit>
+      <trans-unit id="1584359687489669964" datatype="html">
+        <source>Sign in</source>
+        <target>登錄</target>
+      </trans-unit>
+      <trans-unit id="1571753007969378385" datatype="html">
+        <source>Sign up</source>
+        <target>註冊</target>
+      </trans-unit>
+      <trans-unit id="4930247922469403331" datatype="html">
+        <source>Home - teaoea</source>
+        <target>首頁 - teaoea</target>
+      </trans-unit>
+      <trans-unit id="1790664336744462418" datatype="html">
+        <source>Password</source>
+        <target>密碼</target>
+      </trans-unit>
+      <trans-unit id="5167803871153017287" datatype="html">
+        <source>Confirm password</source>
+        <target>確認密碼</target>
+      </trans-unit>
+      <trans-unit id="4450260585069973489" datatype="html">
+        <source>The password isn&apos;t secure enough</source>
+        <target>密碼不夠安全</target>
+      </trans-unit>
+      <trans-unit id="7477196145278522277" datatype="html">
+        <source>At least 8 characters</source>
+        <target>至少8個字符</target>
+      </trans-unit>
+      <trans-unit id="3653294539457872842" datatype="html">
+        <source>Up to 32 characters</source>
+        <target>最多32個字符</target>
+      </trans-unit>
+      <trans-unit id="7830384099672144615" datatype="html">
+        <source>Email address</source>
+        <target>電子郵件地址</target>
+      </trans-unit>
+      <trans-unit id="3832423045655225742" datatype="html">
+        <source>Invalid email address suffix</source>
+        <target>無效的電子郵件地址後綴</target>
+      </trans-unit>
+      <trans-unit id="2324134908861252289" datatype="html">
+        <source>Country</source>
+        <target>國家</target>
+      </trans-unit>
+      <trans-unit id="9178730033899945920" datatype="html">
+        <source>Phone number</source>
+        <target>電話號碼</target>
+      </trans-unit>
+      <trans-unit id="4870141070283689400" datatype="html">
+        <source>The phone number can only be a number</source>
+        <target>電話號碼只能是數字</target>
+      </trans-unit>
+      <trans-unit id="6292046621884338669" datatype="html">
+        <source>Username</source>
+        <target>用戶名</target>
+      </trans-unit>
+      <trans-unit id="6092892111398938486" datatype="html">
+        <source>Allow of letters,underscores and horizontal lines</source>
+        <target>允許字母、下劃線"_"和水平線"-"</target>
+      </trans-unit>
+      <trans-unit id="9189860139260910697" datatype="html">
+        <source>At least 5 characters</source>
+        <target>至少5個字符</target>
+      </trans-unit>
+      <trans-unit id="7947982659146415094" datatype="html">
+        <source>Verification code</source>
+        <target>驗證碼</target>
+      </trans-unit>
+      <trans-unit id="5868830986947172129" datatype="html">
+        <source>Me</source>
+        <target>賬戶設定</target>
+      </trans-unit>
+      <trans-unit id="4964247078132180679" datatype="html">
+        <source>Account settings - teaoea</source>
+        <target>賬戶設定 - teaoea</target>
+      </trans-unit>
+      <trans-unit id="6338928358955846971" datatype="html">
+        <source>The verification code has been sent to the mailbox,<x id="LINE_BREAK" ctype="lb"
+                                                                      equiv-text="&lt;br&gt;"/>please check the inbox
+        </source>
+        <target>驗證碼已發送至郵箱,請檢查收件箱</target>
+      </trans-unit>
+      <trans-unit id="5881559481299775952" datatype="html">
+        <source>Modify password</source>
+        <target>修改密碼</target>
+      </trans-unit>
+      <trans-unit id="2721771170036423646" datatype="html">
+        <source>Modify password - teaoea</source>
+        <target>修改密碼 - teaoea</target>
+      </trans-unit>
+      <trans-unit id="3819679798950937017" datatype="html">
+        <source>Mistake verification code</source>
+        <target>驗證碼錯誤</target>
+      </trans-unit>
+      <trans-unit id="9098010359898849864" datatype="html">
+        <source>Sign in - teaoea</source>
+        <target>登錄 - teaoea</target>
+      </trans-unit>
+      <trans-unit id="7103402554082656086" datatype="html">
+        <source>Username doesn&apos;t exist</source>
+        <target>用戶名不存在</target>
+      </trans-unit>
+      <trans-unit id="4118865998984581162" datatype="html">
+        <source>Mistake password</source>
+        <target>密碼錯誤</target>
+      </trans-unit>
+      <trans-unit id="5773646582970415551" datatype="html">
+        <source>Sign up - teaoea</source>
+        <target>註冊 - teaoea</target>
+      </trans-unit>
+      <trans-unit id="5555496431958649129" datatype="html">
+        <source>The two passwords entered are inconsistent</source>
+        <target>兩次輸入的密碼不一致</target>
+      </trans-unit>
+      <trans-unit id="7152614246608881220" datatype="html">
+        <source>
+          The password needs to meet the following requirements:
+
+          1. Need a capital letter
+
+          2. Need a lowercase letter
+
+          3. Need a number
+
+          4. Need a special character,&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;
+        </source>
+        <target>
+          密碼需要滿足以下要求：
+
+          1. 需要大寫字母
+
+          2. 需要小寫字母
+
+          3. 需要一個數字
+
+          4. 需要一個特殊字符
+        </target>
+      </trans-unit>
+      <trans-unit id="6791498164802383421" datatype="html">
+        <source>Email address suffix can&apos;t be used for signed up</source>
+        <target>電子郵件地址後綴不能用於註冊</target>
+      </trans-unit>
+      <trans-unit id="6194233594898596299" datatype="html">
+        <source>Username is already used by someone else</source>
+        <target>用戶名已被其他人使用</target>
+      </trans-unit>
+      <trans-unit id="8871331676171095977" datatype="html">
+        <source>Email address is already used by someone else</source>
+        <target>電子郵件地址已被其他人使用</target>
+      </trans-unit>
+      <trans-unit id="6301702895671752959" datatype="html">
+        <source>Phone number is already used by someone else</source>
+        <target>電話號碼已被其他人使用</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
