@@ -10,6 +10,10 @@
           "baseHref": ""
         },
         "locales": {
+          "en-GB": {
+            "translation": "src/locale/en-GB.xlf",
+            "baseHref": ""
+          },
           "zh-Hans": {
             "translation": "src/locale/zh-Hans.xlf",
             "baseHref": ""
@@ -60,6 +64,12 @@
             "scripts": []
           },
           "configurations": {
+            "en-GB": {
+              "localize": [
+                "en-GB"
+              ],
+              "main": "src/main.ts"
+            },
             "zh-Hans": {
               "localize": [
                 "zh-Hans"
@@ -113,6 +123,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
+            "en-GB": {
+              "browserTarget": "teaoea:build:en-GB"
+            },
             "zh-Hans": {
               "browserTarget": "teaoea:build:zh-Hans"
             },

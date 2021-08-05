@@ -1,5 +1,8 @@
 import { registerLocaleData } from '@angular/common';
 
+import '@angular/common/locales/global/en-GB';
+import en_GB from '@angular/common/locales/en-GB';
+import extra_en_GB from '@angular/common/locales/extra/en-GB';
 import '@angular/common/locales/global/zh-Hans';
 import zh_Hans from '@angular/common/locales/zh-Hans';
 import extra_zh_Hans from '@angular/common/locales/extra/zh-Hans';
@@ -13,7 +16,8 @@ import '@angular/common/locales/global/en-HK';
 import en_HK from '@angular/common/locales/en-HK';
 import extra_en_HK from '@angular/common/locales/extra/en-HK';
 
-
+// Great Britain(English)
+registerLocaleData(en_GB, 'en-GB', extra_en_GB);
 // China(Simplified Chinese)
 registerLocaleData(zh_Hans, 'zh-Hans', extra_zh_Hans);
 // Hong Kong,China(Traditional Chinese)
