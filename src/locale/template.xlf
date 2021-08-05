@@ -99,10 +99,12 @@
         <source>Account settings - teaoea</source>
       </trans-unit>
       <trans-unit id="6338928358955846971" datatype="html">
-        <source>The verification code has been sent to the mailbox, <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>please check the inbox</source>
+        <source>The verification code has been sent to the mailbox,<x id="LINE_BREAK" ctype="lb"
+                                                                      equiv-text="&lt;br&gt;"/>please check the inbox
+        </source>
       </trans-unit>
       <trans-unit id="5881559481299775952" datatype="html">
-        <source>Modify password </source>
+        <source>Modify password</source>
       </trans-unit>
       <trans-unit id="2721771170036423646" datatype="html">
         <source>Modify password - teaoea</source>
@@ -127,15 +129,16 @@
       </trans-unit>
       <trans-unit id="7152614246608881220" datatype="html">
         <source>
-              The password needs to meet the following requirements:
+          The password needs to meet the following requirements:
 
-            1. Need a capital letter
+          1. Need a capital letter
 
-            2. Need a lowercase letter
+          2. Need a lowercase letter
 
-            3. Need a number
+          3. Need a number
 
-            4. Need a special character,&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;</source>
+          4. Need a special character,&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;
+        </source>
       </trans-unit>
       <trans-unit id="6791498164802383421" datatype="html">
         <source>Email address suffix can&apos;t be used for signed up</source>
@@ -148,6 +151,15 @@
       </trans-unit>
       <trans-unit id="6301702895671752959" datatype="html">
         <source>Phone number is already used by someone else</source>
+      </trans-unit>
+      <trans-unit id="6299596513869757905" datatype="html">
+        <source>United States +1</source>
+      </trans-unit>
+      <trans-unit id="4217447493960184043" datatype="html">
+        <source>China +86</source>
+      </trans-unit>
+      <trans-unit id="4440942506526994150" datatype="html">
+        <source>Hong Kong,China +852</source>
       </trans-unit>
     </body>
   </file>

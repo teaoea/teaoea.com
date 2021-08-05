@@ -208,6 +208,18 @@
         <source>Phone number is already used by someone else</source>
         <target>電話號碼已被其他人使用</target>
       </trans-unit>
+      <trans-unit id="6299596513869757905" datatype="html">
+        <source>United States +1</source>
+        <target>美國 +1</target>
+      </trans-unit>
+      <trans-unit id="4217447493960184043" datatype="html">
+        <source>China +86</source>
+        <target>中國大陸 +86</target>
+      </trans-unit>
+      <trans-unit id="4440942506526994150" datatype="html">
+        <source>Hong Kong,China +852</source>
+        <target>中國香港 +852</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
