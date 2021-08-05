@@ -14,9 +14,13 @@
             "translation": "src/locale/zh-Hans.xlf",
             "baseHref": ""
           },
+          "en-HK": {
+            "translation": "src/locale/en-HK.xlf",
+            "baseHref": ""
+          },
           "zh-Hant-HK": {
             "translation": "src/locale/zh-Hant-HK.xlf",
-            "baseHref": ""
+            "baseHref": "/zh-Hant-HK"
           }
         }
       },
@@ -47,7 +51,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/config.json"
+              "src/config.json",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -58,6 +63,18 @@
             "zh-Hans": {
               "localize": [
                 "zh-Hans"
+              ],
+              "main": "src/main.ts"
+            },
+            "en-HK": {
+              "localize": [
+                "en-HK"
+              ],
+              "main": "src/main.ts"
+            },
+            "zh-Hant-HK": {
+              "localize": [
+                "zh-Hant-HK"
               ],
               "main": "src/main.ts"
             },
@@ -98,6 +115,12 @@
           "configurations": {
             "zh-Hans": {
               "browserTarget": "teaoea:build:zh-Hans"
+            },
+            "en-HK": {
+              "browserTarget": "teaoea:build:en-HK"
+            },
+            "zh-Hant-HK": {
+              "browserTarget": "teaoea:build:zh-Hant-HK"
             },
             "prod": {
               "browserTarget": "teaoea:build:prod"
