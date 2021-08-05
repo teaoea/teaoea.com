@@ -2,23 +2,23 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="2892107238596033479">
+      <trans-unit id="2892107238596033479" datatype="html">
         <source>Category</source>
         <target>类别</target>
       </trans-unit>
-      <trans-unit id="3278564571394100745">
+      <trans-unit id="3278564571394100745" datatype="html">
         <source>Status</source>
         <target>状态</target>
       </trans-unit>
-      <trans-unit id="7596932255924037628">
+      <trans-unit id="7596932255924037628" datatype="html">
         <source>Title</source>
         <target>标题</target>
       </trans-unit>
-      <trans-unit id="3193388349000370860">
+      <trans-unit id="3193388349000370860" datatype="html">
         <source>About</source>
         <target>关于我们</target>
       </trans-unit>
-      <trans-unit id="8134905180384931783">
+      <trans-unit id="8134905180384931783" datatype="html">
         <source>Home</source>
         <target>首页</target>
       </trans-unit>
