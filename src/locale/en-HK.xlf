@@ -28,75 +28,107 @@
       </trans-unit>
       <trans-unit id="5703778869662923789" datatype="html">
         <source>The title must be at least 10 characters</source>
+        <target>The title must be at least 10 characters</target>
       </trans-unit>
       <trans-unit id="3564951754754817328" datatype="html">
         <source>The title up to 90 characters</source>
+        <target>The title up to 90 characters</target>
       </trans-unit>
       <trans-unit id="3193388349000370860" datatype="html">
         <source>About</source>
+        <target>About</target>
       </trans-unit>
       <trans-unit id="8134905180384931783" datatype="html">
         <source>Home</source>
+        <target>Home</target>
       </trans-unit>
       <trans-unit id="1676795155482331512" datatype="html">
         <source>Learn</source>
+        <target>Learn</target>
       </trans-unit>
       <trans-unit id="1320277101496982634" datatype="html">
         <source>Notes</source>
+        <target>Notes</target>
       </trans-unit>
       <trans-unit id="8932343533763733220" datatype="html">
         <source>Community</source>
+        <target>Community</target>
       </trans-unit>
       <trans-unit id="1584359687489669964" datatype="html">
         <source>Sign in</source>
+        <target>Sign in</target>
       </trans-unit>
       <trans-unit id="1571753007969378385" datatype="html">
         <source>Sign up</source>
+        <target>Sign up</target>
       </trans-unit>
       <trans-unit id="4930247922469403331" datatype="html">
         <source>Home - teaoea</source>
+        <target>Home - teaoea</target>
       </trans-unit>
       <trans-unit id="1790664336744462418" datatype="html">
         <source>Password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="5167803871153017287">
+        <source>Confirm password</source>
+        <target>Confirm password</target>
+      </trans-unit>
+      <trans-unit id="7830384099672144615">
+        <source>Email address</source>
+        <target>Email address</target>
       </trans-unit>
       <trans-unit id="4450260585069973489" datatype="html">
         <source>The password isn&apos;t secure enough</source>
+        <target>The password isn&apos;t secure enough</target>
       </trans-unit>
       <trans-unit id="7477196145278522277" datatype="html">
         <source>At least 8 characters</source>
+        <target>At least 8 characters</target>
       </trans-unit>
       <trans-unit id="3653294539457872842" datatype="html">
         <source>Up to 32 characters</source>
+        <target>Up to 32 characters</target>
       </trans-unit>
       <trans-unit id="3832423045655225742" datatype="html">
         <source>Invalid email address suffix</source>
+        <target>Invalid email address suffix</target>
       </trans-unit>
       <trans-unit id="2324134908861252289" datatype="html">
         <source>Country</source>
+        <target>Country</target>
       </trans-unit>
       <trans-unit id="9178730033899945920" datatype="html">
         <source>Phone number</source>
+        <target>Phone number</target>
       </trans-unit>
       <trans-unit id="4870141070283689400" datatype="html">
         <source>The phone number can only be a number</source>
+        <target>The phone number can only be a number</target>
       </trans-unit>
       <trans-unit id="6292046621884338669" datatype="html">
         <source>Username</source>
+        <target>Username</target>
       </trans-unit>
       <trans-unit id="6092892111398938486" datatype="html">
         <source>Allow of letters,underscores and horizontal lines</source>
+        <target>Allow of letters,underscores and horizontal lines</target>
       </trans-unit>
       <trans-unit id="9189860139260910697" datatype="html">
         <source>At least 5 characters</source>
+        <target>At least 5 characters</target>
       </trans-unit>
       <trans-unit id="7947982659146415094" datatype="html">
         <source>Verification code</source>
+        <target>Verification code</target>
       </trans-unit>
       <trans-unit id="5868830986947172129" datatype="html">
+        <source>Me</source>
         <source>Me</source>
       </trans-unit>
       <trans-unit id="4964247078132180679" datatype="html">
         <source>Account settings - teaoea</source>
+        <target>Account settings - teaoea</target>
       </trans-unit>
       <trans-unit id="6338928358955846971" datatype="html">
         <source>The verification code has been sent to the mailbox,<x id="LINE_BREAK" ctype="lb"

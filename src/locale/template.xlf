@@ -53,6 +53,12 @@
       <trans-unit id="1790664336744462418" datatype="html">
         <source>Password</source>
       </trans-unit>
+      <trans-unit id="5167803871153017287">
+        <source>Confirm password</source>
+      </trans-unit>
+      <trans-unit id="7830384099672144615">
+        <source>Email address</source>
+      </trans-unit>
       <trans-unit id="4450260585069973489" datatype="html">
         <source>The password isn&apos;t secure enough</source>
       </trans-unit>
