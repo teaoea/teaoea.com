@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { options, urls } from '../../config';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class QueryService {
   ) {
   }
 
-  post(key: string, value: string) {
+  post(key: string, value: string): Observable<HttpResponse<any>> {
     return this.http.post<any>(urls.user.query, {key, value}, options);
   }
 }

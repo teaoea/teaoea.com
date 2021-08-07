@@ -33,7 +33,8 @@ export const urls = {
     me: `${config.baseURL}${config.urls.user.me}`,
     modify: {
       password: `${config.baseURL}${config.urls.user.modify.password}`
-    }
+    },
+    query: `${config.baseURL}${config.urls.user.query}`
   },
   angular: {
     signin_guard: `${config.baseURL}${config.urls.angular.signin_guard}`,
