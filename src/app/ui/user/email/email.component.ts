@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { forbiddenEmailSuffixes } from '../../../tools/directives/validators';
+import { ExistEmail, forbiddenEmailSuffixes } from '../../../tools/directives/validators';
 
 @Component({
   selector: 'email',
@@ -9,7 +9,9 @@ import { forbiddenEmailSuffixes } from '../../../tools/directives/validators';
 })
 export class EmailComponent implements OnInit {
 
-  constructor() {
+  constructor(
+    private ee: ExistEmail
+  ) {
   }
 
   ngOnInit(): void {
@@ -25,7 +27,7 @@ export class EmailComponent implements OnInit {
 
   formControl = new FormControl('', [
     Validators.required, Validators.email, forbiddenEmailSuffixes
-  ]);
+  ], [this.ee.validate.bind(this.ee)]);
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
@@ -34,6 +36,8 @@ export class EmailComponent implements OnInit {
       return $localize`:@@3832423045655225742:Invalid email address`;
     } else if (this.formControl.hasError('suffix')) {
       return $localize`:@@6791498164802383421:The email address suffix can't be used for signed up`;
+    } else if(this.formControl.hasError('exist')){
+      return $localize`:@@8871331676171095977:This email address is already used by someone else,please change the email address`
     }
   }
 }
