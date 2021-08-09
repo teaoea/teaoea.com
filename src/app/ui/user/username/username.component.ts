@@ -33,7 +33,7 @@ export class UsernameComponent implements OnInit {
     } else if (this.formControl.hasError('pattern')) {
       return $localize`:@@6092892111398938486:Allow of letters,underscores and horizontal lines`;
     } else if (this.formControl.hasError('minLength')) {
-      return $localize`:@@9189860139260910697:At least 5 characters`
+      return $localize`:@@9189860139260910697:At least 5 characters`;
     } else if (this.formControl.hasError('maxLength')) {
       return $localize`:@@3653294539457872842:Up to 32 characters`;
     }

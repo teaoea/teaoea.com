@@ -169,10 +169,6 @@
         <source>The email address suffix can&apos;t be used for signed up</source>
         <target>电子邮箱后缀无法用于注册账户</target>
       </trans-unit>
-      <trans-unit id="8871331676171095977">
-        <source>Email address is already used by someone else</source>
-        <target>邮箱地址已被其他人使用</target>
-      </trans-unit>
       <trans-unit id="6301702895671752959">
         <source>Phone number is already used by someone else</source>
         <target>手机号码已被其他人使用</target>
@@ -218,8 +214,12 @@
         <target>无效的邮箱地址</target>
       </trans-unit>
       <trans-unit id="3527746094124917129" datatype="html">
-        <source>The username has been used by others, please change the username</source>
+        <source>This username has been used by others, please change the username</source>
         <target>用户名已被其他人使用,请更换用户名</target>
+      </trans-unit>
+      <trans-unit id="8871331676171095977">
+        <source>This email address is already used by someone else,please change the email address</source>
+        <target>此邮箱地址已被他人使用，请更改邮箱地址</target>
       </trans-unit>
     </body>
   </file>

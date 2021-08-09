@@ -46,7 +46,7 @@ export class SignupService {
             this.snackBar.open($localize`:@@6092892111398938486:Allow of letters,underscores and horizontal lines`);
             break;
           case 465:
-            this.snackBar.open($localize`:@@8871331676171095977:Email address is already used by someone else`);
+            this.snackBar.open($localize`:@@8871331676171095977:This email address is already used by someone else,please change the email address`);
             break;
           case 466:
             this.snackBar.open($localize`:@@6301702895671752959:Phone number is already used by someone else`);
