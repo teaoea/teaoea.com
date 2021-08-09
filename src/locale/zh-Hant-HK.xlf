@@ -192,10 +192,6 @@
         <source>The email address suffix can&apos;t be used for signed up</source>
         <target>電子郵件地址後綴不能用於註冊</target>
       </trans-unit>
-      <trans-unit id="6194233594898596299" datatype="html">
-        <source>Username is already used by someone else</source>
-        <target>用戶名已被其他人使用</target>
-      </trans-unit>
       <trans-unit id="8871331676171095977" datatype="html">
         <source>Email address is already used by someone else</source>
         <target>電子郵件地址已被其他人使用</target>
@@ -219,6 +215,10 @@
       <trans-unit id="3832423045655225742" datatype="html">
         <source>Invalid email address</source>
         <target>無效的郵箱地址</target>
+      </trans-unit>
+      <trans-unit id="3527746094124917129" datatype="html">
+        <source>This username is already used by someone else, please change the username</source>
+        <target>此用戶名已被其他人使用，請更改用戶名</target>
       </trans-unit>
     </body>
   </file>

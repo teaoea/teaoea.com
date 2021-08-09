@@ -40,7 +40,7 @@ export class SignupService {
             this.snackBar.open($localize`:@@6791498164802383421:Email address suffix can't be used for signed up`);
             break;
           case 463:
-            this.snackBar.open($localize`:@@6194233594898596299:Username is already used by someone else`);
+            this.snackBar.open($localize`:@@3527746094124917129:This username is already used by someone else, please change the username`);
             break;
           case 464:
             this.snackBar.open($localize`:@@6092892111398938486:Allow of letters,underscores and horizontal lines`);

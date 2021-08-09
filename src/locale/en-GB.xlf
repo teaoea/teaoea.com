@@ -194,10 +194,6 @@
         <source>The email address suffix can&apos;t be used for signed up</source>
         <target>The email address suffix can&apos;t be used for signed up</target>
       </trans-unit>
-      <trans-unit id="6194233594898596299" datatype="html">
-        <source>Username is already used by someone else</source>
-        <target>Username is already used by someone else</target>
-      </trans-unit>
       <trans-unit id="8871331676171095977" datatype="html">
         <source>Email address is already used by someone else</source>
         <target>Email address is already used by someone else</target>
@@ -221,6 +217,10 @@
       <trans-unit id="3832423045655225742" datatype="html">
         <source>Invalid email address</source>
         <target>Invalid email address</target>
+      </trans-unit>
+      <trans-unit id="3527746094124917129" datatype="html">
+        <source>This username is already used by someone else, please change the username</source>
+        <target>This username is already used by someone else, please change the username</target>
       </trans-unit>
     </body>
   </file>
