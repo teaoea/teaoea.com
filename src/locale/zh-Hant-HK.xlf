@@ -90,10 +90,6 @@
         <source>Email address</source>
         <target>電子郵件地址</target>
       </trans-unit>
-      <trans-unit id="3832423045655225742" datatype="html">
-        <source>Invalid email address suffix</source>
-        <target>無效的電子郵件地址後綴</target>
-      </trans-unit>
       <trans-unit id="2324134908861252289" datatype="html">
         <source>Country</source>
         <target>國家</target>
@@ -193,7 +189,7 @@
         </target>
       </trans-unit>
       <trans-unit id="6791498164802383421" datatype="html">
-        <source>Email address suffix can&apos;t be used for signed up</source>
+        <source>The email address suffix can&apos;t be used for signed up</source>
         <target>電子郵件地址後綴不能用於註冊</target>
       </trans-unit>
       <trans-unit id="6194233594898596299" datatype="html">
@@ -219,6 +215,10 @@
       <trans-unit id="4440942506526994150" datatype="html">
         <source>Hong Kong,China +852</source>
         <target>中國香港 +852</target>
+      </trans-unit>
+      <trans-unit id="3832423045655225742" datatype="html">
+        <source>Invalid email address</source>
+        <target>無效的郵箱地址</target>
       </trans-unit>
     </body>
   </file>

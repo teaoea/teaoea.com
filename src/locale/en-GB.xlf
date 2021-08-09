@@ -90,10 +90,6 @@
         <source>Up to 32 characters</source>
         <target>Up to 32 characters</target>
       </trans-unit>
-      <trans-unit id="3832423045655225742" datatype="html">
-        <source>Invalid email address suffix</source>
-        <target>Invalid email address suffix</target>
-      </trans-unit>
       <trans-unit id="2324134908861252289" datatype="html">
         <source>Country</source>
         <target>Country</target>
@@ -195,8 +191,8 @@
         </target>
       </trans-unit>
       <trans-unit id="6791498164802383421" datatype="html">
-        <source>Email address suffix can&apos;t be used for signed up</source>
-        <target>Email address suffix can&apos;t be used for signed up</target>
+        <source>The email address suffix can&apos;t be used for signed up</source>
+        <target>The email address suffix can&apos;t be used for signed up</target>
       </trans-unit>
       <trans-unit id="6194233594898596299" datatype="html">
         <source>Username is already used by someone else</source>
@@ -221,6 +217,10 @@
       <trans-unit id="4440942506526994150" datatype="html">
         <source>Hong Kong,China +852</source>
         <target>Hong Kong,China +852</target>
+      </trans-unit>
+      <trans-unit id="3832423045655225742" datatype="html">
+        <source>Invalid email address</source>
+        <target>Invalid email address</target>
       </trans-unit>
     </body>
   </file>

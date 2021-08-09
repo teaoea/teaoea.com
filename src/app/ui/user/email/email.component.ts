@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
-import { Suffixes } from './email';
+import { CustomValidator } from '../../../tools/directives/custom-validator';
 
 @Component({
   selector: 'email',
@@ -9,7 +9,9 @@ import { Suffixes } from './email';
 })
 export class EmailComponent implements OnInit {
 
-  constructor() {
+  constructor(
+    private cv:CustomValidator
+  ) {
   }
 
   ngOnInit(): void {
@@ -30,8 +32,10 @@ export class EmailComponent implements OnInit {
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
       return $localize`:@@5461254227938381642:You must enter a value`;
-    } else if (!(Suffixes(this.value))) {
-      return $localize`:@@3832423045655225742:Invalid email address suffix`;
+    } else if (this.formControl.hasError('email')) {
+      return $localize`:@@3832423045655225742:Invalid email address`;
+    } else if (!this.cv.suffixes(this.value)) {
+      return $localize`:@@6791498164802383421:The email address suffix can't be used for signed up`;
     }
   }
 }
