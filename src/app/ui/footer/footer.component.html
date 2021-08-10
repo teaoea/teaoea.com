@@ -3,9 +3,9 @@
     <mat-icon matSuffix>language</mat-icon>
   </button>
   <mat-menu #language="matMenu">
-    <button mat-menu-item (click)="UnitedStates()" (keyup.enter)="UnitedStates()">🇺🇸 United States</button>
-    <button mat-menu-item (click)="China()" (keyup.enter)="China()">🇨🇳 China</button>
-    <button mat-menu-item (click)="HongKong()" (keyup.enter)="HongKong()">🇭🇰 Hong Kong,China</button>
+    <button mat-menu-item (click)="UnitedStates()" (keyup.enter)="UnitedStates()" i18n="@@4992519833511954918">🇺🇸 United States</button>
+    <button mat-menu-item (click)="China()" (keyup.enter)="China()" i18n="@@7065100373741461382">🇨🇳 China</button>
+    <button mat-menu-item (click)="HongKong()" (keyup.enter)="HongKong()" i18n="@@5860302252638307784">🇭🇰 Hong Kong,China</button>
   </mat-menu>
 
   <button mat-flat-button class="about" (keyup.enter)="about()">

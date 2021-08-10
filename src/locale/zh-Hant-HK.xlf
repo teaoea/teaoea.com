@@ -197,16 +197,28 @@
         <target>電話號碼已被其他人使用</target>
       </trans-unit>
       <trans-unit id="6299596513869757905" datatype="html">
-        <source>United States +1</source>
-        <target>美國 +1</target>
+        <source>🇺🇸 United States +1</source>
+        <target>🇺🇸 美國 +1</target>
+      </trans-unit>
+      <trans-unit id="4992519833511954918" datatype="html">
+        <source>🇺🇸 United States</source>
+        <target>🇺🇸 美國</target>
       </trans-unit>
       <trans-unit id="4217447493960184043" datatype="html">
-        <source>China +86</source>
-        <target>中國大陸 +86</target>
+        <source>🇨🇳 China +86</source>
+        <target>🇨🇳 中國大陸 +86</target>
+      </trans-unit>
+      <trans-unit id="7065100373741461382" datatype="html">
+        <source>🇨🇳 China</source>
+        <target>🇨🇳 中國大陸</target>
       </trans-unit>
       <trans-unit id="4440942506526994150" datatype="html">
-        <source>Hong Kong,China +852</source>
-        <target>中國香港 +852</target>
+        <source>🇭🇰 Hong Kong,China +852</source>
+        <target>🇭🇰 中國香港 +852</target>
+      </trans-unit>
+      <trans-unit id="5860302252638307784" datatype="html">
+        <source>🇭🇰 Hong Kong,China</source>
+        <target>🇭🇰 中國香港</target>
       </trans-unit>
       <trans-unit id="3832423045655225742" datatype="html">
         <source>Invalid email address</source>
