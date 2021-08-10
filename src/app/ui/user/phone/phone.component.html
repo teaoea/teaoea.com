@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-form-field appearance="outline" class="number">
     <mat-label i18n="@@9178730033899945920">Phone number</mat-label>
-    <input matInput required class="input"
+    <input matInput required class="input" type="number"
            (keyup)="newNumber(value2)" [(ngModel)]="value2" [formControl]="formControl">
     <button mat-icon-button matSuffix disabled>
       <mat-icon matSuffix>phone</mat-icon>
