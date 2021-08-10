@@ -192,10 +192,6 @@
         <source>The email address suffix can&apos;t be used for signed up</source>
         <target>電子郵件地址後綴不能用於註冊</target>
       </trans-unit>
-      <trans-unit id="6301702895671752959" datatype="html">
-        <source>Phone number is already used by someone else</source>
-        <target>電話號碼已被其他人使用</target>
-      </trans-unit>
       <trans-unit id="6299596513869757905" datatype="html">
         <source>🇺🇸 United States +1</source>
         <target>🇺🇸 美國 +1</target>
@@ -228,9 +224,13 @@
         <source>This username is already used by someone else, please change the username</source>
         <target>此用戶名已被其他人使用，請更改用戶名</target>
       </trans-unit>
-      <trans-unit id="8871331676171095977">
+      <trans-unit id="8871331676171095977" datatype="html">
         <source>This email address is already used by someone else,please change the email address</source>
         <target>此郵箱地址已被他人使用，請更改郵箱地址</target>
+      </trans-unit>
+      <trans-unit id="6301702895671752959" datatype="html">
+        <source>This phone number is already used by someone else,please change the phone number</source>
+        <target>此電話號碼已被其他人使用，請更改電話號碼</target>
       </trans-unit>
     </body>
   </file>

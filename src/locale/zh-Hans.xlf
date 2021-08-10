@@ -22,158 +22,154 @@
         <source>Home</source>
         <target>首页</target>
       </trans-unit>
-      <trans-unit id="1676795155482331512">
+      <trans-unit id="1676795155482331512" datatype="html">
         <source>Learn</source>
         <target>学习</target>
       </trans-unit>
-      <trans-unit id="1320277101496982634">
+      <trans-unit id="1320277101496982634" datatype="html">
         <source>Notes</source>
         <target>笔记</target>
       </trans-unit>
-      <trans-unit id="8932343533763733220">
+      <trans-unit id="8932343533763733220" datatype="html">
         <source>Community</source>
         <target>社区</target>
       </trans-unit>
-      <trans-unit id="1584359687489669964">
+      <trans-unit id="1584359687489669964" datatype="html">
         <source>Sign in</source>
         <target>登录</target>
       </trans-unit>
-      <trans-unit id="1571753007969378385">
+      <trans-unit id="1571753007969378385" datatype="html">
         <source>Sign up</source>
         <target>注册</target>
       </trans-unit>
-      <trans-unit id="1790664336744462418">
+      <trans-unit id="1790664336744462418" datatype="html">
         <source>Password</source>
         <target>密码</target>
       </trans-unit>
-      <trans-unit id="5167803871153017287">
+      <trans-unit id="5167803871153017287" datatype="html">
         <source>Confirm password</source>
         <target>确认密码</target>
       </trans-unit>
-      <trans-unit id="7830384099672144615">
+      <trans-unit id="7830384099672144615" datatype="html">
         <source>Email address</source>
         <target>电子邮箱</target>
       </trans-unit>
-      <trans-unit id="2324134908861252289">
+      <trans-unit id="2324134908861252289" datatype="html">
         <source>Country</source>
         <target>国家</target>
       </trans-unit>
-      <trans-unit id="9178730033899945920">
+      <trans-unit id="9178730033899945920" datatype="html">
         <source>Phone number</source>
         <target>手机号</target>
       </trans-unit>
-      <trans-unit id="6292046621884338669">
+      <trans-unit id="6292046621884338669" datatype="html">
         <source>Username</source>
         <target>用户名</target>
       </trans-unit>
-      <trans-unit id="7947982659146415094">
+      <trans-unit id="7947982659146415094" datatype="html">
         <source>Verification code</source>
         <target>验证码</target>
       </trans-unit>
-      <trans-unit id="5868830986947172129">
+      <trans-unit id="5868830986947172129" datatype="html">
         <source>Me</source>
         <target>账户设定</target>
       </trans-unit>
       <trans-unit id="6338928358955846971">
         <source>The verification code has been sent to the mailbox,
-          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>please check the inbo
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>please check the inbox
         </source>
         <target>验证码已发送到邮箱，<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>请查看收件箱。
         </target>
       </trans-unit>
-      <trans-unit id="5881559481299775952">
+      <trans-unit id="5881559481299775952" datatype="html">
         <source>Modify password</source>
         <target>修改密码</target>
       </trans-unit>
-      <trans-unit id="4930247922469403331">
+      <trans-unit id="4930247922469403331" datatype="html">
         <source>Home - teaoea</source>
         <target>首页 - teaoea</target>
       </trans-unit>
-      <trans-unit id="5461254227938381642">
+      <trans-unit id="5461254227938381642" datatype="html">
         <source>You must enter a value</source>
         <target>必须输入一个值</target>
       </trans-unit>
-      <trans-unit id="4450260585069973489">
+      <trans-unit id="4450260585069973489" datatype="html">
         <source>The password isn&apos;t secure enough</source>
         <target>密码不够安全</target>
       </trans-unit>
-      <trans-unit id="7477196145278522277">
+      <trans-unit id="7477196145278522277" datatype="html">
         <source>At least 8 characters</source>
         <target>密码最少8个字符</target>
       </trans-unit>
-      <trans-unit id="3653294539457872842">
+      <trans-unit id="3653294539457872842" datatype="html">
         <source>Up to 32 characters</source>
         <target>密码最多32个字符</target>
       </trans-unit>
-      <trans-unit id="4870141070283689400">
+      <trans-unit id="4870141070283689400" datatype="html">
         <source>The phone number can only be a number</source>
         <target>手机号只能是数字</target>
       </trans-unit>
-      <trans-unit id="6092892111398938486">
+      <trans-unit id="6092892111398938486" datatype="html">
         <source>Allow of letters,underscores and horizontal lines</source>
         <target>用户名允许只能使用字母_-</target>
       </trans-unit>
-      <trans-unit id="9189860139260910697">
+      <trans-unit id="9189860139260910697" datatype="html">
         <source>At least 5 characters</source>
         <target>用户名最少5个字符</target>
       </trans-unit>
-      <trans-unit id="2945974538621128369">
+      <trans-unit id="2945974538621128369" datatype="html">
         <source>Must choose a category</source>
         <target>必须选择一个类别</target>
       </trans-unit>
-      <trans-unit id="5703778869662923789">
+      <trans-unit id="5703778869662923789" datatype="html">
         <source>The title must be at least 10 characters</source>
         <target>标题最少10个字符</target>
       </trans-unit>
-      <trans-unit id="3564951754754817328">
+      <trans-unit id="3564951754754817328" datatype="html">
         <source>The title up to 90 characters</source>
         <target>标题最多90个字符</target>
       </trans-unit>
-      <trans-unit id="4052058279966515691">
+      <trans-unit id="4052058279966515691" datatype="html">
         <source>Write article - teaoea</source>
         <target>编写文章 - teaoea</target>
       </trans-unit>
-      <trans-unit id="4964247078132180679">
+      <trans-unit id="4964247078132180679" datatype="html">
         <source>Account settings - teaoea</source>
         <target>账户设定 - teaoea</target>
       </trans-unit>
-      <trans-unit id="2721771170036423646">
+      <trans-unit id="2721771170036423646" datatype="html">
         <source>Modify password - teaoea</source>
         <target>修改密码 - teaoea</target>
       </trans-unit>
-      <trans-unit id="3819679798950937017">
+      <trans-unit id="3819679798950937017" datatype="html">
         <source>Mistake verification code</source>
         <target>验证码错误</target>
       </trans-unit>
-      <trans-unit id="9098010359898849864">
+      <trans-unit id="9098010359898849864" datatype="html">
         <source>Sign in - teaoea</source>
         <target>登录 - teaoea</target>
       </trans-unit>
-      <trans-unit id="7103402554082656086">
+      <trans-unit id="7103402554082656086" datatype="html">
         <source>Username doesn&apos;t exist</source>
         <target>用户名不存在</target>
       </trans-unit>
-      <trans-unit id="4118865998984581162">
+      <trans-unit id="4118865998984581162" datatype="html">
         <source>Mistake password</source>
         <target>密码错误</target>
       </trans-unit>
-      <trans-unit id="5773646582970415551">
+      <trans-unit id="5773646582970415551" datatype="html">
         <source>Sign up - teaoea</source>
         <target>注册 - teaoea</target>
       </trans-unit>
-      <trans-unit id="5555496431958649129">
+      <trans-unit id="5555496431958649129" datatype="html">
         <source>The two passwords entered are inconsistent</source>
         <target>两次输入的密码不一致</target>
       </trans-unit>
-      <trans-unit id="6791498164802383421">
+      <trans-unit id="6791498164802383421" datatype="html">
         <source>The email address suffix can&apos;t be used for signed up</source>
         <target>电子邮箱后缀无法用于注册账户</target>
       </trans-unit>
-      <trans-unit id="6301702895671752959">
-        <source>Phone number is already used by someone else</source>
-        <target>手机号码已被其他人使用</target>
-      </trans-unit>
-      <trans-unit id="7152614246608881220">
+      <trans-unit id="7152614246608881220" datatype="html">
         <source>
           The password needs to meet the following requirements:
 
@@ -194,7 +190,7 @@
 
           3. 需要数字
 
-          4. 需要特殊字符,&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;
+          4. 需要特殊字符，&quot;!@#~$%^&amp;*(&quot;&apos;)+|_&lt;&gt;&quot;
         </target>
       </trans-unit>
       <trans-unit id="6299596513869757905" datatype="html">
@@ -227,11 +223,15 @@
       </trans-unit>
       <trans-unit id="3527746094124917129" datatype="html">
         <source>This username has been used by others, please change the username</source>
-        <target>用户名已被其他人使用,请更换用户名</target>
+        <target>用户名已被其他人使用，请更换用户名</target>
       </trans-unit>
-      <trans-unit id="8871331676171095977">
+      <trans-unit id="8871331676171095977" datatype="html">
         <source>This email address is already used by someone else,please change the email address</source>
         <target>此邮箱地址已被他人使用，请更改邮箱地址</target>
+      </trans-unit>
+      <trans-unit id="6301702895671752959" datatype="html">
+        <source>This phone number is already used by someone else,please change the phone number</source>
+        <target>手机号码已被其他人使用，请更换手机号</target>
       </trans-unit>
     </body>
   </file>

@@ -194,10 +194,6 @@
         <source>The email address suffix can&apos;t be used for signed up</source>
         <target>The email address suffix can&apos;t be used for signed up</target>
       </trans-unit>
-      <trans-unit id="6301702895671752959" datatype="html">
-        <source>Phone number is already used by someone else</source>
-        <target>Phone number is already used by someone else</target>
-      </trans-unit>
       <trans-unit id="6299596513869757905" datatype="html">
         <source>🇺🇸 United States +1</source>
         <target>🇺🇸 United States +1</target>
@@ -233,6 +229,10 @@
       <trans-unit id="8871331676171095977">
         <source>This email address is already used by someone else,please change the email address</source>
         <target>This email address is already used by someone else,please change the email address</target>
+      </trans-unit>
+      <trans-unit id="6301702895671752959" datatype="html">
+        <source>This phone number is already used by someone else,please change the phone number</source>
+        <target>This phone number is already used by someone else,please change the phone number</target>
       </trans-unit>
     </body>
   </file>
