@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { ExistUsername } from '../../../tools/directives/exist-username';
 
 @Component({
   selector: 'username',
@@ -8,7 +9,9 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class UsernameComponent implements OnInit {
 
-  constructor() {
+  constructor(
+    private eu: ExistUsername
+  ) {
   }
 
   ngOnInit(): void {
@@ -22,10 +25,15 @@ export class UsernameComponent implements OnInit {
     this.username.emit(value);
   }
 
-  formControl = new FormControl('', [
-    Validators.required, Validators.pattern(/^[a-zA-Z@._-]{5,32}$/),
-    Validators.minLength(5), Validators.maxLength(32)
-  ]);
+  formControl = new FormControl(
+    this.value,
+    [
+      Validators.required, Validators.pattern(/^[a-zA-Z@._-]{5,32}$/),
+      Validators.minLength(5), Validators.maxLength(32)
+    ],
+    [
+      this.eu.validate.bind(this.eu)]
+  );
 
   errorMessage(): any {
     if (this.formControl.hasError('required')) {
@@ -36,6 +44,8 @@ export class UsernameComponent implements OnInit {
       return $localize`:@@9189860139260910697:At least 5 characters`;
     } else if (this.formControl.hasError('maxLength')) {
       return $localize`:@@3653294539457872842:Up to 32 characters`;
+    } else if (this.formControl.hasError('exist')) {
+      $localize`:@@3527746094124917129:This username has been used by others, please change the username`;
     }
   }
 }
