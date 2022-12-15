@@ -1,0 +1,33 @@
+<mat-toolbar>
+  <div class="button">
+    <button mat-button color="primary" (keyup.enter)="home()">
+      <a routerLink="/" routerLinkActive="active">首页</a>
+    </button>
+  </div>
+
+  <!--
+ 如果用户未登录,显示'登录'和'注册'按钮,
+ 已登录,显示'个人中心'图标按钮
+ -->
+  <div *ngIf="show; then False; else True"></div>
+  <ng-template #False>
+    <div class="button login">
+      <button mat-flat-button color="primary" (keyup.enter)="signup()">
+        <a routerLink="/account/login" routerLinkActive="active">登录</a>
+      </button>
+    </div>
+    <div class="button signup">
+      <button mat-flat-button color="primary" (keyup.enter)="signup()">
+        <a routerLink="/account/signup" routerLinkActive="active">注册</a>
+      </button>
+    </div>
+  </ng-template>
+  <ng-template #True>
+    <div class="me">
+      <button mat-mini-fab color="primary" aria-label="account setting"
+              (click)="me()" (keyup.enter)="me()">
+        <mat-icon>manage_accounts</mat-icon>
+      </button>
+    </div>
+  </ng-template>
+</mat-toolbar>
