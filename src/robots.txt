@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: /account
+Allow: /
+
+User-agent: Baiduspider
+Disallow: /account
+Allow: /
+
+User-agent: *
+Disallow: /
