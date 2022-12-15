@@ -7,16 +7,20 @@ import {SignupComponent} from './user/signup/signup.component';
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule} from "@angular/material/snack-bar";
-import { HeaderComponent } from './tool/component/header/header.component';
+import {HeaderComponent} from './tool/component/header/header.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
+import {HomeComponent} from "./tool/component/home/home.component";
+import {FooterComponent} from './tool/component/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
     SignupComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
