@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://192.168.31.196:1234",
+  "user": {
+    "signup": "/v1/account/signup",
+    "auth": "/v1/account/auth"
+  }
+}
