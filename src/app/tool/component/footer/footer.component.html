@@ -1,5 +1,8 @@
-<mat-toolbar>
-  <button mat-flat-button class="about" (keyup.enter)="about()">
-    <a routerLink="/about" routerLinkActive="active">关于我们</a>
-  </button>
-</mat-toolbar>
+<div id="page-container">
+  <div id="content-wrap">
+    <mat-toolbar id="footer">
+      <button mat-flat-button (keyup.enter)="about()" (click)="about()">关于我们</button>
+    </mat-toolbar>
+  </div>
+</div>
+
