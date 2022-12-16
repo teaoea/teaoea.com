@@ -15,11 +15,10 @@ export class SendMailService {
   ) {
   }
 
-  post(email: string, language: string, db_int: number) {
+  post(email: string, language: string) {
     return this.http.post<any>(`${url.baseUrl}${url.user.send_mail}`, {
       email: email,
       language: language,
-      db_int: db_int
     }, options).subscribe({
       next: () => {
         return this.snackBar.open(`验证码已发送到${email}`)
