@@ -21,13 +21,13 @@ export class HeaderComponent implements OnInit {
   }
 
   username: string = ''
-  show: boolean = false
+  show: boolean = true
 
   auth() {
     return this.authService.authorization().subscribe({
       next: (response) => {
         this.username = response.body.message;
-        this.show = true;
+        this.show = false;
       }
     })
   }
