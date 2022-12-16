@@ -13,6 +13,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {HomeComponent} from "./tool/component/home/home.component";
 import {FooterComponent} from './tool/component/footer/footer.component';
+import { UsernameComponent } from './tool/component/user/username/username.component';
+import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -21,6 +24,7 @@ import {FooterComponent} from './tool/component/footer/footer.component';
     FooterComponent,
     HomeComponent,
     SignupComponent,
+    UsernameComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import {FooterComponent} from './tool/component/footer/footer.component';
     MatSnackBarModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2000}}
