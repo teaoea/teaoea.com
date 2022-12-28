@@ -1,6 +1,7 @@
 <mat-toolbar>
-  <div class="button">
-    <button mat-button color="primary" (keyup.enter)="home()" (click)="home()">首页</button>
+  <div>
+    <button (keyup.enter)="home()" (click)="home()">
+      <span class="text">首页</span></button>
   </div>
 
   <!--
@@ -9,11 +10,15 @@
  -->
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
-    <div class="button login">
-      <button mat-flat-button color="primary" (keyup.enter)="login()" (click)="login()">登录</button>
+    <div>
+      <button (keyup.enter)="login()" (click)="login()">
+        <span class="text">登录</span>
+      </button>
     </div>
-    <div class="button signup">
-      <button mat-flat-button color="primary" (keyup.enter)="signup()" (click)="signup()">注册</button>
+    <div>
+      <button (keyup.enter)="signup()" (click)="signup()">
+        <span class="text">注册</span>
+      </button>
     </div>
   </ng-template>
   <ng-template #False>
