@@ -1,13 +1,6 @@
-<p>
-  <mat-form-field appearance="outline">
-    <mat-label>用户名</mat-label>
-    <input matInput required type="text" [formControl]="formControl"
-           [(ngModel)]="value" (keyup.enter)="newUsername(value)">
-    <button mat-icon-button matSuffix disabled>
-      <mat-icon matSuffix>account_circle</mat-icon>
-    </button>
-    <!--
-    <mat-error *ngIf="formControl.invalid">{{errorMessage()}}</mat-error>
-    -->
-  </mat-form-field>
-</p>
+<div class="container">
+  <input type="text" required [formControl]="formControl"
+         [(ngModel)]="value" (keyup.enter)="newUsername(value)">
+  <label>用户名</label>
+  <i></i>
+</div>
