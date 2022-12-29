@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {AuthService} from "../../service/auth/auth.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { AuthService } from "../../service/auth/auth.service";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -32,19 +32,19 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  home() {
-    return this.router.navigate(['/'], {relativeTo: this.route}).then();
+  async home() {
+    return this.router.navigate(['/'], { relativeTo: this.route });
   }
 
-  login() {
-    return this.router.navigate(['/account/login'], {relativeTo: this.route}).then();
+  async login() {
+    return this.router.navigate(['/account/login'], { relativeTo: this.route }).then();
   }
 
-  signup() {
-    return this.router.navigate(['/account/signup'], {relativeTo: this.route}).then();
+  async signup() {
+    return this.router.navigate(['/account/signup'], { relativeTo: this.route }).then();
   }
 
-  me() {
-    return this.router.navigate(['/account/me'], {relativeTo: this.route}).then();
+  async me() {
+    return this.router.navigate(['/account/me'], { relativeTo: this.route }).then();
   }
 }
