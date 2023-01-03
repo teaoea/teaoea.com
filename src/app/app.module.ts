@@ -17,6 +17,7 @@ import { UsernameComponent } from './tool/component/user/username/username.compo
 import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
 import { EmailComponent } from './tool/component/user/email/email.component';
+import { LoginComponent } from './user/login/login.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { EmailComponent } from './tool/component/user/email/email.component';
     SignupComponent,
     UsernameComponent,
     EmailComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
