@@ -1,6 +1,13 @@
 # angular version 14
 
-## Compoents
+## Public components
+
+- [app-header](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/header)
+- [app-footer](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/footer)
+- [app-username](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/username)
+- [app-email](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/email)
+
+## Pages
 
 - [home](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/home)
 - [singup](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup)
