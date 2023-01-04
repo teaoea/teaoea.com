@@ -6,5 +6,8 @@ User-agent: Baiduspider
 Disallow: /account
 Allow: /
 
+User-agent: MSNBot
+Disallow: /account
+
 User-agent: *
 Disallow: /
