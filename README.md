@@ -1,18 +1,12 @@
-# `angular version 14`
+# angular version 14
 
-## 路由
+## Pages
 
-[home]: https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/home
-[singup]: https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup
-[login]: https://github.com/teaoea/teaoea.com/tree/main/src/app/user/login
-
-| url             | component        |
-| --------------- | ---------------- |
-| ""              | [Home](home)     |
-| "account/signup | [Signup](signup) |
-| "account/login  | [Login](login)   |
+- [home](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/home)
+- [singup](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup)
+- [login](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/login)
 
 ## Thanks
 
-1. [Angular](https://angular.io/)
-2. [Angular Material](https://material.angular.io/)
+- [Angular](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
