@@ -1,10 +1,12 @@
-# 用户注册
+# signup
 
-## 使用的组件
+注册页面,用户注册无需密码,注册时需要验证邮箱的有效性
 
-1. [app-username](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/username)
-2. [app-email](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/email)
+## components used
 
-## 网页预览图
+- [app-username](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/username)
+- [app-email](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/email)
+
+## preview
 
 ![注册](https://github.com/teaoea/github-img/blob/main/teaoea.com/signup.png)
