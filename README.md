@@ -1,6 +1,6 @@
 # angular version 14
 
-## Pages
+## Compoents
 
 - [home](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/home)
 - [singup](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup)
