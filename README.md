@@ -6,11 +6,11 @@
 [singup]: https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup
 [login]: https://github.com/teaoea/teaoea.com/tree/main/src/app/user/login
 
-| url             | component        | funtion |
-| --------------- | ---------------- | ------- |
-| ""              | [Home](home)     | 首页    |
-| "account/signup | [Signup](signup) | 注册    |
-| "account/login  | [Login](login)   | 登录    |
+| url             | component        |
+| --------------- | ---------------- |
+| ""              | [Home](home)     |
+| "account/signup | [Signup](signup) |
+| "account/login  | [Login](login)   |
 
 ## Thanks
 
