@@ -8,5 +8,5 @@
 
 ## Thanks
 
-- [Angular](https://angular.io/)
-- [Angular Material](https://material.angular.io/)
+- [Angular](https://github.com/angular/angular)
+- [Angular Material](https://github.com/angular/components)
