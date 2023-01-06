@@ -2,10 +2,10 @@
 
 <form>
   <div class="field">
-    <app-username></app-username>
+    <app-username (username)="username($event)"></app-username>
   </div>
   <div class="field">
-    <app-email></app-email>
+    <app-email (email)="email($event)"></app-email>
   </div>
   <div class="field">
     <button class="button" (click)="onSubmit()" (keyup.enter)="onSubmit()">

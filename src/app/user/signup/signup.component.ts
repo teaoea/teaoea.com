@@ -35,6 +35,10 @@ export class SignupComponent implements OnInit {
     this.signup.password = value;
   }
 
+  password2(value: string) {
+    this.signup.password2 = value;
+  }
+
   onSubmit() {
     this.service.post(this.signup);
   }
