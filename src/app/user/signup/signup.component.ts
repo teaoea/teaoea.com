@@ -22,6 +22,8 @@ export class SignupComponent implements OnInit {
     password: "",
     password2: "",
   };
+
+  NotShow = true;
   usernameFormControl = new FormControl(this.signup.username, [
     Validators.required,
   ]);

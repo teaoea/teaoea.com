@@ -1,68 +1,100 @@
 <app-header></app-header>
+<div>
+  <form>
+    <!--username-->
+    <mat-form-field appearance="outline">
+      <mat-label>用户名</mat-label>
+      <input
+        type="text"
+        matInput
+        [(ngModel)]="signup.username"
+        [formControl]="usernameFormControl"
+      />
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-error *ngIf="usernameFormControl.hasError('required')"
+        >用户名不能为空</mat-error
+      >
+    </mat-form-field>
 
-<form>
-  <mat-form-field>
-    <mat-label>用户名</mat-label>
-    <input
-      type="text"
-      matInput
-      [(ngModel)]="signup.username"
-      [formControl]="usernameFormControl"
-    />
-    <mat-icon matSuffix>face_6</mat-icon>
-    <mat-error *ngIf="usernameFormControl.hasError('required')"
-      >用户名不能为空</mat-error
-    >
-  </mat-form-field>
+    <!--email-->
+    <mat-form-field appearance="outline">
+      <mat-label>电子邮箱</mat-label>
+      <input
+        type="email"
+        matInput
+        [(ngModel)]="signup.email"
+        [formControl]="emailFormControl"
+      />
+      <mat-icon matSuffix>mail</mat-icon>
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+        >请输入有效的电子邮件地址</mat-error
+      >
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        电子邮箱地址不能为空
+      </mat-error>
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>电子邮箱</mat-label>
-    <input
-      type="email"
-      matInput
-      [(ngModel)]="signup.email"
-      [formControl]="emailFormControl"
-    />
-    <mat-icon matSuffix>mail</mat-icon>
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-      >请输入有效的电子邮件地址</mat-error
-    >
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      电子邮箱地址不能为空
-    </mat-error>
-  </mat-form-field>
+    <!--password-->
+    <mat-form-field appearance="outline">
+      <mat-label>密码</mat-label>
+      <input
+        [type]="NotShow ? 'password' : 'text'"
+        matInput
+        [(ngModel)]="signup.password"
+        [formControl]="passwordFormControl"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="NotShow = !NotShow"
+        [attr.aria-lable]="'Show password'"
+        [attr.aria-pressed]="NotShow"
+      >
+        <mat-icon matSuffix>{{
+          NotShow ? "visibility_off" : "visibility"
+        }}</mat-icon>
+      </button>
 
-  <mat-form-field>
-    <mat-label>密码</mat-label>
-    <input
-      type="password"
-      matInput
-      [(ngModel)]="signup.password"
-      [formControl]="passwordFormControl"
-    />
-    <mat-icon matSuffix>password</mat-icon>
-    <mat-error *ngIf="passwordFormControl.hasError('required')"
-      >密码不能为空</mat-error
-    >
-  </mat-form-field>
+      <mat-error *ngIf="passwordFormControl.hasError('required')"
+        >密码不能为空</mat-error
+      >
+    </mat-form-field>
 
-  <mat-form-field>
-    <mat-label>确认密码</mat-label>
-    <input
-      type="password"
-      matInput
-      [(ngModel)]="signup.password2"
-      [formControl]="password2FormControl"
-    />
-    <mat-icon matSuffix>password</mat-icon>
-    <mat-error *ngIf="password2FormControl.hasError('required')"
-      >密码不能为空</mat-error
-    >
-  </mat-form-field>
-</form>
+    <!--password2-->
+    <mat-form-field appearance="outline">
+      <mat-label>确认密码</mat-label>
+      <input
+        type="password"
+        matInput
+        [(ngModel)]="signup.password2"
+        [formControl]="password2FormControl"
+      />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="NotShow = !NotShow"
+        [attr.aria-lable]="'Show password'"
+        [attr.aria-pressed]="NotShow"
+      >
+        <mat-icon matSuffix>{{
+          NotShow ? "visibility_off" : "visibility"
+        }}</mat-icon>
+      </button>
+      <mat-error *ngIf="password2FormControl.hasError('required')"
+        >密码不能为空</mat-error
+      >
+    </mat-form-field>
 
+    <!--onSubmit-->
+    <div>
+      <button mat-stroked-button color="primary" (click)="(onSubmit)">
+        注册
+      </button>
+    </div>
+  </form>
+</div>
 <app-footer></app-footer>
