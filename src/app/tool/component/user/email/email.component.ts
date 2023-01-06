@@ -10,6 +10,9 @@ export class EmailComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  lable = "邮箱";
+
   value: string = "";
 
   @Output() email: EventEmitter<string> = new EventEmitter();

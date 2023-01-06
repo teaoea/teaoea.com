@@ -1,11 +1,8 @@
-<div class="container">
-  <input
-    type="email"
-    required
-    [formControl]="formControl"
-    [(ngModel)]="value"
-    (keyup.enter)="newEmail(value)"
-  />
-  <label>邮箱</label>
-  <i></i>
-</div>
+<app-input
+  [lable]="lable"
+  type="email"
+  required
+  [formControl]="formControl"
+  [(ngModel)]="value"
+  (keyup.enter)="newEmail(value)"
+></app-input>

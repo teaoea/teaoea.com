@@ -1,36 +1,32 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormControl, Validators} from "@angular/forms";
+import { Component, EventEmitter, OnInit, Output } from "@angular/core";
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
-  selector: 'app-username',
-  templateUrl: './username.component.html',
-  styleUrls: ['./username.component.scss']
+  selector: "app-username",
+  templateUrl: "./username.component.html",
+  styleUrls: ["./username.component.scss"],
 })
 export class UsernameComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
+  lable = "用户名";
 
-  value: string = ''
+  value: string = "";
 
   @Output() username: EventEmitter<string> = new EventEmitter();
 
   newUsername(value: string) {
-    this.username.emit(value)
+    this.username.emit(value);
   }
 
-  formControl = new FormControl(
-    this.value,
-    [
-      Validators.required,
-      //Validators.pattern(/^[a-zA-Z@._-]$/),
-      Validators.minLength(5), Validators.maxLength(32)
-    ]
-  );
-
+  formControl = new FormControl(this.value, [
+    Validators.required,
+    //Validators.pattern(/^[a-zA-Z@._-]$/),
+    Validators.minLength(5),
+    Validators.maxLength(32),
+  ]);
 
   /**
    errorMessage(): any {
