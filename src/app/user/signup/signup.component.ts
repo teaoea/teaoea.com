@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Title } from "@angular/platform-browser";
-import { SendMailService } from "src/app/tool/service/send-mail/send-mail.service";
 import { SignupService } from "./signup.service";
 import { Signup } from "./signup";
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-signup",
@@ -22,23 +22,22 @@ export class SignupComponent implements OnInit {
     password: "",
     password2: "",
   };
+  usernameFormControl = new FormControl(this.signup.username, [
+    Validators.required,
+  ]);
 
-  username(value: string) {
-    this.signup.username = value;
-  }
+  emailFormControl = new FormControl(this.signup.email, [
+    Validators.required,
+    Validators.email,
+  ]);
 
-  email(value: string) {
-    this.signup.email = value;
-  }
+  passwordFormControl = new FormControl(this.signup.password, [
+    Validators.required,
+  ]);
 
-  password(value: string) {
-    this.signup.password = value;
-  }
-
-  password2(value: string) {
-    this.signup.password2 = value;
-  }
-
+  password2FormControl = new FormControl(this.signup.password2, [
+    Validators.required,
+  ]);
   onSubmit() {
     this.service.post(this.signup);
   }

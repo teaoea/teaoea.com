@@ -19,6 +19,10 @@ import { FooterComponent } from "./tool/component/footer/footer.component";
 import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
 import { LoginComponent } from "./user/login/login.component";
+import {
+  ErrorStateMatcher,
+  ShowOnDirtyErrorStateMatcher,
+} from "@angular/material/core";
 
 @NgModule({
   declarations: [
@@ -43,6 +47,7 @@ import { LoginComponent } from "./user/login/login.component";
   ],
   providers: [
     { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2000 } },
+    { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher },
   ],
   bootstrap: [AppComponent],
 })
