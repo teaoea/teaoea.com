@@ -1,24 +1,24 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SignupComponent } from './user/signup/signup.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { SignupComponent } from "./user/signup/signup.component";
 import { HttpClientModule } from "@angular/common/http";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from "@angular/material/snack-bar";
-import { HeaderComponent } from './tool/component/header/header.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import {
+  MAT_SNACK_BAR_DEFAULT_OPTIONS,
+  MatSnackBarModule,
+} from "@angular/material/snack-bar";
+import { HeaderComponent } from "./tool/component/header/header.component";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { HomeComponent } from "./tool/component/home/home.component";
-import { FooterComponent } from './tool/component/footer/footer.component';
-import { UsernameComponent } from './tool/component/user/username/username.component';
+import { FooterComponent } from "./tool/component/footer/footer.component";
 import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
-import { EmailComponent } from './tool/component/user/email/email.component';
-import { LoginComponent } from './user/login/login.component';
-import { InputComponent } from './tool/component/input/input.component';
+import { LoginComponent } from "./user/login/login.component";
 
 @NgModule({
   declarations: [
@@ -27,10 +27,7 @@ import { InputComponent } from './tool/component/input/input.component';
     FooterComponent,
     HomeComponent,
     SignupComponent,
-    UsernameComponent,
-    EmailComponent,
     LoginComponent,
-    InputComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,12 +39,11 @@ import { InputComponent } from './tool/component/input/input.component';
     MatButtonModule,
     MatIconModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
-    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2000 } }
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2000 } },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
