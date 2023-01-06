@@ -1,6 +1,11 @@
 <div class="container">
-  <input type="email" required />
+  <input
+    type="email"
+    required
+    [formControl]="formControl"
+    [(ngModel)]="value"
+    (keyup.enter)="newEmail(value)"
+  />
   <label>邮箱</label>
   <i></i>
-  <button>验证码</button>
 </div>
