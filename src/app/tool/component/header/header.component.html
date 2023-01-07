@@ -1,8 +1,14 @@
-<mat-toolbar>
-  <div>
-    <button (keyup.enter)="home()" (click)="home()">
-      <span class="text">首页</span></button>
-  </div>
+<mat-grid-tile-header>
+  <p>
+    <button
+      mat-raised-button
+      color="primary"
+      (keyup.enter)="home()"
+      (click)="home()"
+    >
+      Home
+    </button>
+  </p>
 
   <!--
  如果用户未登录,显示'登录'和'注册'按钮,
@@ -10,23 +16,38 @@
  -->
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
-    <div>
-      <button (keyup.enter)="login()" (click)="login()">
-        <span class="text">登录</span>
+    <p>
+      <button
+        mat-raised-button
+        color="primary"
+        (keyup.enter)="login()"
+        (click)="login()"
+      >
+        登录
       </button>
-    </div>
-    <div>
-      <button (keyup.enter)="signup()" (click)="signup()">
-        <span class="text">注册</span>
+    </p>
+    <p>
+      <button
+        mat-raised-button
+        color="primary"
+        (keyup.enter)="signup()"
+        (click)="signup()"
+      >
+        注册
       </button>
-    </div>
+    </p>
   </ng-template>
   <ng-template #False>
-    <div class="me">
-      <button mat-mini-fab color="primary" aria-label="account setting"
-              (click)="me()" (keyup.enter)="me()">
+    <p>
+      <button
+        mat-mini-fab
+        color="primary"
+        aria-label="account setting"
+        (click)="me()"
+        (keyup.enter)="me()"
+      >
         <mat-icon>manage_accounts</mat-icon>
       </button>
-    </div>
+    </p>
   </ng-template>
-</mat-toolbar>
+</mat-grid-tile-header>
