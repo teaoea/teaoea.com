@@ -11,6 +11,7 @@ import {
   MatSnackBarModule,
 } from "@angular/material/snack-bar";
 import { HeaderComponent } from "./tool/component/header/header.component";
+import { MatGridListModule } from "@angular/material/grid-list";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
@@ -38,6 +39,7 @@ import {
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatGridListModule,
     MatSnackBarModule,
     MatToolbarModule,
     MatButtonModule,
