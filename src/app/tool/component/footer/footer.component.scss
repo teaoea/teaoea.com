@@ -1,7 +1,17 @@
-mat-toolbar {
+footer {
   background-color: #424242;
+  display: grid;
+  height: 70px;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
 }
+
 button {
   background-color: #0171e3;
   color: rgb(255, 255, 255);
+}
+
+.about {
+  grid-area: 1 / 2 / 2 / 3;
 }
