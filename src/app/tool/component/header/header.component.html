@@ -1,47 +1,38 @@
-<mat-grid-tile-header>
-  <p>
-    <button
-      mat-raised-button
-      color="primary"
-      (keyup.enter)="home()"
-      (click)="home()"
-    >
-      Home
+<header>
+  <p class="home">
+    <button mat-raised-button (keyup.enter)="home()" (click)="home()">
+      首页
     </button>
   </p>
 
+  <p class="note">
+    <button mat-raised-button>笔记</button>
+  </p>
+
+  <p class="discuss">
+    <button mat-raised-button>讨论</button>
+  </p>
   <!--
- 如果用户未登录,显示'登录'和'注册'按钮,
- 已登录,显示'个人中心'图标按钮
- -->
+  如果用户未登录,显示'登录'和'注册'按钮,
+  已登录,显示'个人中心'图标按钮
+  -->
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
-    <p>
-      <button
-        mat-raised-button
-        color="primary"
-        (keyup.enter)="login()"
-        (click)="login()"
-      >
+    <p class="login">
+      <button mat-raised-button (keyup.enter)="login()" (click)="login()">
         登录
       </button>
     </p>
-    <p>
-      <button
-        mat-raised-button
-        color="primary"
-        (keyup.enter)="signup()"
-        (click)="signup()"
-      >
+    <p class="signup">
+      <button mat-raised-button (keyup.enter)="signup()" (click)="signup()">
         注册
       </button>
     </p>
   </ng-template>
   <ng-template #False>
-    <p>
+    <p class="me">
       <button
         mat-mini-fab
-        color="primary"
         aria-label="account setting"
         (click)="me()"
         (keyup.enter)="me()"
@@ -50,4 +41,4 @@
       </button>
     </p>
   </ng-template>
-</mat-grid-tile-header>
+</header>
