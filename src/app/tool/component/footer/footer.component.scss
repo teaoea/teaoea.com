@@ -1,5 +1,7 @@
 footer {
   background-color: #424242;
+  position: sticky;
+  bottom: 0;
   display: grid;
   height: 70px;
   grid-auto-columns: 1fr;
