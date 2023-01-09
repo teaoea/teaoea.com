@@ -24,6 +24,7 @@ export class SignupComponent implements OnInit {
   };
 
   NotShow = true;
+
   usernameFormControl = new FormControl(this.signup.username, [
     Validators.required,
   ]);

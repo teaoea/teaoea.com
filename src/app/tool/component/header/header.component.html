@@ -1,16 +1,21 @@
 <header>
   <p class="home">
-    <button mat-raised-button (keyup.enter)="home()" (click)="home()">
+    <button
+      mat-raised-button
+      (keyup.enter)="home()"
+      (click)="home()"
+      lang="zh-hans"
+    >
       首页
     </button>
   </p>
 
   <p class="note">
-    <button mat-raised-button>笔记</button>
+    <button mat-raised-button lang="zh-hans">笔记</button>
   </p>
 
   <p class="discuss">
-    <button mat-raised-button>讨论</button>
+    <button mat-raised-button lang="zh-hans">讨论</button>
   </p>
   <!--
   如果用户未登录,显示'登录'和'注册'按钮,
@@ -19,12 +24,22 @@
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
     <p class="login">
-      <button mat-raised-button (keyup.enter)="login()" (click)="login()">
+      <button
+        mat-raised-button
+        (keyup.enter)="login()"
+        (click)="login()"
+        lang="zh-hans"
+      >
         登录
       </button>
     </p>
     <p class="signup">
-      <button mat-raised-button (keyup.enter)="signup()" (click)="signup()">
+      <button
+        mat-raised-button
+        (keyup.enter)="signup()"
+        (click)="signup()"
+        lang="zh-hans"
+      >
         注册
       </button>
     </p>
