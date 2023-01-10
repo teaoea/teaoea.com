@@ -1,84 +1,72 @@
 <app-header></app-header>
-<div class="container">
-  <form class="form">
-    <!--username-->
-    <p class="username">
-      <mat-form-field appearance="outline">
-        <mat-label lang="zh-hans">用户名</mat-label>
-        <input
-          type="text"
-          matInput
-          [(ngModel)]="signup.username"
-          [formControl]="usernameFormControl"
-          lang="en"
-        />
-        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        <mat-error *ngIf="usernameFormControl.hasError('required')"
-          >用户名不能为空</mat-error
-        >
-      </mat-form-field>
-    </p>
-    <!--email-->
-    <p class="email">
-      <mat-form-field appearance="outline" class="email">
-        <mat-label lang="zh-hans">电子邮箱</mat-label>
-        <input
-          type="email"
-          matInput
-          [(ngModel)]="signup.email"
-          [formControl]="emailFormControl"
-          lang="en"
-        />
-        <mat-icon matSuffix>mail</mat-icon>
-        <mat-error
-          *ngIf="
-            emailFormControl.hasError('email') &&
-            !emailFormControl.hasError('required')
-          "
-          >请输入有效的电子邮件地址</mat-error
-        >
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          电子邮箱地址不能为空
-        </mat-error>
-      </mat-form-field>
-    </p>
-    <!--password-->
-    <p class="password">
-      <mat-form-field appearance="outline" class="password">
-        <mat-label>密码</mat-label>
-        <input
-          matInput
-          [(ngModel)]="signup.password"
-          [formControl]="passwordFormControl"
-        />
-        <mat-icon matSuffix>password</mat-icon>
-        <mat-error *ngIf="passwordFormControl.hasError('required')"
-          >密码不能为空</mat-error
-        >
-      </mat-form-field>
-    </p>
-    <!--password2-->
-    <p class="password2">
-      <mat-form-field appearance="outline" class="password2">
-        <mat-label>确认密码</mat-label>
-        <input
-          type="password"
-          matInput
-          [(ngModel)]="signup.password2"
-          [formControl]="password2FormControl"
-        />
-        <mat-icon matSuffix>password</mat-icon>
-        <mat-error *ngIf="password2FormControl.hasError('required')"
-          >密码不能为空</mat-error
-        >
-      </mat-form-field>
-    </p>
-    <!--onSubmit-->
-    <p class="onSubmit">
-      <button mat-stroked-button (click)="(onSubmit)" lang="zh-hans">
-        注册
-      </button>
-    </p>
-  </form>
-</div>
+<form>
+  <!--username-->
+  <mat-form-field appearance="outline">
+    <mat-label lang="en">Username</mat-label>
+    <input
+      type="text"
+      matInput
+      [(ngModel)]="signup.username"
+      [formControl]="usernameFormControl"
+      lang="en"
+    />
+    <mat-error *ngIf="usernameFormControl.hasError('required')" lang="en">
+      Username is <strong>required</strong></mat-error
+    >
+  </mat-form-field>
+  <!--email-->
+  <mat-form-field appearance="outline">
+    <mat-label lang="en">Email</mat-label>
+    <input
+      type="email"
+      matInput
+      [(ngModel)]="signup.email"
+      [formControl]="emailFormControl"
+      lang="en"
+    />
+    <mat-error
+      *ngIf="
+        emailFormControl.hasError('email') &&
+        !emailFormControl.hasError('required')
+      "
+      lang="en"
+      >Please enter a valid email address</mat-error
+    >
+    <mat-error *ngIf="emailFormControl.hasError('required')" lang="en">
+      Email is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <!--password-->
+  <mat-form-field appearance="outline">
+    <mat-label lang="en">Password</mat-label>
+    <input
+      matInput
+      [(ngModel)]="signup.password"
+      [formControl]="passwordFormControl"
+    />
+    <mat-error *ngIf="passwordFormControl.hasError('required')" lang="en"
+      >Password is <strong>required</strong></mat-error
+    >
+  </mat-form-field>
+  <!--password2-->
+  <mat-form-field appearance="outline">
+    <mat-label lang="en">Confirm password</mat-label>
+    <input
+      type="password"
+      matInput
+      [(ngModel)]="signup.password2"
+      [formControl]="password2FormControl"
+    />
+    <mat-error *ngIf="password2FormControl.hasError('required')" lang="en"
+      >Password is <strong>required</strong></mat-error
+    >
+  </mat-form-field>
+  <!--onSubmit-->
+  <div>
+    <button mat-raised-button lang="en">Forget</button>
+    <button mat-raised-button color="primary" (click)="(onSubmit)" lang="en">
+      Sign Up
+    </button>
+  </div>
+</form>
 <app-footer></app-footer>
