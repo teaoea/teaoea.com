@@ -10,7 +10,7 @@
 ## pages
 
 - [home](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/home)
-- [singup](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup)
+- [signup](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/signup)
 - [login](https://github.com/teaoea/teaoea.com/tree/main/src/app/user/login)
 
 ## thanks
