@@ -1,15 +1,15 @@
 <header>
-  <p>
+  <p class="home">
     <button mat-raised-button (keyup.enter)="home()" (click)="home()" lang="en">
       Home
     </button>
   </p>
 
-  <p>
+  <p class="notes">
     <button mat-raised-button lang="en">Notes</button>
   </p>
 
-  <p>
+  <p class="group">
     <button mat-raised-button lang="en">Group</button>
   </p>
   <!--
@@ -18,31 +18,31 @@
   -->
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
-    <p>
+    <p class="login">
       <button
         mat-raised-button
         (keyup.enter)="login()"
         (click)="login()"
         lang="en"
-        color="primary"
+        class="account"
       >
         Login
       </button>
     </p>
-    <p>
+    <p class="signup">
       <button
         mat-raised-button
         (keyup.enter)="signup()"
         (click)="signup()"
         lang="en"
-        color="primary"
+        class="account"
       >
         Sign Up
       </button>
     </p>
   </ng-template>
   <ng-template #False>
-    <p>
+    <p class="me">
       <button
         mat-mini-fab
         aria-label="account setting"
