@@ -1,11 +1,12 @@
-.form {
+
+form {
   width: 20%;
-  height: 80.5%;
+  height: 50%;
   text-align: center;
 }
 
 mat-form-field {
-  width: 100%;
+  width: 90%;
 }
 
 button {
@@ -13,13 +14,28 @@ button {
   width: 35%;
 }
 
+@media (prefers-color-scheme: dark) {
+
+  form {
+    background-color: #303030;
+  }
+  input {
+    color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  input {
+    color: #000000;
+  }
+}
+
 .placeholder {
-  width: 30%;
+  width: 20%;
   visibility: hidden
 }
 
 .onSubmit {
   background-color: #3375ef;
 }
-
 
