@@ -1,78 +1,9 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.cn/guide/theming#defining-a-custom-theme
-@use "@angular/material" as mat;
+@import "assets/style/lang";
+@import "assets/style/theme";
 
-@include mat.core();
-
-$primary: mat.define-palette(mat.$indigo-palette, 500);
-$accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-$warn: mat.define-palette(mat.$red-palette);
-
-$light-theme: mat.define-light-theme(
-    (
-      color: (
-        primary: $primary,
-        accent: $accent,
-        warn: $warn,
-      ),
-    )
-);
-
-$dark-theme: mat.define-dark-theme(
-    (
-      color:(
-        primary:$primary,
-        accent: $accent,
-        warn: $warn,
-      )
-    )
-);
-
-// Apply the dark themes
-@media (prefers-color-scheme: dark) {
-  @include mat.core-color($dark-theme);
-  @include mat.all-component-themes($dark-theme);
-  body {
-    background-color: #000000;
-  }
-}
-
-// Apply the light themes
-@media (prefers-color-scheme: light) {
-  @include mat.core-color($light-theme);
-  @include mat.all-component-themes($light-theme);
-  body {
-    background-color: #ffffff;
-  }
-}
-
-html {
+html, body {
   height: 100%;
   margin: 0;
 }
 
-body {
-  height: 100%;
-  margin: 0;
-}
-
-@font-face {
-  font-family: "Fira Code";
-  unicode-range: U+30-39;
-  src: url(//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css);
-}
-
-@font-face {
-  font-family: "Fira Code";
-  src: url(//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css);
-  unicode-range: U+2018, U+2019, U+201c, U+201d;
-}
-
-[lang]:lang(en) {
-  font-family: "Fira Code", sans-serif;
-}
-
-[lang]:lang(zh-hans) {
-  font-family: "Ma Shan Zheng", sans-serif;
-}
 
