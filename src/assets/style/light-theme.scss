@@ -16,28 +16,6 @@ $light-theme: mat.define-light-theme(
     )
 );
 
-$dark-theme: mat.define-dark-theme(
-    (
-      color:(
-        primary:$primary,
-        accent: $accent,
-        warn: $warn,
-      )
-    )
-);
-
-// Apply the dark themes
-@media (prefers-color-scheme: dark) {
-  @include mat.core-color($dark-theme);
-  @include mat.all-component-themes($dark-theme);
-  body {
-    background-color: #181818;
-  }
-  header, footer {
-    background-color: #424242;
-  }
-}
-
 // Apply the light themes
 @media (prefers-color-scheme: light) {
   @include mat.core-color($light-theme);
