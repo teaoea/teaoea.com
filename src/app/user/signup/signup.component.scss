@@ -15,6 +15,18 @@ button {
   bottom: 10px;
 }
 
+@media (prefers-color-scheme: dark) {
+  button {
+    color: #fbfbfb;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    color: #424242;
+  }
+}
+
 .placeholder {
   width: 20%;
   visibility: hidden
@@ -32,7 +44,7 @@ button {
 
 // Light mode
 @media (prefers-color-scheme: light) {
-  form{
+  form {
     background-color: #fbfbfb;
   }
   input {

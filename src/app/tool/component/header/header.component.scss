@@ -8,6 +8,18 @@ button {
   width: 100px;
 }
 
+@media (prefers-color-scheme: dark) {
+  button {
+    color: #fbfbfb;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    color: #424242;
+  }
+}
+
 header {
   position: sticky;
   top: 0;
