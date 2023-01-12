@@ -19,11 +19,19 @@ button {
   button {
     color: #fbfbfb;
   }
+  .snackBar {
+    background-color: #fbfbfb;
+    color: #181818;
+  }
 }
 
 @media (prefers-color-scheme: light) {
   button {
     color: #424242;
+  }
+  .snackBar {
+    background-color: #424242;
+    color: #fbfbfb;
   }
 }
 
