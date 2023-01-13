@@ -1,16 +1,13 @@
 <app-header></app-header>
-<div>
+<div class="container">
   <form>
     <!--username-->
-    <p>
+    <p class="username">
       <mat-form-field appearance="outline">
         <mat-label lang="en">Username</mat-label>
-        <input
-          type="text"
-          matInput
-          [(ngModel)]="signup.username"
-          [formControl]="usernameFormControl"
-          lang="en"
+        <input type="text" matInput lang="en"
+               [(ngModel)]="signup.username"
+               [formControl]="usernameFormControl"
         />
         <mat-error *ngIf="usernameFormControl.hasError('required')" lang="en">
           Username is <strong>required</strong></mat-error
@@ -21,12 +18,10 @@
     <p class="email">
       <mat-form-field appearance="outline">
         <mat-label lang="en">Email</mat-label>
-        <input
-          type="email"
-          matInput
-          [(ngModel)]="signup.email"
-          [formControl]="emailFormControl"
-          lang="en"
+        <input type="email" matInput lang="en"
+               [(ngModel)]="signup.email"
+               [formControl]="emailFormControl"
+
         />
         <mat-error
           *ngIf="
@@ -43,13 +38,12 @@
       </mat-form-field>
     </p>
     <!--password-->
-    <p>
+    <p class="password">
       <mat-form-field appearance="outline">
         <mat-label lang="en">Password</mat-label>
-        <input
-          matInput
-          [(ngModel)]="signup.password"
-          [formControl]="passwordFormControl"
+        <input type="password" matInput
+               [(ngModel)]="signup.password"
+               [formControl]="passwordFormControl"
         />
         <mat-error *ngIf="passwordFormControl.hasError('required')" lang="en"
         >Password is <strong>required</strong></mat-error
@@ -57,15 +51,12 @@
       </mat-form-field>
     </p>
     <!--confirm password-->
-    <p>
+    <p class="cp">
       <mat-form-field appearance="outline">
         <mat-label lang="en">Confirm password</mat-label>
-        <input
-          type="password"
-          matInput
-          [(ngModel)]="signup.password2"
-          [formControl]="password2FormControl"
-        />
+        <input type="password" matInput
+               [(ngModel)]="signup.password2"
+               [formControl]="password2FormControl"/>
         <mat-error *ngIf="password2FormControl.hasError('required')" lang="en"
         >Password is <strong>required</strong></mat-error
         >
@@ -73,17 +64,19 @@
     </p>
 
 
-    <!--forget password-->
-    <p>
-      <button mat-button lang="en">Forget</button>
-      <!-- placeholder element,hidden-->
-      <button class="placeholder"></button>
+    <div class="account">
+      <!--forget password-->
+      <p class="forget">
+        <button mat-button lang="en" style="color: red">Forget</button>
+      </p>
       <!--onSubmit-->
-      <button mat-raised-button (click)="onSubmit()"
-              lang="en" color="primary">
-        Sign Up
-      </button>
-    </p>
+      <p class="signup">
+        <button mat-raised-button (click)="onSubmit()"
+                lang="en" color="primary">
+          Sign Up
+        </button>
+      </p>
+    </div>
   </form>
 </div>
 <app-footer></app-footer>

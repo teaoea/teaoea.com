@@ -1,18 +1,11 @@
-form {
-  height: 50%;
-  min-width: 300px;
-  max-width: 350px;
-  text-align: center;
-}
-
 mat-form-field {
-  width: 90%;
+  width: 100%;
 }
 
 button {
   font-size: 16px;
-  width: 35%;
-  bottom: 10px;
+  width: 100%;
+  bottom: 15px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,15 +28,10 @@ button {
   }
 }
 
-.placeholder {
-  width: 20%;
-  visibility: hidden
-}
-
 // Dark mode
 @media (prefers-color-scheme: dark) {
   form {
-    background-color: #303030;
+    background-color: #424242;
   }
   input {
     color: #fbfbfb;
@@ -53,12 +41,75 @@ button {
 // Light mode
 @media (prefers-color-scheme: light) {
   form {
-    background-color: #fbfbfb;
+    background-color: #f3f3f3;
   }
   input {
     color: #181818;
   }
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0 0;
+  grid-template-areas:
+    ". . . . form form form form . . . ."
+    ". . . . form form form form . . . ."
+    ". . . . form form form form . . . ."
+    ". . . . form form form form . . . ."
+    ". . . . form form form form . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+}
 
+form {
+  grid-area: form;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+     ". username username ."
+    ". email email ."
+    ". password password ."
+    ". cp cp ."
+    ". account account .";
+}
 
+.username {
+  grid-area: username;
+}
+
+.email {
+  grid-area: email;
+}
+
+.password {
+  grid-area: password;
+}
+
+.cp {
+  grid-area: cp;
+}
+
+.account {
+  grid-area: account;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "forget forget forget . signup signup signup";
+}
+
+.forget {
+  grid-area: forget;
+}
+
+.signup {
+  grid-area: signup;
+}
