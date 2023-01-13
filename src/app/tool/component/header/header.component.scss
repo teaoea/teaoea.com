@@ -23,10 +23,28 @@ button {
 header {
   position: sticky;
   top: 0;
-  height: 70px;
-  display: flex;
-  display: -webkit-flex; // Safari
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px;
+  grid-template-areas: ". home notes group . search search search . login signup .";
+}
+
+.home {
+  grid-area: home;
+}
+
+.notes {
+  grid-area: notes;
+}
+
+.group {
+  grid-area: group;
+}
+
+.login {
+  grid-area: login;
+}
+
+.signup {
+  grid-area: signup;
 }
