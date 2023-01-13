@@ -12,6 +12,10 @@
   <p class="group">
     <button mat-button lang="en">Group</button>
   </p>
+
+  <p class="search">
+   <input type="text" lang="en" placeholder="search" class="search__input" (keyup.enter)="$any($event)">
+  </p>
   <!--
   如果用户未登录,显示'登录'和'注册'按钮,
   已登录,显示'个人中心'图标按钮

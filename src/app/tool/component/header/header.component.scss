@@ -26,7 +26,7 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 70px;
-  grid-template-areas: ". home notes group . search search search . login signup .";
+  grid-template-areas: ". home notes group . search search . . login signup .";
 }
 
 .home {
@@ -39,6 +39,25 @@ header {
 
 .group {
   grid-area: group;
+}
+
+.search {
+  grid-area: search;
+}
+
+input{
+  width: 100%;
+}
+
+.search__input {
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 100%;
+  transition: all ease-in-out .5s;
+  margin-right: -2rem;
 }
 
 .login {
