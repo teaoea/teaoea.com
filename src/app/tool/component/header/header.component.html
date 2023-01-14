@@ -1,20 +1,20 @@
 <header>
   <p class="home">
-    <button mat-button (keyup.enter)="home()" (click)="home()" lang="en">
+    <button mat-button class="mat_button" lang="en" (keyup.enter)="home()" (click)="home()">
       Home
     </button>
   </p>
 
   <p class="notes">
-    <button mat-button lang="en">Notes</button>
+    <button mat-button class="mat_button" lang="en">Notes</button>
   </p>
 
   <p class="group">
-    <button mat-button lang="en">Group</button>
+    <button mat-button class="mat_button" lang="en">Group</button>
   </p>
 
   <p class="search">
-   <input type="text" lang="en" placeholder="search" class="search__input" (keyup.enter)="$any($event)">
+    <input type="text" lang="en" placeholder="search" class="search__input" (keyup.enter)="$any($event)">
   </p>
   <!--
   如果用户未登录,显示'登录'和'注册'按钮,
@@ -23,14 +23,14 @@
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
     <p class="login">
-      <button mat-raised-button (keyup.enter)="login()"
-              (click)="login()" lang="en" color="primary">
+      <button mat-raised-button color="primary" lang="en"
+              (keyup.enter)="login()" (click)="login()">
         Login
       </button>
     </p>
     <p class="signup">
-      <button mat-raised-button (keyup.enter)="signup()"
-              (click)="signup()" lang="en" color="primary">
+      <button mat-raised-button color="primary" lang="en"
+              (keyup.enter)="signup()" (click)="signup()">
         Sign Up
       </button>
     </p>
