@@ -27,6 +27,9 @@ $dark-theme: mat.define-dark-theme(
   form {
     background-color: #181818;
   }
+  input {
+    color: #fbfbfb;
+  }
   button {
     color: #fbfbfb;
   }
@@ -34,5 +37,10 @@ $dark-theme: mat.define-dark-theme(
   .snackBar {
     background-color: #fbfbfb;
     color: #181818;
+  }
+  // search box
+  .search__input {
+    background-color: #181818;
+    color: #fbfbfb;
   }
 }

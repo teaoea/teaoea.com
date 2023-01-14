@@ -29,12 +29,20 @@ $light-theme: mat.define-light-theme(
   form {
     background-color: #f3f3f3;
   }
-
+  input {
+    color: #181818;
+  }
   button {
     color: #424242;
   }
+  // matSnackBar
   .snackBar {
     background-color: #424242;
     color: #fbfbfb;
+  }
+  // search box
+  .search__input {
+    background-color: #f4f2f2;
+    color: #424242;
   }
 }
