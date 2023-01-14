@@ -24,6 +24,10 @@ import {
   ErrorStateMatcher,
   ShowOnDirtyErrorStateMatcher,
 } from "@angular/material/core";
+import { UsernameComponent } from './tool/component/username/username.component';
+import { EmailComponent } from './tool/component/email/email.component';
+import { PasswordComponent } from './tool/component/password/password.component';
+import { ConfirmPasswordComponent } from './tool/component/confirm-password/confirm-password.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,10 @@ import {
     HomeComponent,
     SignupComponent,
     LoginComponent,
+    UsernameComponent,
+    EmailComponent,
+    PasswordComponent,
+    ConfirmPasswordComponent,
   ],
   imports: [
     BrowserModule,

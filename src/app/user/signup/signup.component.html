@@ -3,66 +3,20 @@
   <form>
     <!--username-->
     <p class="username">
-      <mat-form-field appearance="outline">
-        <mat-label lang="en">Username</mat-label>
-        <input type="text" matInput lang="en"
-               [(ngModel)]="signup.username"
-               [formControl]="usernameFormControl"
-        />
-        <mat-error *ngIf="usernameFormControl.hasError('required')" lang="en">
-          Username is <strong>required</strong></mat-error
-        >
-      </mat-form-field>
+      <app-username (username)="username($event)"></app-username>
     </p>
     <!--email-->
     <p class="email">
-      <mat-form-field appearance="outline">
-        <mat-label lang="en">Email</mat-label>
-        <input type="email" matInput lang="en"
-               [(ngModel)]="signup.email"
-               [formControl]="emailFormControl"
-
-        />
-        <mat-error
-          *ngIf="
-            emailFormControl.hasError('email') &&
-            !emailFormControl.hasError('required')
-          "
-          lang="en"
-        >Please enter a valid email address
-        </mat-error
-        >
-        <mat-error *ngIf="emailFormControl.hasError('required')" lang="en">
-          Email is <strong>required</strong>
-        </mat-error>
-      </mat-form-field>
+      <app-email (email)="email($event)"></app-email>
     </p>
     <!--password-->
     <p class="password">
-      <mat-form-field appearance="outline">
-        <mat-label lang="en">Password</mat-label>
-        <input type="password" matInput
-               [(ngModel)]="signup.password"
-               [formControl]="passwordFormControl"
-        />
-        <mat-error *ngIf="passwordFormControl.hasError('required')" lang="en"
-        >Password is <strong>required</strong></mat-error
-        >
-      </mat-form-field>
+      <app-password (password)="password($event)"></app-password>
     </p>
     <!--confirm password-->
-    <p class="cp">
-      <mat-form-field appearance="outline">
-        <mat-label lang="en">Confirm password</mat-label>
-        <input type="password" matInput
-               [(ngModel)]="signup.password2"
-               [formControl]="password2FormControl"/>
-        <mat-error *ngIf="password2FormControl.hasError('required')" lang="en"
-        >Password is <strong>required</strong></mat-error
-        >
-      </mat-form-field>
+    <p class="confirm_password">
+      <app-confirm-password (confirm_password)="confirm_password($event)"></app-confirm-password>
     </p>
-
 
     <div class="account">
       <!--forget password-->

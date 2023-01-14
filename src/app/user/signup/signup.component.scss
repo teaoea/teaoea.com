@@ -1,7 +1,3 @@
-mat-form-field {
-  width: 100%;
-}
-
 button {
   font-size: 16px;
   width: 100%;
@@ -33,18 +29,12 @@ button {
   form {
     background-color: #424242;
   }
-  input {
-    color: #fbfbfb;
-  }
 }
 
 // Light mode
 @media (prefers-color-scheme: light) {
   form {
     background-color: #f3f3f3;
-  }
-  input {
-    color: #181818;
   }
 }
 
@@ -93,7 +83,7 @@ form {
   grid-area: password;
 }
 
-.cp {
+.confirm_password {
   grid-area: cp;
 }
 

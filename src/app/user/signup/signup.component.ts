@@ -2,7 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 import { SignupService } from "./signup.service";
 import { Signup } from "./signup";
-import { FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-signup",
@@ -10,10 +9,11 @@ import { FormControl, Validators } from "@angular/forms";
   styleUrls: ["./signup.component.scss"],
 })
 export class SignupComponent implements OnInit {
-  constructor(private service: SignupService, private title: Title) {}
+  constructor(private service: SignupService, private title: Title) {
+  }
 
   ngOnInit(): void {
-    this.title.setTitle("注册 - teaoea");
+    this.title.setTitle("Sign Up - teaoea");
   }
 
   signup: Signup = {
@@ -23,24 +23,22 @@ export class SignupComponent implements OnInit {
     password2: "",
   };
 
-  NotShow = true;
+  username(value: string) {
+    this.signup.username = value
+  }
 
-  usernameFormControl = new FormControl(this.signup.username, [
-    Validators.required,
-  ]);
+  email(value: string) {
+    this.signup.email = value
+  }
 
-  emailFormControl = new FormControl(this.signup.email, [
-    Validators.required,
-    Validators.email,
-  ]);
+  password(value: string) {
+    this.signup.password = value
+  }
 
-  passwordFormControl = new FormControl(this.signup.password, [
-    Validators.required,
-  ]);
+  confirm_password(value: string) {
+    this.signup.password2 = value
+  }
 
-  password2FormControl = new FormControl(this.signup.password2, [
-    Validators.required,
-  ]);
   onSubmit() {
     this.service.post(this.signup);
   }

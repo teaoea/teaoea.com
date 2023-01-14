@@ -1,0 +1,17 @@
+mat-form-field{
+  width: 100%;
+}
+
+// Dark mode
+@media (prefers-color-scheme: dark) {
+  input {
+    color: #fbfbfb;
+  }
+}
+
+// Light mode
+@media (prefers-color-scheme: light) {
+  input {
+    color: #181818;
+  }
+}
