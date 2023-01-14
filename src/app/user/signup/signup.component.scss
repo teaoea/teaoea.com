@@ -4,40 +4,6 @@ button {
   bottom: 15px;
 }
 
-@media (prefers-color-scheme: dark) {
-  button {
-    color: #fbfbfb;
-  }
-  .snackBar {
-    background-color: #fbfbfb;
-    color: #181818;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  button {
-    color: #424242;
-  }
-  .snackBar {
-    background-color: #424242;
-    color: #fbfbfb;
-  }
-}
-
-// Dark mode
-@media (prefers-color-scheme: dark) {
-  form {
-    background-color: #424242;
-  }
-}
-
-// Light mode
-@media (prefers-color-scheme: light) {
-  form {
-    background-color: #f3f3f3;
-  }
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

@@ -24,4 +24,15 @@ $dark-theme: mat.define-dark-theme(
   header, footer {
     background-color: #424242;
   }
+  form {
+    background-color: #181818;
+  }
+  button {
+    color: #fbfbfb;
+  }
+  // matSnackBar
+  .snackBar {
+    background-color: #fbfbfb;
+    color: #181818;
+  }
 }

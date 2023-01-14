@@ -26,4 +26,15 @@ $light-theme: mat.define-light-theme(
   header, footer {
     background-color: #fbfbfb;
   }
+  form {
+    background-color: #f3f3f3;
+  }
+
+  button {
+    color: #424242;
+  }
+  .snackBar {
+    background-color: #424242;
+    color: #fbfbfb;
+  }
 }
