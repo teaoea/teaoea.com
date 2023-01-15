@@ -11,8 +11,6 @@ import {
   MatSnackBarModule,
 } from "@angular/material/snack-bar";
 import { HeaderComponent } from "./tool/component/header/header.component";
-import { MatGridListModule } from "@angular/material/grid-list";
-import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { HomeComponent } from "./tool/component/home/home.component";
@@ -47,13 +45,11 @@ import { ConfirmPasswordComponent } from './tool/component/confirm-password/conf
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatGridListModule,
+    ReactiveFormsModule,
     MatSnackBarModule,
-    MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatInputModule,
-    ReactiveFormsModule,
   ],
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 15000}},
