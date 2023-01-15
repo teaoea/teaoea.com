@@ -24,50 +24,55 @@ export class SignupService {
       .subscribe({
         next: (response) => {
           localStorage.setItem("Authorization", response.body.message);
+          this.snackBar.open('Account sign up is complete, and will return to the homepage soon',
+            '', {
+              panelClass: 'snackBar'
+            })
           this.router.navigate(["/"], {relativeTo: this.route}).then();
         },
         error: (error) => {
           switch (error.status) {
             case 460:
-              this.snackBar.open("两次输入的密码不一致", "", {
-                duration: 1500,
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('The two entered passwords do not match',
+                '', {
+                  panelClass: 'snackBar'
+                });
               break;
             case 461:
-              this.snackBar.open("密码不够安全,请使用更安全的密码", "", {
-                duration: 1500,
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('The password is not secure enough, please use a more secure password',
+                '', {
+                  panelClass: 'snackBar'
+                });
               break;
             case 462:
-              this.snackBar.open("用户名已被注册", "", {
-                duration: 1500,
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('Username already taken',
+                '', {
+                  panelClass: 'snackBar'
+                });
               break;
             case 463:
-              this.snackBar.open("用户名只支持字母,谨防信息泄露,不要使用真名", "", {
-                duration: 1500,
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('The username only supports letters, beware of information leakage, do not use real names',
+                '', {
+                  panelClass: 'snackBar'
+                });
               break;
             case 464:
-              this.snackBar.open("邮箱已被注册", "", {
-                duration: 1500,
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('Email address already taken',
+                '', {
+                  panelClass: 'snackBar'
+                });
               break;
             case 465:
-              this.snackBar.open("当前邮箱地址不支持注册", "", {
-                duration: 1500,
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('The current email address does not support sign up',
+                '', {
+                  panelClass: 'snackBar'
+                });
               break;
             default:
-              this.snackBar.open("注册失败,请联系管理员", "", {
-                panelClass: 'snackBar'
-              });
+              this.snackBar.open('Sign up failed, please contact the administrator',
+                '', {
+                  panelClass: 'snackBar'
+                });
           }
         },
       });

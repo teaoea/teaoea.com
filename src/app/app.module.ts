@@ -56,7 +56,7 @@ import { ConfirmPasswordComponent } from './tool/component/confirm-password/conf
     ReactiveFormsModule,
   ],
   providers: [
-    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2000 } },
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 15000 } },
     { provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher },
   ],
   bootstrap: [AppComponent],
