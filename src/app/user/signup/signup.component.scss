@@ -6,25 +6,21 @@ button {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
   gap: 0 0;
   grid-template-areas:
-    ". . . . form form form form . . . ."
-    ". . . . form form form form . . . ."
-    ". . . . form form form form . . . ."
-    ". . . . form form form form . . . ."
-    ". . . . form form form form . . . ."
-    ". . . . . . . . . . . ."
-    ". . . . . . . . . . . ."
-    ". . . . . . . . . . . ."
-    ". . . . . . . . . . . ."
-    ". . . . . . . . . . . ."
+    ". . . form form form . . "
+    ". . . form form form . . "
+    ". . . form form form . . "
+    ". . . form form form . . "
+    ". . . form form form . . "
 }
 
 form {
   grid-area: form;
   width: 100%;
+  max-width: 500px;
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
