@@ -7,9 +7,10 @@ button {
 .container {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0 0;
   grid-template-areas:
+  ". . . . . . . ."
     ". . . form form form . . "
     ". . . form form form . . "
     ". . . form form form . . "
