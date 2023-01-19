@@ -2,6 +2,7 @@
   "baseUrl": "http://localhost:1234",
   "user": {
     "signup": "/v1/account/signup",
+    "login": "/v1/account/login",
     "auth": "/v1/account/auth",
     "send_mail": "/v1/account/send_mail_code"
   }

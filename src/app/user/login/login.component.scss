@@ -1,0 +1,58 @@
+button {
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  bottom: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0 0;
+  grid-template-areas:
+    ". . . . . . . ."
+    ". . . form form form . . "
+    ". . . form form form . . "
+    ". . . form form form . . "
+}
+
+form {
+  grid-area: form;
+  width: 100%;
+  min-width: 400px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    ". email email ."
+    ". password password ."
+    ". account account .";
+}
+
+.email {
+  grid-area: email;
+}
+
+.password {
+  grid-area: password;
+}
+.account {
+  grid-area: account;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "forget . login";
+}
+
+.forget {
+  grid-area: forget;
+}
+
+.login {
+  grid-area: login;
+}

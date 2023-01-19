@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Title} from "@angular/platform-browser";
+import {LoginService} from "./login.service";
+import {Login} from "./login";
 
 @Component({
   selector: 'app-login',
@@ -7,9 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(
+    private title: Title,
+    private service: LoginService
+  ) {
   }
 
+  ngOnInit(): void {
+    this.title.setTitle('Login - teaoea')
+  }
+
+  login: Login = {
+    email: "",
+    password: ""
+  }
+
+  email(value: string) {
+    this.login.email = value
+  }
+
+  password(value: string) {
+    this.login.password = value
+  }
+  onSubmit() {
+    this.service.post(this.login)
+  }
 }

@@ -1,1 +1,25 @@
-<p>login works!</p>
+<app-header></app-header>
+<div class="container">
+  <form>
+    <p class="email">
+      <app-email (email)="email($event)"></app-email>
+    </p>
+    <p class="password">
+      <app-password (password)="password($event)"></app-password>
+    </p>
+    <div class="account">
+      <!--forget password-->
+      <p class="forget">
+        <button mat-button lang="en" style="color: red">Forget</button>
+      </p>
+      <!--onSubmit-->
+      <p class="login">
+        <button mat-raised-button (click)="onSubmit()"
+                lang="en" color="primary">
+          Login
+        </button>
+      </p>
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>
