@@ -1,11 +1,4 @@
-# [Welcome](https://teaoea.com)
-
-## public components
-
-- [app-header](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/header)
-- [app-footer](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/footer)
-- [app-username](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/username)
-- [app-email](https://github.com/teaoea/teaoea.com/tree/main/src/app/tool/component/user/email)
+# [https://teaoea.com](https://teaoea.com)
 
 ## pages
 
