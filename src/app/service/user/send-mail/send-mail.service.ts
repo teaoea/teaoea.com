@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import url from '../urls.json'
-import {options} from "../http";
+import url from '../../urls.json'
+import {options} from "../../http";
 import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Injectable({

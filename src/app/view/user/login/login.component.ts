@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import {Title} from "@angular/platform-browser";
-import {LoginService} from "../../../service/login/login.service";
-import {Login} from "./login";
+import { Component, OnInit } from '@angular/core';
+import { Title } from "@angular/platform-browser";
+import { LoginService } from "../../../service/user/login/login.service";
+import { Login } from "../../../service/user/login/login";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: [ './login.component.scss' ]
 })
 export class LoginComponent implements OnInit {
 
@@ -32,6 +32,7 @@ export class LoginComponent implements OnInit {
   password(value: string) {
     this.login.password = value
   }
+
   onSubmit() {
     this.service.post(this.login)
   }

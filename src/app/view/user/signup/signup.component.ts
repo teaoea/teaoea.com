@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Title } from "@angular/platform-browser";
-import { SignupService } from "./signup.service";
-import { Signup } from "./signup";
+import { SignupService } from "../../../service/user/signup/signup.service";
+import { Signup } from "../../../service/user/signup/signup";
 
 @Component({
   selector: "app-signup",
