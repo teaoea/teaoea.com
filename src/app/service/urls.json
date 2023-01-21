@@ -5,5 +5,8 @@
     "login": "/v1/account/login",
     "auth": "/v1/account/auth",
     "send_mail": "/v1/account/send_mail_code"
+  },
+  "angular": {
+    "user_validator": "/v1/angular/user_validator"
   }
 }

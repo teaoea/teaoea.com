@@ -6,4 +6,7 @@
   <mat-error *ngIf="formControl.hasError('required')" lang="en">
     Username is <strong>required</strong></mat-error
   >
+  <mat-error *ngIf="formControl.hasError('hasError')" lang="en">
+    Username already in use
+  </mat-error>
 </mat-form-field>
