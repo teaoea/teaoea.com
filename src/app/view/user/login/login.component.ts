@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
-import {LoginService} from "./login.service";
+import {LoginService} from "../../../service/login/login.service";
 import {Login} from "./login";
 
 @Component({

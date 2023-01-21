@@ -2,9 +2,9 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Router} from "@angular/router";
 import {MatSnackBar} from "@angular/material/snack-bar";
-import {Login} from "./login";
-import url from "../../../service/urls.json";
-import {options} from "../../../service/http";
+import {Login} from "../../view/user/login/login";
+import url from "../urls.json";
+import {options} from "../http";
 
 @Injectable({
   providedIn: 'root'
