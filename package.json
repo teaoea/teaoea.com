@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "@milkdown/core": "^6.5.4",
+    "@milkdown/plugin-math": "^6.5.4",
     "@milkdown/preset-commonmark": "^6.5.4",
     "@milkdown/theme-nord": "^6.5.4",
     "rxjs": "~7.5.0",
