@@ -16,6 +16,6 @@ export class UserValidatorService {
 
   userInputValidator(key: string, value: string): Observable<HttpResponse<any>> {
     return this.http
-      .post<any>(`${url.baseUrl}${url.angular.user_validator}`, {key, value}, options)
+      .post<any>(`${url.baseUrl}${url.angular.user_validator}`, {key: key, value: value}, options)
   }
 }
