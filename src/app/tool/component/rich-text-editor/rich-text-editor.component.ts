@@ -1,5 +1,7 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormControl, Validators } from "@angular/forms";
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { defaultValueCtx, Editor, rootCtx } from "@milkdown/core";
+import { nord } from "@milkdown/theme-nord";
+import { commonmark } from "@milkdown/preset-commonmark";
 
 @Component({
   selector: 'rich-text-editor',
@@ -12,17 +14,26 @@ export class RichTextEditorComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+  }
+
+  // @ts-ignore
+  @ViewChild("editorRef") editorRef: ElementRef
+
+  defaultValue = "# 💗 Angular"
+
+  ngAfterViewInit() {
+    Editor.make()
+      .config((ctx) => {
+        ctx.set(rootCtx, this.editorRef.nativeElement);
+        ctx.set(defaultValueCtx, this.defaultValue)
+      })
+      .use(nord)
+      .use(commonmark)
+      .create().then()
   }
 
   @Output() text: EventEmitter<any> = new EventEmitter
 
   value: string = ''
-
-  newText(value: string) {
-    this.text.emit(value);
-  }
-
-  formControl = new FormControl(this.value, [
-    Validators.required,
-  ]);
 }

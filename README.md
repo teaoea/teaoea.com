@@ -8,5 +8,7 @@
 
 ## thanks
 
-- [angular](https://github.com/angular/angular)
-- [angular material](https://github.com/angular/components)
+- [angular](https://github.com/angular/angular) - web frame
+- [angular material](https://github.com/angular/components) - web ui library
+
+* [milkdown](https://github.com/Saul-Mirone/milkdown) - rich-text-editor

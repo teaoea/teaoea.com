@@ -13,7 +13,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { HomeComponent } from "./tool/component/home/home.component";
 import { FooterComponent } from "./tool/component/footer/footer.component";
 import { MatInputModule } from "@angular/material/input";
-import { ReactiveFormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { LoginComponent } from "./user/login/login.component";
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from "@angular/material/core";
 import { UsernameComponent } from './tool/component/username/username.component';
@@ -46,6 +46,7 @@ import { RichTextEditorComponent } from './tool/component/rich-text-editor/rich-
     MatButtonModule,
     MatIconModule,
     MatInputModule,
+    FormsModule,
   ],
   providers: [
     {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 15000}},
