@@ -21,7 +21,6 @@ import { EmailComponent } from './component/email/email.component';
 import { PasswordComponent } from './component/password/password.component';
 import { ConfirmPasswordComponent } from './component/confirm-password/confirm-password.component';
 import { RichTextEditorComponent } from './component/rich-text-editor/rich-text-editor.component';
-import { UserDirectiveDirective } from './component/_directive/user-directive.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +35,6 @@ import { UserDirectiveDirective } from './component/_directive/user-directive.di
     PasswordComponent,
     ConfirmPasswordComponent,
     RichTextEditorComponent,
-    UserDirectiveDirective,
   ],
   imports: [
     BrowserModule,
