@@ -3,8 +3,8 @@ import {HttpClient} from "@angular/common/http";
 import {ActivatedRoute, Router} from "@angular/router";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {Login} from "./login";
-import url from "../../tool/http/urls.json";
-import {options} from "../../tool/http/http";
+import url from "../../../service/urls.json";
+import {options} from "../../../service/http";
 
 @Injectable({
   providedIn: 'root'

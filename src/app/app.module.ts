@@ -1,26 +1,27 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from "./app-routing.module";
+import { AppRouterModule } from "./router/router.module";
 import { AppComponent } from "./app.component";
-import { SignupComponent } from "./user/signup/signup.component";
+import { SignupComponent } from "./view/user/signup/signup.component";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS, MatSnackBarModule } from "@angular/material/snack-bar";
-import { HeaderComponent } from "./tool/component/header/header.component";
+import { HeaderComponent } from "./component/header/header.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
-import { HomeComponent } from "./tool/component/home/home.component";
-import { FooterComponent } from "./tool/component/footer/footer.component";
+import { HomeComponent } from "./view/home/home.component";
+import { FooterComponent } from "./component/footer/footer.component";
 import { MatInputModule } from "@angular/material/input";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { LoginComponent } from "./user/login/login.component";
+import { LoginComponent } from "./view/user/login/login.component";
 import { ErrorStateMatcher, ShowOnDirtyErrorStateMatcher } from "@angular/material/core";
-import { UsernameComponent } from './tool/component/username/username.component';
-import { EmailComponent } from './tool/component/email/email.component';
-import { PasswordComponent } from './tool/component/password/password.component';
-import { ConfirmPasswordComponent } from './tool/component/confirm-password/confirm-password.component';
-import { RichTextEditorComponent } from './tool/component/rich-text-editor/rich-text-editor.component';
+import { UsernameComponent } from './component/username/username.component';
+import { EmailComponent } from './component/email/email.component';
+import { PasswordComponent } from './component/password/password.component';
+import { ConfirmPasswordComponent } from './component/confirm-password/confirm-password.component';
+import { RichTextEditorComponent } from './component/rich-text-editor/rich-text-editor.component';
+import { UserDirectiveDirective } from './component/_directive/user-directive.directive';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,11 @@ import { RichTextEditorComponent } from './tool/component/rich-text-editor/rich-
     PasswordComponent,
     ConfirmPasswordComponent,
     RichTextEditorComponent,
+    UserDirectiveDirective,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRouterModule,
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
