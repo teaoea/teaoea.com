@@ -4,7 +4,8 @@
     "signup": "/v1/account/signup",
     "login": "/v1/account/login",
     "auth": "/v1/account/auth",
-    "send_mail": "/v1/account/send_mail_code"
+    "send_mail": "/v1/account/send_mail_code",
+    "me": "/v1/account/me"
   },
   "angular": {
     "user_validator": "/v1/angular/user_validator"
