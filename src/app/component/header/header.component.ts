@@ -9,6 +9,9 @@ import { ActivatedRoute, Router } from "@angular/router";
 })
 export class HeaderComponent implements OnInit {
 
+  username: string = ''
+  show: boolean = true
+
   constructor(
     private authService: AuthService,
     private router: Router,
@@ -20,9 +23,6 @@ export class HeaderComponent implements OnInit {
     this.auth()
   }
 
-  username: string = ''
-  show: boolean = true
-
   auth() {
     return this.authService.authorization().subscribe({
       next: (response) => {
@@ -32,19 +32,19 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  async home() {
-    return this.router.navigate(['/'], { relativeTo: this.route });
+  home() {
+    return this.router.navigate(['/'], {relativeTo: this.route});
   }
 
-  async login() {
-    return this.router.navigate(['/account/login'], { relativeTo: this.route }).then();
+  login() {
+    return this.router.navigate(['/account/login'], {relativeTo: this.route}).then();
   }
 
-  async signup() {
-    return this.router.navigate(['/account/signup'], { relativeTo: this.route }).then();
+  signup() {
+    return this.router.navigate(['/account/signup'], {relativeTo: this.route}).then();
   }
 
-  async me() {
-    return this.router.navigate(['/account/me'], { relativeTo: this.route }).then();
+  me() {
+    return this.router.navigate(['/account/info'], {relativeTo: this.route}).then();
   }
 }
