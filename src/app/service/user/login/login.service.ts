@@ -23,7 +23,7 @@ export class LoginService {
       .subscribe({
         next: (response) => {
           localStorage.setItem('Authorization', response.body.message);
-          this.router.navigate(['/'], { relativeTo: this.route }).then();
+          window.location.replace(window.location.origin);
         },
         error: (err) => {
           switch (err.status) {

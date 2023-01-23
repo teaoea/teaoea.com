@@ -1,71 +1,54 @@
 <header>
-  <p class="home">
-    <button
-      (click)="home()"
-      (keyup.enter)="home()"
-      class="mat_button"
-      lang="en"
-      mat-button
-    >
+  <p class='home'>
+    <button class='mat_button' lang='en' mat-button
+            routerLink='/home' routerLinkActive='active'>
       Home
     </button>
   </p>
 
-  <p class="notes">
-    <button class="mat_button" lang="en" mat-button>Notes</button>
+  <p class='notes'>
+    <button class='mat_button' lang='en' mat-button
+            routerLink='/notes' routerLinkActive='active'>
+      Notes
+    </button>
   </p>
 
-  <p class="group">
-    <button class="mat_button" lang="en" mat-button>Group</button>
+  <p class='group'>
+    <button class='mat_button' lang='en' mat-button
+            routerLink='/groups' routerLinkActive='active'>
+      Groups
+    </button>
   </p>
 
-  <p class="search">
-    <input
-      (keyup.enter)="$any($event)"
-      class="search__input"
-      lang="en"
-      placeholder="search"
-      type="text"
+  <p class='search'>
+    <input class='search__input' lang='en'
+           placeholder='search' type='text'
     />
   </p>
   <!--
   如果用户未登录,显示'登录'和'注册'按钮,
   已登录,显示'个人中心'图标按钮
   -->
-  <div *ngIf="show; then True; else False"></div>
+  <div *ngIf='show; then True; else False'></div>
   <ng-template #True>
-    <p class="login">
-      <button
-        (click)="login()"
-        (keyup.enter)="login()"
-        color="primary"
-        lang="en"
-        mat-raised-button
-      >
+    <p class='login'>
+      <button color='primary' lang='en' mat-raised-button
+              routerLink='/account/login' routerLinkActive='active'>
         Login
       </button>
     </p>
-    <p class="signup">
-      <button
-        (click)="signup()"
-        (keyup.enter)="signup()"
-        color="primary"
-        lang="en"
-        mat-raised-button
-      >
+    <p class='signup'>
+      <button color='primary' lang='en' mat-raised-button
+              routerLink='/account/signup' routerLinkActive='active'>
         Sign Up
       </button>
     </p>
   </ng-template>
   <ng-template #False>
-    <p class="me">
-      <input
-        (click)="me()"
-        (keyup.enter)="me()"
-        alt="account info"
-        class="button_avatar"
-        src="assets/img/avatar/avatar_1.jpg"
-        type="image"
+    <p class='me'>
+      <input alt='account info' class='button_avatar'
+             routerLink='/account/info' routerLinkActive='active'
+             src='assets/img/avatar/avatar_1.jpg' type='image'
       />
     </p>
   </ng-template>

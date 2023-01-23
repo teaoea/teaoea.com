@@ -9,16 +9,16 @@ import { Login } from '../../../service/user/login/login';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  login: Login = {
+    email: '',
+    password: '',
+  };
+
   constructor(private title: Title, private service: LoginService) {}
 
   ngOnInit(): void {
     this.title.setTitle('Login - teaoea');
   }
-
-  login: Login = {
-    email: '',
-    password: '',
-  };
 
   email(value: string) {
     this.login.email = value;
