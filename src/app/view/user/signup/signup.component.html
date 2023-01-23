@@ -15,7 +15,9 @@
     </p>
     <!--confirm password-->
     <p class="confirm_password">
-      <app-confirm-password (confirm_password)="confirm_password($event)"></app-confirm-password>
+      <app-confirm-password
+        (confirm_password)="confirm_password($event)"
+      ></app-confirm-password>
     </p>
 
     <div class="account">
@@ -25,8 +27,12 @@
       </p>
       <!--onSubmit-->
       <p class="signup">
-        <button mat-raised-button (click)="onSubmit()"
-                lang="en" color="primary">
+        <button
+          mat-raised-button
+          (click)="onSubmit()"
+          lang="en"
+          color="primary"
+        >
           Sign Up
         </button>
       </p>

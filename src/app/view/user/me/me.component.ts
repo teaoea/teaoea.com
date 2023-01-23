@@ -1,18 +1,18 @@
-import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Router } from "@angular/router";
-import { Me } from "src/app/service/user/me/me";
-import { MeService } from "src/app/service/user/me/me.service";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Me } from 'src/app/service/user/me/me';
+import { MeService } from 'src/app/service/user/me/me.service';
 
 @Component({
-  selector: "app-me",
-  templateUrl: "./me.component.html",
-  styleUrls: ["./me.component.scss"],
+  selector: 'app-me',
+  templateUrl: './me.component.html',
+  styleUrls: ['./me.component.scss'],
 })
 export class MeComponent implements OnInit {
   constructor(
     private service: MeService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit(): void {
@@ -21,11 +21,11 @@ export class MeComponent implements OnInit {
 
   me: Me = {
     id: 0,
-    username: "",
-    email: "",
+    username: '',
+    email: '',
     email_active: false,
-    avatar: "",
-    gender: "",
+    avatar: '',
+    gender: '',
   };
 
   info() {
@@ -39,7 +39,7 @@ export class MeComponent implements OnInit {
         this.me.gender = response.body.gender;
       },
       error: () => {
-        this.router.navigate(["account/login"], { relativeTo: this.route });
+        this.router.navigate(['account/login'], { relativeTo: this.route });
       },
     });
   }

@@ -19,7 +19,7 @@ header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 70px;
-  grid-template-areas: ". home notes group . search search . . login signup .";
+  grid-template-areas: '. home notes group . search search . . login signup .';
 }
 
 .home {
@@ -48,7 +48,7 @@ input {
   padding: 0.7rem 1rem;
   border-radius: 30px;
   width: 100%;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   margin-right: -2rem;
 }
 

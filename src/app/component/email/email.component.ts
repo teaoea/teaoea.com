@@ -1,22 +1,19 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormControl, Validators } from "@angular/forms";
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-email',
   templateUrl: './email.component.html',
-  styleUrls: ['./email.component.scss']
+  styleUrls: ['./email.component.scss'],
 })
 export class EmailComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
+  value: string = '';
 
-  value: string = ''
-
-  @Output() email: EventEmitter<string> = new EventEmitter()
+  @Output() email: EventEmitter<string> = new EventEmitter();
 
   newEmail(value: string) {
     this.email.emit(value);

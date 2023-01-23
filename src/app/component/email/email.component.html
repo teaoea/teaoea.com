@@ -1,17 +1,19 @@
 <mat-form-field appearance="outline">
   <mat-label lang="en">Email</mat-label>
-  <input type="email" matInput lang="en" required
-         [(ngModel)]="value" [formControl]="formControl"
-         (keyup)="newEmail(value)"/>
-  <mat-error
-    *ngIf="
-            formControl.hasError('email') &&
-            !formControl.hasError('required')
-          "
+  <input
+    type="email"
+    matInput
     lang="en"
-  >Please enter a valid email address
-  </mat-error
-  >
+    required
+    [(ngModel)]="value"
+    [formControl]="formControl"
+    (keyup)="newEmail(value)"
+  />
+  <mat-error
+    *ngIf="formControl.hasError('email') && !formControl.hasError('required')"
+    lang="en"
+    >Please enter a valid email address
+  </mat-error>
   <mat-error *ngIf="formControl.hasError('required')" lang="en">
     Email is <strong>required</strong>
   </mat-error>

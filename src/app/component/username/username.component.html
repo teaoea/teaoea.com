@@ -1,8 +1,14 @@
 <mat-form-field appearance="outline">
   <mat-label lang="en">Username</mat-label>
-  <input type="text" matInput lang="en" required
-         [(ngModel)]="value" [formControl]="formControl"
-         (keyup)="newUsername(value)"/>
+  <input
+    type="text"
+    matInput
+    lang="en"
+    required
+    [(ngModel)]="value"
+    [formControl]="formControl"
+    (keyup)="newUsername(value)"
+  />
   <mat-error *ngIf="formControl.hasError('required')" lang="en">
     Username is <strong>required</strong></mat-error
   >

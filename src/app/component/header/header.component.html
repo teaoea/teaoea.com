@@ -1,6 +1,12 @@
 <header>
   <p class="home">
-    <button (click)="home()" (keyup.enter)="home()" class="mat_button" lang="en" mat-button>
+    <button
+      (click)="home()"
+      (keyup.enter)="home()"
+      class="mat_button"
+      lang="en"
+      mat-button
+    >
       Home
     </button>
   </p>
@@ -14,7 +20,13 @@
   </p>
 
   <p class="search">
-    <input (keyup.enter)="$any($event)" class="search__input" lang="en" placeholder="search" type="text">
+    <input
+      (keyup.enter)="$any($event)"
+      class="search__input"
+      lang="en"
+      placeholder="search"
+      type="text"
+    />
   </p>
   <!--
   如果用户未登录,显示'登录'和'注册'按钮,
@@ -23,23 +35,37 @@
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
     <p class="login">
-      <button (click)="login()" (keyup.enter)="login()" color="primary"
-              lang="en" mat-raised-button>
+      <button
+        (click)="login()"
+        (keyup.enter)="login()"
+        color="primary"
+        lang="en"
+        mat-raised-button
+      >
         Login
       </button>
     </p>
     <p class="signup">
-      <button (click)="signup()" (keyup.enter)="signup()" color="primary"
-              lang="en" mat-raised-button>
+      <button
+        (click)="signup()"
+        (keyup.enter)="signup()"
+        color="primary"
+        lang="en"
+        mat-raised-button
+      >
         Sign Up
       </button>
     </p>
   </ng-template>
   <ng-template #False>
     <p class="me">
-      <input (click)="me()" (keyup.enter)="me()"
-             alt="account info" class="button_avatar"
-             src="assets/img/avatar/avatar_1.jpg" type="image"
+      <input
+        (click)="me()"
+        (keyup.enter)="me()"
+        alt="account info"
+        class="button_avatar"
+        src="assets/img/avatar/avatar_1.jpg"
+        type="image"
       />
     </p>
   </ng-template>

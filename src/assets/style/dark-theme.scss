@@ -1,4 +1,4 @@
-@use "@angular/material" as mat;
+@use '@angular/material' as mat;
 
 @include mat.core();
 
@@ -6,13 +6,13 @@ $primary: mat.define-palette(mat.$indigo-palette, 500);
 $accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 $warn: mat.define-palette(mat.$red-palette);
 $dark-theme: mat.define-dark-theme(
-    (
-      color:(
-        primary:$primary,
-        accent: $accent,
-        warn: $warn,
-      )
-    )
+  (
+    color: (
+      primary: $primary,
+      accent: $accent,
+      warn: $warn,
+    ),
+  )
 );
 // Apply the dark themes
 @media (prefers-color-scheme: dark) {
@@ -21,7 +21,8 @@ $dark-theme: mat.define-dark-theme(
   body {
     background-color: #181818;
   }
-  header, footer {
+  header,
+  footer {
     background-color: #424242;
   }
   form {

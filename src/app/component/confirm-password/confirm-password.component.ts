@@ -1,28 +1,23 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormControl, Validators } from "@angular/forms";
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-confirm-password',
   templateUrl: './confirm-password.component.html',
-  styleUrls: ['./confirm-password.component.scss']
+  styleUrls: ['./confirm-password.component.scss'],
 })
 export class ConfirmPasswordComponent implements OnInit {
+  constructor() {}
 
-  constructor() {
-  }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
+  value: string = '';
 
-  value: string = ''
-
-  @Output() confirm_password: EventEmitter<string> = new EventEmitter()
+  @Output() confirm_password: EventEmitter<string> = new EventEmitter();
 
   newConfirmPassword(value: string) {
     this.confirm_password.emit(value);
   }
 
-  formControl = new FormControl(this.value, [
-    Validators.required,
-  ]);
+  formControl = new FormControl(this.value, [Validators.required]);
 }

@@ -1,39 +1,34 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from "@angular/platform-browser";
-import { LoginService } from "../../../service/user/login/login.service";
-import { Login } from "../../../service/user/login/login";
+import { Title } from '@angular/platform-browser';
+import { LoginService } from '../../../service/user/login/login.service';
+import { Login } from '../../../service/user/login/login';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: [ './login.component.scss' ]
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-
-  constructor(
-    private title: Title,
-    private service: LoginService
-  ) {
-  }
+  constructor(private title: Title, private service: LoginService) {}
 
   ngOnInit(): void {
-    this.title.setTitle('Login - teaoea')
+    this.title.setTitle('Login - teaoea');
   }
 
   login: Login = {
-    email: "",
-    password: ""
-  }
+    email: '',
+    password: '',
+  };
 
   email(value: string) {
-    this.login.email = value
+    this.login.email = value;
   }
 
   password(value: string) {
-    this.login.password = value
+    this.login.password = value;
   }
 
   onSubmit() {
-    this.service.post(this.login)
+    this.service.post(this.login);
   }
 }
