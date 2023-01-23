@@ -21,7 +21,7 @@ export class LoginService {
 
   post(login: Login) {
     return this.http
-      .post<any>(`${url.baseUrl}${url.user.signup}`, login, options)
+      .post<any>(`${url.baseUrl}${url.user.login}`, login, options)
       .subscribe({
         next: (response) => {
           localStorage.setItem("Authorization", response.body.message);
