@@ -11,8 +11,8 @@ import {
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import {
-  MatSnackBarModule,
   MAT_SNACK_BAR_DEFAULT_OPTIONS,
+  MatSnackBarModule,
 } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
@@ -28,6 +28,8 @@ import { HomeComponent } from './view/home/home.component';
 import { LoginComponent } from './view/user/login/login.component';
 import { MeComponent } from './view/user/me/me.component';
 import { SignupComponent } from './view/user/signup/signup.component';
+import { NotFoundComponent } from './view/not-found/not-found.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { SignupComponent } from './view/user/signup/signup.component';
     ConfirmPasswordComponent,
     RichTextEditorComponent,
     MeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { SignupComponent } from './view/user/signup/signup.component';
     MatIconModule,
     MatInputModule,
     FormsModule,
+    MatCardModule,
   ],
   providers: [
     { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 15000 } },

@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0 0;
+  grid-template-areas:
+    '. . . . . . . .'
+    '. . . . . . . . '
+    '. . . . . . . . '
+    '. . . text text text . . ';
+}
+
+.card {
+  grid-area: text;
+
+  display: grid;
+  gap: 0 0;
+  grid-template-areas: '. image text text .';
+  height: 54px;
+}
+
+input {
+  width: 60px;
+  grid-area: image;
+}
+
+p {
+  grid-area: text;
+  @media (prefers-color-scheme: dark) {
+    color: #f3f3f3;
+  }
+}
