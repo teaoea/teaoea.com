@@ -7,7 +7,7 @@ export const options = {
   observe: "response" as "response",
 };
 
-const authorization: any = localStorage.getItem("Authorization") != null
+const authorization: any = localStorage.getItem("Authorization")
 export const authOptions = {
   headers: new HttpHeaders({
     "Content-Type": "application/json",
