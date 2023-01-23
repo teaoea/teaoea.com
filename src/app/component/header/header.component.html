@@ -1,20 +1,20 @@
 <header>
   <p class="home">
-    <button mat-button class="mat_button" lang="en" (keyup.enter)="home()" (click)="home()">
+    <button (click)="home()" (keyup.enter)="home()" class="mat_button" lang="en" mat-button>
       Home
     </button>
   </p>
 
   <p class="notes">
-    <button mat-button class="mat_button" lang="en">Notes</button>
+    <button class="mat_button" lang="en" mat-button>Notes</button>
   </p>
 
   <p class="group">
-    <button mat-button class="mat_button" lang="en">Group</button>
+    <button class="mat_button" lang="en" mat-button>Group</button>
   </p>
 
   <p class="search">
-    <input type="text" lang="en" placeholder="search" class="search__input" (keyup.enter)="$any($event)">
+    <input (keyup.enter)="$any($event)" class="search__input" lang="en" placeholder="search" type="text">
   </p>
   <!--
   如果用户未登录,显示'登录'和'注册'按钮,
@@ -23,24 +23,24 @@
   <div *ngIf="show; then True; else False"></div>
   <ng-template #True>
     <p class="login">
-      <button mat-raised-button color="primary" lang="en"
-              (keyup.enter)="login()" (click)="login()">
+      <button (click)="login()" (keyup.enter)="login()" color="primary"
+              lang="en" mat-raised-button>
         Login
       </button>
     </p>
     <p class="signup">
-      <button mat-raised-button color="primary" lang="en"
-              (keyup.enter)="signup()" (click)="signup()">
+      <button (click)="signup()" (keyup.enter)="signup()" color="primary"
+              lang="en" mat-raised-button>
         Sign Up
       </button>
     </p>
   </ng-template>
   <ng-template #False>
     <p class="me">
-      <button mat-mini-fab aria-label="account setting"
-              (click)="me()" (keyup.enter)="me()">
-        <mat-icon>manage_accounts</mat-icon>
-      </button>
+      <input (click)="me()" (keyup.enter)="me()"
+             alt="account info" class="button_avatar"
+             src="assets/img/avatar/avatar_1.jpg" type="image"
+      />
     </p>
   </ng-template>
 </header>

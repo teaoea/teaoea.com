@@ -15,21 +15,16 @@ export class HeaderComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
   ) {
-  }
-
-  ngOnInit(): void {
-    this.auth()
-  }
-
-  auth() {
-    return this.authService.authorization().subscribe({
-      next: (response) => {
-        this.username = response.body.message;
+    authService.authorization().subscribe({
+      next: () => {
         this.show = false;
       }
     })
+  }
+
+  ngOnInit(): void {
   }
 
   home() {
