@@ -22,12 +22,9 @@
            placeholder='search' type='text'
     />
   </p>
-  <!--
-  如果用户未登录,显示'登录'和'注册'按钮,
-  已登录,显示'个人中心'图标按钮
-  -->
-  <div *ngIf='show; then True; else False'></div>
-  <ng-template #True>
+
+  <div *ngIf='show; then login; else me'></div>
+  <ng-template #login>
     <p class='login'>
       <button color='primary' lang='en' mat-raised-button routerLink='/account/login'>
         Login
@@ -39,7 +36,7 @@
       </button>
     </p>
   </ng-template>
-  <ng-template #False>
+  <ng-template #me>
     <p class='me'>
       <input alt='account info' class='button_avatar' routerLink='/account/{{user_id}}'
              src='https://i.328888.xyz/2023/01/24/bZkx5.jpeg' type='image'
