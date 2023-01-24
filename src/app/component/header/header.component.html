@@ -1,21 +1,18 @@
 <header>
   <p class='home'>
-    <button class='mat_button' lang='en' mat-button
-            routerLink='/home' routerLinkActive='active'>
+    <button class='mat_button' lang='en' mat-button routerLink='/home'>
       Home
     </button>
   </p>
 
   <p class='notes'>
-    <button class='mat_button' lang='en' mat-button
-            routerLink='/notes' routerLinkActive='active'>
+    <button class='mat_button' lang='en' mat-button routerLink='/notes'>
       Notes
     </button>
   </p>
 
   <p class='group'>
-    <button class='mat_button' lang='en' mat-button
-            routerLink='/groups' routerLinkActive='active'>
+    <button class='mat_button' lang='en' mat-button routerLink='/groups'>
       Groups
     </button>
   </p>
@@ -32,22 +29,19 @@
   <div *ngIf='show; then True; else False'></div>
   <ng-template #True>
     <p class='login'>
-      <button color='primary' lang='en' mat-raised-button
-              routerLink='/account/login' routerLinkActive='active'>
+      <button color='primary' lang='en' mat-raised-button routerLink='/account/login'>
         Login
       </button>
     </p>
     <p class='signup'>
-      <button color='primary' lang='en' mat-raised-button
-              routerLink='/account/signup' routerLinkActive='active'>
+      <button color='primary' lang='en' mat-raised-button routerLink='/account/signup'>
         Sign Up
       </button>
     </p>
   </ng-template>
   <ng-template #False>
     <p class='me'>
-      <input alt='account info' class='button_avatar'
-             routerLink='/account/info' routerLinkActive='active'
+      <input alt='account info' class='button_avatar' routerLink='/account/info'
              src='https://i.328888.xyz/2023/01/24/bZkx5.jpeg' type='image'
       />
     </p>
