@@ -7,15 +7,16 @@ import { AuthService } from '../../service/user/auth/auth.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  username: string = '';
+  user_id = Date.parse(String(new Date().getTime()));
   show: boolean = true;
 
   constructor(private authService: AuthService) {}
 
   ngOnInit(): void {
     this.authService.authorization().subscribe({
-      next: () => {
+      next: (response) => {
         this.show = false;
+        this.user_id = response.body.message;
       },
     });
   }

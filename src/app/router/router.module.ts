@@ -8,11 +8,14 @@ import { NotFoundComponent } from '../view/not-found/not-found.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'account/signup', component: SignupComponent },
   { path: 'account/login', component: LoginComponent },
-  { path: 'account/info', component: MeComponent, canActivate: [AuthGuard] },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'account/:id',
+    component: MeComponent,
+    canActivate: [AuthGuard],
+  },
   { path: '**', component: NotFoundComponent }, // 404
 ];
 

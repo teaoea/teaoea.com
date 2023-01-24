@@ -1,6 +1,6 @@
 <header>
   <p class='home'>
-    <button class='mat_button' lang='en' mat-button routerLink='/home'>
+    <button class='mat_button' lang='en' mat-button routerLink='/'>
       Home
     </button>
   </p>
@@ -41,7 +41,7 @@
   </ng-template>
   <ng-template #False>
     <p class='me'>
-      <input alt='account info' class='button_avatar' routerLink='/account/info'
+      <input alt='account info' class='button_avatar' routerLink='/account/{{user_id}}'
              src='https://i.328888.xyz/2023/01/24/bZkx5.jpeg' type='image'
       />
     </p>
