@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Me } from 'src/app/service/user/me/me';
 import { MeService } from 'src/app/service/user/me/me.service';
 
@@ -9,16 +9,6 @@ import { MeService } from 'src/app/service/user/me/me.service';
   styleUrls: ['./me.component.scss'],
 })
 export class MeComponent implements OnInit {
-  constructor(
-    private service: MeService,
-    private router: Router,
-    private route: ActivatedRoute,
-  ) {}
-
-  ngOnInit(): void {
-    this.info;
-  }
-
   me: Me = {
     id: 0,
     username: '',
@@ -28,8 +18,8 @@ export class MeComponent implements OnInit {
     gender: '',
   };
 
-  info() {
-    this.service.get().subscribe({
+  constructor(private service: MeService, private router: Router) {
+    service.get().subscribe({
       next: (response) => {
         this.me.id = response.body.id;
         this.me.username = response.body.username;
@@ -39,8 +29,10 @@ export class MeComponent implements OnInit {
         this.me.gender = response.body.gender;
       },
       error: () => {
-        this.router.navigate(['account/login'], { relativeTo: this.route });
+        router.navigate(['/account/login']).then();
       },
     });
   }
+
+  ngOnInit(): void {}
 }

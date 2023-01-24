@@ -5,7 +5,6 @@ import { LoginComponent } from '../view/user/login/login.component';
 import { MeComponent } from '../view/user/me/me.component';
 import { SignupComponent } from '../view/user/signup/signup.component';
 import { NotFoundComponent } from '../view/not-found/not-found.component';
-import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -14,7 +13,6 @@ const routes: Routes = [
   {
     path: 'account/:id',
     component: MeComponent,
-    canActivate: [AuthGuard],
   },
   { path: '**', component: NotFoundComponent }, // 404
 ];
