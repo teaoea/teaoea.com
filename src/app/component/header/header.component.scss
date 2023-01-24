@@ -14,8 +14,6 @@ button {
 }
 
 header {
-  position: sticky;
-  top: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 70px;

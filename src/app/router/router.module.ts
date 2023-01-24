@@ -8,7 +8,7 @@ import { NotFoundComponent } from '../view/not-found/not-found.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, runGuardsAndResolvers: 'always' },
+  { path: 'home', component: HomeComponent },
   { path: 'account/signup', component: SignupComponent },
   { path: 'account/login', component: LoginComponent },
   { path: 'account/info', component: MeComponent, canActivate: [AuthGuard] },
@@ -17,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRouterModule {}
