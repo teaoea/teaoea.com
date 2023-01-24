@@ -17,12 +17,17 @@ import { math } from '@milkdown/plugin-math';
   styleUrls: ['./rich-text-editor.component.scss'],
 })
 export class RichTextEditorComponent implements OnInit {
+  @ViewChild('editorRef') editorRef: ElementRef = new ElementRef<any>(
+    navigator,
+  );
+  @Output() text: EventEmitter<any> = new EventEmitter();
+  value: string = '';
+
   constructor() {}
 
-  ngOnInit(): void {}
-
-  // @ts-ignore
-  @ViewChild('editorRef') editorRef: ElementRef;
+  ngOnInit(): void {
+    this.ngAfterViewInit();
+  }
 
   ngAfterViewInit() {
     Editor.make()
@@ -35,8 +40,4 @@ export class RichTextEditorComponent implements OnInit {
       .create()
       .then();
   }
-
-  @Output() text: EventEmitter<any> = new EventEmitter();
-
-  value: string = '';
 }
