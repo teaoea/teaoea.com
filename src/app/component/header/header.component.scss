@@ -1,11 +1,12 @@
 #container {
   position: static;
   height: 100px;
-  top: 0;
 }
 
 #header {
   display: grid;
+  align-content: center;
+  justify-content: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 70px;
   gap: 0 0;
