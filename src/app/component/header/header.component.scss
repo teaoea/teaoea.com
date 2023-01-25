@@ -1,3 +1,18 @@
+#container {
+  position: static;
+  height: 100px;
+  top: 0;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px;
+  gap: 0 0;
+  grid-template-areas:
+    '. home notes group . search search search search . login signup'
+}
+
 p {
   height: 100%;
   text-align: center;
@@ -8,31 +23,24 @@ button {
   width: 100px;
 }
 
-.button_avatar {
+#button_avatar {
   width: 50px;
   height: 50px;
 }
 
-header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 70px;
-  grid-template-areas: '. home notes group . search search . . login signup .';
-}
-
-.home {
+#home {
   grid-area: home;
 }
 
-.notes {
+#notes {
   grid-area: notes;
 }
 
-.group {
+#groups {
   grid-area: group;
 }
 
-.search {
+#search {
   grid-area: search;
 }
 
@@ -40,7 +48,7 @@ input {
   width: 100%;
 }
 
-.search__input {
+#search__input {
   font-size: 16px;
   border: none;
   padding: 0.7rem 1rem;
@@ -50,14 +58,14 @@ input {
   margin-right: -2rem;
 }
 
-.login {
+#login {
   grid-area: login;
 }
 
-.signup {
+#signup {
   grid-area: signup;
 }
 
-.me {
+#me {
   grid-area: signup;
 }

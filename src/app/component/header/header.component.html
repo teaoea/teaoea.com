@@ -1,46 +1,49 @@
-<header>
-  <p class='home'>
-    <button class='mat_button' lang='en' mat-button routerLink='/'>
-      Home
-    </button>
-  </p>
-
-  <p class='notes'>
-    <button class='mat_button' lang='en' mat-button routerLink='/notes'>
-      Notes
-    </button>
-  </p>
-
-  <p class='group'>
-    <button class='mat_button' lang='en' mat-button routerLink='/groups'>
-      Groups
-    </button>
-  </p>
-
-  <p class='search'>
-    <input class='search__input' lang='en'
-           placeholder='search' type='text'
-    />
-  </p>
-
-  <div *ngIf='show; then login; else me'></div>
-  <ng-template #login>
-    <p class='login'>
-      <button color='primary' lang='en' mat-raised-button routerLink='/account/login'>
-        Login
+<div id='container'>
+  <header id='header'>
+    <p id='home'>
+      <button class='mat_button' lang='en' mat-button routerLink='/'>
+        Home
       </button>
     </p>
-    <p class='signup'>
-      <button color='primary' lang='en' mat-raised-button routerLink='/account/signup'>
-        Sign Up
+
+    <p id='notes'>
+      <button class='mat_button' lang='en' mat-button routerLink='/notes'>
+        Notes
       </button>
     </p>
-  </ng-template>
-  <ng-template #me>
-    <p class='me'>
-      <input alt='account info' class='button_avatar' routerLink='/account/{{user_id}}'
-             src='https://i.328888.xyz/2023/01/24/bZkx5.jpeg' type='image'
-      />
+
+    <p id='groups'>
+      <button class='mat_button' lang='en' mat-button routerLink='/groups'>
+        Groups
+      </button>
     </p>
-  </ng-template>
-</header>
+
+    <p id='search'>
+      <input id='search__input' lang='en' placeholder='search' type='text' />
+    </p>
+
+    <div *ngIf='show; then login; else me'></div>
+    <ng-template #login>
+      <p id='login'>
+        <button color='primary' lang='en'
+                mat-raised-button routerLink='/account/login'>
+          Login
+        </button>
+      </p>
+      <p id='signup'>
+        <button color='primary' lang='en'
+                mat-raised-button routerLink='/account/signup'>
+          Sign Up
+        </button>
+      </p>
+    </ng-template>
+    <ng-template #me>
+      <p id='me'>
+        <input type='image' id='button_avatar'
+               routerLink='/account/{{ user_id }}' alt='account info'
+               src='assets/img/avatar/{{ avatar_theme }}'
+        />
+      </p>
+    </ng-template>
+  </header>
+</div>

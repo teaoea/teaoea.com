@@ -8,7 +8,12 @@ import { AuthService } from '../../service/user/auth/auth.service';
 })
 export class HeaderComponent implements OnInit {
   user_id = Date.parse(String(new Date().getTime()));
+
   show: boolean = true;
+
+  avatar_theme: string = 'avatar-dark.jpg';
+
+  themeMode = window.matchMedia('(prefers-color-scheme: light)');
 
   constructor(private authService: AuthService) {
     authService.authorization().subscribe({
@@ -16,6 +21,12 @@ export class HeaderComponent implements OnInit {
         this.show = false;
         this.user_id = response.body.message;
       },
+    });
+
+    this.themeMode.addEventListener('change', (e) => {
+      if (e.matches) {
+        this.avatar_theme = 'avatar-light.jpg';
+      }
     });
   }
 
