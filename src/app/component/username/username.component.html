@@ -1,18 +1,7 @@
-<mat-form-field appearance="outline">
-  <mat-label lang="en">Username</mat-label>
-  <input
-    type="text"
-    matInput
-    lang="en"
-    required
-    [(ngModel)]="value"
-    [formControl]="formControl"
-    (keyup)="newUsername(value)"
+<mat-form-field appearance='outline'>
+  <mat-label lang='en'>Username</mat-label>
+  <input type='text' matInput lang='en' required
+         [(ngModel)]='value' [formControl]='formControl' (keyup)='newUsername(value)'
   />
-  <mat-error *ngIf="formControl.hasError('required')" lang="en">
-    Username is <strong>required</strong></mat-error
-  >
-  <mat-error *ngIf="formControl.hasError('hasError')" lang="en">
-    Username already in use
-  </mat-error>
+  <mat-error *ngIf='formControl.invalid' lang='en'>{{errorMessage()}}</mat-error>
 </mat-form-field>

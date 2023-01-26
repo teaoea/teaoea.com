@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { UsernameIsExistValidators } from './validators';
 
 @Component({
   selector: 'app-username',
@@ -9,13 +10,32 @@ import { FormControl, Validators } from '@angular/forms';
 export class UsernameComponent implements OnInit {
   value: string = '';
   @Output() username: EventEmitter<string> = new EventEmitter();
-  formControl = new FormControl(this.value, [Validators.required]);
 
-  constructor() {}
+  constructor(private usernameIsExistValidators: UsernameIsExistValidators) {}
+
+  formControl = new FormControl(this.value, {
+    validators: [Validators.required],
+    asyncValidators: [
+      this.usernameIsExistValidators.validate.bind(
+        this.usernameIsExistValidators,
+      ),
+    ],
+    updateOn: 'blur',
+  });
 
   ngOnInit(): void {}
 
   newUsername(value: string) {
     this.username.emit(value);
+  }
+
+  errorMessage() {
+    if (this.formControl.hasError('required')) {
+      return 'Username is required';
+    }
+    if (this.formControl.hasError('is_exist')) {
+      return 'The username is already signup';
+    }
+    return null;
   }
 }
