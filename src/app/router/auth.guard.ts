@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {
   ActivatedRouteSnapshot,
   CanActivate,
+  Router,
   RouterStateSnapshot,
   UrlTree,
 } from '@angular/router';
@@ -12,7 +13,7 @@ import { AuthService } from '../service/user/auth/auth.service';
   providedIn: 'root',
 })
 export class AuthGuard implements CanActivate {
-  constructor(private service: AuthService) {}
+  constructor(private service: AuthService, private router: Router) {}
 
   auth: boolean = false;
 
@@ -27,6 +28,10 @@ export class AuthGuard implements CanActivate {
     this.service.authorization().subscribe({
       next: () => {
         this.auth = true;
+      },
+      error: () => {
+        this.router.navigate(['/account/login']).then();
+        this.auth = false;
       },
     });
     return this.auth;
