@@ -1,7 +1,12 @@
+#placeholder {
+  height: 30px;
+  width: 100%;
+}
+
 #footer {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100%;
+  grid-template-rows: 70px;
   gap: 0 0;
   grid-template-areas: '. about . . . . . . . . . .';
 }

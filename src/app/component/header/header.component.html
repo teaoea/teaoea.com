@@ -1,49 +1,48 @@
-<div id='container'>
-  <header id='header'>
-    <p id='home'>
-      <button class='mat_button' lang='en' mat-button routerLink='/'>
-        Home
+<header id='header'>
+  <p id='home'>
+    <button class='mat_button' lang='en' mat-button routerLink='/'>
+      Home
+    </button>
+  </p>
+
+  <p id='notes'>
+    <button class='mat_button' lang='en' mat-button routerLink='/notes'>
+      Notes
+    </button>
+  </p>
+
+  <p id='groups'>
+    <button class='mat_button' lang='en' mat-button routerLink='/groups'>
+      Groups
+    </button>
+  </p>
+
+  <p id='search'>
+    <input id='search__input' lang='en' placeholder='search' type='text' />
+  </p>
+
+  <div *ngIf='show; then login; else me'></div>
+  <ng-template #login>
+    <p id='login'>
+      <button color='primary' lang='en'
+              mat-raised-button routerLink='/account/login'>
+        Login
       </button>
     </p>
-
-    <p id='notes'>
-      <button class='mat_button' lang='en' mat-button routerLink='/notes'>
-        Notes
+    <p id='signup'>
+      <button color='primary' lang='en'
+              mat-raised-button routerLink='/account/signup'>
+        Sign Up
       </button>
     </p>
-
-    <p id='groups'>
-      <button class='mat_button' lang='en' mat-button routerLink='/groups'>
-        Groups
-      </button>
+  </ng-template>
+  <ng-template #me>
+    <p id='me'>
+      <input type='image' id='button_avatar'
+             routerLink='/account/{{ user_id }}' alt='account info'
+             src='assets/img/avatar/{{ avatar_theme }}'
+      />
     </p>
-
-    <p id='search'>
-      <input id='search__input' lang='en' placeholder='search' type='text' />
-    </p>
-
-    <div *ngIf='show; then login; else me'></div>
-    <ng-template #login>
-      <p id='login'>
-        <button color='primary' lang='en'
-                mat-raised-button routerLink='/account/login'>
-          Login
-        </button>
-      </p>
-      <p id='signup'>
-        <button color='primary' lang='en'
-                mat-raised-button routerLink='/account/signup'>
-          Sign Up
-        </button>
-      </p>
-    </ng-template>
-    <ng-template #me>
-      <p id='me'>
-        <input type='image' id='button_avatar'
-               routerLink='/account/{{ user_id }}' alt='account info'
-               src='assets/img/avatar/{{ avatar_theme }}'
-        />
-      </p>
-    </ng-template>
-  </header>
-</div>
+  </ng-template>
+</header>
+<div id='placeholder'></div>
